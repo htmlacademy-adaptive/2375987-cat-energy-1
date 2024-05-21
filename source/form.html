@@ -31,104 +31,121 @@
     </nav>
   </header>
   <!-- main -->
+
   <main class="main-container">
     <section class="program-diet">
       <h1 class="program-diet__title">Подбор программы</h1>
       <p class="program-diet__description">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
       <form class="program-form" action="https://echo.htmlacademy.ru/" method="get">
+
         <!-- cat profiles -->
         <fieldset class="program-form__group">
           <legend class="visually-hidden">Данные кота</legend>
+
           <label class="program-form__text" for="name">ИМЯ:*</label>
           <input class="program-form__input" type="text" id="name" name="name" placeholder="имя" value="Барсик"
             required>
+
           <label class="program-form__text" for="weight">Вес (кг):*</label>
           <input class="program-form__input" type="text" id="weight" name="weight" placeholder="вес" value="7" required>
+
           <label class="program-form__text" for="age">Возраст (лет):</label>
-          <input class="program-form__input" type="text" id="age" name="age" placeholder="возраст" value="7" required>
+          <input class="program-form__input" type="text" id="age" name="age" placeholder="возраст" value="7">
         </fieldset>
+
         <!-- choose a diet -->
         <fieldset class="program-form__group">
           <legend class="visually-hidden">Выбрать программу по рациону питания</legend>
           <ul class="program-form__list">
             <li class="program-form__item">
-              <label class="control">
-                <input  class="control-input" type="radio" value="lose weight" name="name" checked>
+              <label class="control" for="lose">
+                <input class="control-input" type="radio" value="lose weight" name="name" id="lose" checked>
                 Похудение
               </label>
             </li>
+
             <li class="program-form__item">
-              <label class="control">
-                <input  class="control-input" type="radio" value="gain weight" name="name">
+              <label class="control" for="gain">
+                <input class="control-input" type="radio" value="gain weight" name="name" id="gain">
                 Набор массы
               </label>
             </li>
+
             <li class="program-form__item">
-              <input  class="control-input" class="control">
-                <input type="radio" value="advice" name="name">
+              <label class="control" for="advice">
+                <input class="control-input" type="radio" value="advice" name="name">
                 Не знаю (Нужен ваш совет)
               </label>
             </li>
           </ul>
         </fieldset>
+
         <!-- the questionnaire of the cat's owner -->
         <fieldset class="program-form__group">
           <legend class="program-form__title">Контактные данные
             (владельца кота)</legend>
           <label for="email">E-mail:*</label>
           <input type="email" name="mail" placeholder="kuklachev@gmail.com" id="email" required>
+
           <label for="number">Телефон:*</label>
           <input type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number" required>
         </fieldset>
-       <fieldset class="program-form__group">
+
+        <fieldset class="program-form__group">
           <legend class="program-form__title">Комментарии</legend>
-          <textarea id='feedback' name='feedback' rows='2' cols='20'>
-            Расскажите обо всех повадках кота.
-            </textarea>
+          <textarea name="feedback" id="feedback" rows="2" cols="20">Расскажите обо всех повадках кота.</textarea>
         </fieldset>
+
         <fieldset class="program-form__group">
           <legend class="program-form__title">Дополнительно</legend>
           <ul class="program-form__list">
             <li class="program-form__item">
-              <label class="control">
-                <input  class="control-input" type="checkbox"  name="sweetener" checked>
+              <label class="control" for="sweetener">
+                <input class="control-input" type="checkbox" name="sweetener" checked id="sweetener">
                 Cахарозаменитель
               </label>
+
             </li>
             <li class="program-form__item">
-              <label class="control">
-                <input  class="control-input" type="checkbox" name="water">
+              <label class="control" for="water">
+                <input class="control-input" type="checkbox" name="water" id="water">
                 Питьевая вода
               </label>
+
             </li>
             <li class="program-form__item">
-              <label class="control">
-                <input  class="control-input" type="checkbox" name="milk">
+              <label class="control" for="milk">
+                <input class="control-input" type="checkbox" name="milk" id="milk">
                 Молоко
               </label>
+
             </li>
             <li class="program-form__item">
-              <label class="control">
-                <input  class="control-input" type="checkbox" name="vitamins">
+              <label class="control" for="vitamins">
+                <input class="control-input" type="checkbox" name="vitamins" id="vitamins">
                 Витамины
               </label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Отправить</button>
-        <p>* — Обязательные поля</p>
+        <button class="button" type="submit">Отправить</button>
+        <p class="required">* — Обязательные поля</p>
       </form>
     </section>
   </main>
 
   <footer class="page-footer">
+
     <!-- contacts -->
     <section class="contacts">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="contacts__adress">
-        <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
-      </address>
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts-wrapper">
+        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__adress">
+          <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        </address>
+      </div>
     </section>
 
     <!-- logo cat Enerdji -->
@@ -138,6 +155,7 @@
         <img class="page-footer__img" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
       </a>
     </section>
+
     <!-- social -->
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
@@ -159,6 +177,7 @@
         </li>
       </ul>
     </section>
+
     <!-- logo HTML academy -->
     <section class="link-htmlacademy">
       <h2 class="visually-hidden">Ссылка на сайт HTML academy</h2>

@@ -18,7 +18,8 @@
       <button class="page-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="page-navigation__list">
         <li class="page-navigation__item">
-          <a class="page-navigation__link page-navigation__link--current" href="index.html" aria-current="page">Главное</a>
+          <a class="page-navigation__link page-navigation__link--current" href="index.html"
+            aria-current="page">Главное</a>
         </li>
         <li class="page-navigation__item">
           <a class="page-navigation__link" href="catalog.html">Каталог продукции</a>
@@ -31,6 +32,7 @@
   </header>
   <!-- main -->
   <main class="main-container">
+
     <!-- page-hero -->
     <section class="page-hero">
       <h1 class="page-hero__title">Функциональное питание для котов</h1>
@@ -38,6 +40,7 @@
       <img class="page-hero__img" src="img/img-hero.svg" width="280" height="270" alt="Изображение продукции магазина">
       <a class="button" href="form.html">Подобрать программу</a>
     </section>
+
     <!-- ration -->
     <section class="ration">
       <h2 class="visually-hidden">Программы по рациону питания</h2>
@@ -56,6 +59,7 @@
         </li>
       </ul>
     </section>
+
     <!-- advantages -->
     <section class="advantages">
       <h2 class="advantages__title">Как это работает</h2>
@@ -72,6 +76,7 @@
         <li class="advantages__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
       </ol>
     </section>
+
     <!-- result -->
     <section class="result">
       <h2 class="result__title">Живой пример</h2>
@@ -83,6 +88,7 @@
           <span class="result__definition">5 кг</span>
           <span class="result__discription">снижение веса</span>
         </li>
+
         <li class="result__item">
           <span class="result__definition">60 дней</span>
           <span class="result__discription">затрачено времени</span>
@@ -92,63 +98,72 @@
       <img class="result__before" src="img/cat-before.svg" width="280" height="256" alt="Изображение полного котика">
       <img class="result__after" src="img/cat-after.svg" width="280" height="256" alt="Изображение стройного котика">
       <p class="slider-toggles">
-        <button type="button" class="button">Ползунок</button>
+        <button type="button" class="button">
+          <span class="visually-hidden">Ползунок</span>
+        </button>
       </p>
     </section>
   </main>
 
   <footer class="page-footer">
-    <!-- contacts -->
-    <section class="contacts">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="contacts__adress">
-        <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
-      </address>
-    </section>
 
-    <!-- logo cat Enerdji -->
-    <section class="page-footer__logo">
-      <h2 class="visually-hidden"> Ссылка на сайт Кэт Энерджи</h2>
-      <a href="index.html" class="page-footer__link">
-        <img class="page-footer__img" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
-      </a>
-    </section>
-    <!-- social -->
-    <section class="footer-social">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="footer-social__list">
-        <li class="footer-social__item">
-          <a class="footer-social__link footer-social-vk" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="footer-social__item">
-          <a class="footer-social__link footer-social-youtube" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-        <li class="footer-social__item">
-          <a class="footer-social__link footer-social-telegram" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <!-- logo HTML academy -->
-    <section class="link-htmlacademy">
-      <h2 class="visually-hidden">Ссылка на сайт HTML academy</h2>
-      <a class="link-htmlacademy__link" href="https://htmlacademy.ru/">
-        <span class="link-htmlacademy__text">HTML Academy</span>
-        <svg class="link-htmlacademy__img" role="img" aria-label="Логотип HTML академии" width="27.000000"
-          height="34.000000" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <path
-            d="M13.64 0.01L13.5 0L0 1.4L0 26.01L13.5 34L27 26.01L27 1.4L13.64 0.01ZM25.23 25.01L13.5 31.95L1.76 25.01L1.76 14.92L13.45 21.84L13.47 23.09L5.45 18.35L5.44 19.58L13.48 24.38L13.5 25.67L5.46 20.91L5.45 22.14L13.5 26.95L21.62 22.11L21.62 20.89L21.62 16.9L25.24 14.75L25.23 25.01ZM25.23 13.45L22.01 15.33L20.53 16.2L13.46 12.02L13.45 13.24L19.49 16.81L19.44 16.84L19.31 16.92L18.45 17.41L13.46 14.46L13.45 15.69L17.39 18.02L16.45 18.63L16.43 18.64L13.46 16.9L13.45 18.12L15.4 19.26L13.41 20.44L1.79 13.57L13.43 6.61L25.23 13.45ZM25.23 12.22L13.44 5.31L1.76 12.21L1.76 2.98L13.5 1.76L25.23 2.98L25.23 12.22Z"
-            fill="#666666" fill-opacity="1.000000" fill-rule="nonzero" />
-        </svg>
-      </a>
-    </section>
-  </footer>
+    <!-- contacts -->
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts-wrapper">
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__adress">
+            <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+          </address>
+        </div>
+      </section>
+
+      <!-- logo cat Enerdji -->
+      <section class="page-footer__logo">
+        <h2 class="visually-hidden"> Ссылка на сайт Кэт Энерджи</h2>
+        <a href="index.html" class="page-footer__link" aria-current="page">
+          <img class="page-footer__img" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
+        </a>
+      </section>
+
+      <!-- social -->
+      <section class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a class="footer-social__link footer-social-vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+
+          <li class="footer-social__item">
+            <a class="footer-social__link footer-social-youtube" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link footer-social-telegram" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- logo HTML academy -->
+      <section class="link-htmlacademy">
+        <h2 class="visually-hidden">Ссылка на сайт HTML academy</h2>
+        <a class="link-htmlacademy__link" href="https://htmlacademy.ru/">
+          <span class="link-htmlacademy__text">HTML Academy</span>
+          <svg class="link-htmlacademy__img" role="img" aria-label="Логотип HTML академии" width="27.000000"
+            height="34.000000" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path
+              d="M13.64 0.01L13.5 0L0 1.4L0 26.01L13.5 34L27 26.01L27 1.4L13.64 0.01ZM25.23 25.01L13.5 31.95L1.76 25.01L1.76 14.92L13.45 21.84L13.47 23.09L5.45 18.35L5.44 19.58L13.48 24.38L13.5 25.67L5.46 20.91L5.45 22.14L13.5 26.95L21.62 22.11L21.62 20.89L21.62 16.9L25.24 14.75L25.23 25.01ZM25.23 13.45L22.01 15.33L20.53 16.2L13.46 12.02L13.45 13.24L19.49 16.81L19.44 16.84L19.31 16.92L18.45 17.41L13.46 14.46L13.45 15.69L17.39 18.02L16.45 18.63L16.43 18.64L13.46 16.9L13.45 18.12L15.4 19.26L13.41 20.44L1.79 13.57L13.43 6.61L25.23 13.45ZM25.23 12.22L13.44 5.31L1.76 12.21L1.76 2.98L13.5 1.76L25.23 2.98L25.23 12.22Z"
+              fill="#666666" fill-opacity="1.000000" fill-rule="nonzero" />
+          </svg>
+        </a>
+      </section>
+    </footer>
 </body>
 
 </html>
