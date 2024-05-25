@@ -42,16 +42,24 @@
         <!-- cat profiles -->
         <fieldset class="program-form__group">
           <legend class="visually-hidden">Данные кота</legend>
+          <ul class="program-form__list">
+            <li class="program-form__item">
+              <label class="program-form__text" for="name">ИМЯ:*</label>
+              <input class="program-form__input" type="text" id="name" name="name" placeholder="имя" value="Барсик"
+                required>
+            </li>
 
-          <label class="program-form__text" for="name">ИМЯ:*</label>
-          <input class="program-form__input" type="text" id="name" name="name" placeholder="имя" value="Барсик"
-            required>
+            <li class="program-form__item">
+              <label class="program-form__text" for="weight">Вес (кг):*</label>
+              <input class="program-form__input" type="text" id="weight" name="weight" placeholder="вес" value="7"
+                required>
+            </li>
 
-          <label class="program-form__text" for="weight">Вес (кг):*</label>
-          <input class="program-form__input" type="text" id="weight" name="weight" placeholder="вес" value="7" required>
-
-          <label class="program-form__text" for="age">Возраст (лет):</label>
-          <input class="program-form__input" type="text" id="age" name="age" placeholder="возраст" value="7">
+            <li class="program-form__item">
+              <label class="program-form__text" for="age">Возраст (лет):</label>
+              <input class="program-form__input" type="text" id="age" name="age" placeholder="возраст" value="7">
+            </li>
+          </ul>
         </fieldset>
 
         <!-- choose a diet -->
@@ -74,7 +82,7 @@
 
             <li class="program-form__item">
               <label class="control" for="advice">
-                <input class="control-input" type="radio" value="advice" name="name">
+                <input class="control-input" type="radio" value="advice" name="name" id="advice">
                 Не знаю (Нужен ваш совет)
               </label>
             </li>
@@ -85,16 +93,25 @@
         <fieldset class="program-form__group">
           <legend class="program-form__title">Контактные данные
             (владельца кота)</legend>
-          <label for="email">E-mail:*</label>
-          <input type="email" name="mail" placeholder="kuklachev@gmail.com" id="email" required>
+          <ul class="program-form__list">
+            <li class="program-form__item">
+              <label for="email">E-mail:*</label>
+              <input type="email" name="mail" placeholder="kuklachev@gmail.com" id="email" required>
+            </li>
 
-          <label for="number">Телефон:*</label>
-          <input type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number" required>
+            <li class="program-form__item">
+              <label for="number">Телефон:*</label>
+              <input type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number" required>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="program-form__group">
           <legend class="program-form__title">Комментарии</legend>
-          <textarea name="feedback" id="feedback" rows="2" cols="20">Расскажите обо всех повадках кота.</textarea>
+          <label class="visually-hidden" for="feedback">Комментарии
+            <textarea name="feedback" id="feedback" rows="2" cols="20"
+              placeholder="Расскажите обо всех повадках кота."></textarea>
+          </label>
         </fieldset>
 
         <fieldset class="program-form__group">
@@ -102,7 +119,7 @@
           <ul class="program-form__list">
             <li class="program-form__item">
               <label class="control" for="sweetener">
-                <input class="control-input" type="checkbox" name="sweetener" checked id="sweetener">
+                <input class="control-input" type="checkbox" name="sweetener" id="sweetener" checked>
                 Cахарозаменитель
               </label>
 
@@ -129,8 +146,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button" type="submit">Отправить</button>
-        <p class="required">* — Обязательные поля</p>
+        <div class="program-form_submit">
+          <button class="button" type="submit">Отправить</button>
+          <p class="required">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
   </main>
@@ -149,12 +168,11 @@
     </section>
 
     <!-- logo cat Enerdji -->
-    <section class="page-footer__logo">
-      <h2 class="visually-hidden"> Ссылка на сайт Кэт Энерджи</h2>
+    <div class="page-footer__logo">
       <a href="index.html" class="page-footer__link">
         <img class="page-footer__img" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
       </a>
-    </section>
+    </div>
 
     <!-- social -->
     <section class="footer-social">
@@ -180,7 +198,7 @@
 
     <!-- logo HTML academy -->
     <section class="link-htmlacademy">
-      <h2 class="visually-hidden">Ссылка на сайт HTML academy</h2>
+      <h2 class="visually-hidden">Партнеры</h2>
       <a class="link-htmlacademy__link" href="https://htmlacademy.ru/">
         <span class="link-htmlacademy__text">HTML Academy</span>
         <svg class="link-htmlacademy__img" role="img" aria-label="Логотип HTML академии" width="27.000000"
