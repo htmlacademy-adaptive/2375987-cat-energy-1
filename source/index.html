@@ -9,11 +9,12 @@
 </head>
 
 <body>
+  <div class="container">
   <!-- header -->
   <header class="page-header">
-    <a href="index.html" class="page-header__logo" aria-current="page">
-      <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
-      <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
+    <a href="index.html" class="page-logo__logo" aria-current="page">
+      <img class="page-logo__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
+      <img class="page-logo__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
     </a>
     <nav class="page-navigation">
       <button class="page-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -36,10 +37,13 @@
 
     <!-- page-hero -->
     <section class="page-hero">
-      <h1 class="page-hero__title">Функциональное питание для котов</h1>
-      <p class="page-hero__text">Занялся собой? Займись котом!</p>
+      <div class="page-hero__wrapper">
+      <h1 class="page-hero__title page-hero__title--white">Функциональное питание для котов</h1>
+      <p class="page-hero__text page-hero__text--white">Занялся собой? Займись котом!</p>
+      </div>
       <img class="page-hero__img" src="img/img-hero.svg" width="280" height="270" alt="Изображение продукции магазина">
-      <a class="button" href="form.html">Подобрать программу</a>
+      <a class="button button--big" href="form.html">Подобрать программу</a>
+
     </section>
 
     <!-- ration -->
@@ -164,6 +168,7 @@
         </a>
       </section>
     </footer>
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,17 @@
+.button {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: var(--basic-green);
+  appearance: none;
+  text-decoration: none;
+
+  &--big {
+    padding: 13px 64px 10px;
+  }
+
+}
