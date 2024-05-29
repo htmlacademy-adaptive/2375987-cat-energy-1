@@ -1,5 +1,30 @@
-.ration
-{
+:root{
+  --color-text:#000000;
+  --basic-green:#68b738;
+  --basic-grey:#f2f2f2;
+}
+
+.ration{
   padding-left: 20px;
   padding-right: 20px;
+}
+.ration__list{
+  margin: 0;
+  padding: 0;
+}
+
+.ration__item{
+  background-color: var(--basic-grey);
+  margin-bottom: 20px;
+}
+.ration__subtitle{
+  color: var(--color-text);
+font-family: "Oswald", sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 37px;
+text-transform: uppercase;
+}
+.ration__text{
+  margin: 0 0 42px 0;
 }

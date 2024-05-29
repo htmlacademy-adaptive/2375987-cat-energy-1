@@ -1,3 +1,9 @@
+:root{
+  --color-text:#000000;
+  --basic-green:#68b738;
+  --basic-grey:#f2f2f2;
+}
+
 .button {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
@@ -12,6 +18,13 @@
 
   &--big {
     padding: 13px 64px 10px;
+  }
+
+  &--link{
+    background-color:var(--basic-grey);
+    color:var(--color-text);
+    padding: 4px 20px 4px 0px;
+    margin-bottom: 18px;
   }
 
 }
