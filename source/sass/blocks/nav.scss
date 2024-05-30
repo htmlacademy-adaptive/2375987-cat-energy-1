@@ -1,12 +1,9 @@
-:root{
-  --color-text:#000000;
-  --basic-green:#68b738;
-  --basic-grey:#f2f2f2;
-}
 
 .page-navigation__list {
-  margin: 0;
-  padding: 0;
+  // @include list ();
+  margin:0;
+  padding:0;
+  list-style: none;
 }
 
 .page-navigation__link {
