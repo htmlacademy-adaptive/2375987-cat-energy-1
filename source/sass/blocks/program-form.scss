@@ -13,14 +13,13 @@
 
 .program-form__item {
   color: inherit;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 14px;
 }
-
 
 .program-form__title {
   color: var(--color-text);
@@ -38,5 +37,4 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-
 }

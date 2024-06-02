@@ -1,12 +1,13 @@
-.page-hero{
+.page-hero {
   padding-right: 20px;
   padding-left: 20px;
   margin-bottom: 20px;
 }
-.page-hero__wrapper{
+
+.page-hero__wrapper {
   background-color: var(--basic-green);
   padding: 27px 10px 203px;
-  }
+}
 
 .page-hero__title {
   font-family: "Oswald", sans-serif;
@@ -34,7 +35,8 @@
     color: #ffffff;
   }
 }
-.page-hero__img{
+
+.page-hero__img {
   display: block;
   margin: 0 auto;
 }
