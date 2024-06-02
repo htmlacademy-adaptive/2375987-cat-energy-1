@@ -39,10 +39,10 @@
       <h1 class="program-diet__title">Подбор программы</h1>
       <p class="program-diet__description">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
-      <form class="program-form" action="https://echo.htmlacademy.ru/" method="get">
 
+      <form class="program-form" action="https://echo.htmlacademy.ru/" method="get">
         <!-- cat profiles -->
-        <fieldset class="program-form__group">
+        <fieldset class="program-form__group program-form__group--profile">
           <legend class="visually-hidden">Данные кота</legend>
           <ul class="program-form__list">
             <li class="program-form__item">
@@ -110,8 +110,8 @@
 
         <fieldset class="program-form__group">
           <legend class="program-form__title">Комментарии</legend>
-          <label class="visually-hidden" for="feedback">Комментарии
-            <textarea name="feedback" id="feedback" rows="2" cols="20"
+          <label for="feedback">
+            <textarea class="program-form__feedback"  name="feedback" id="feedback" rows="10" cols="40"
               placeholder="Расскажите обо всех повадках кота."></textarea>
           </label>
         </fieldset>
@@ -148,8 +148,9 @@
             </li>
           </ul>
         </fieldset>
+
         <div class="program-form_submit">
-          <button class="button" type="submit">Отправить</button>
+          <button class="button button--form" type="submit">Отправить</button>
           <p class="required">* — Обязательные поля</p>
         </div>
       </form>
@@ -159,7 +160,7 @@
   <footer class="page-footer">
 
     <!-- contacts -->
-    <section class="contacts">
+    <section class="contacts contacts--background">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts-wrapper">
         <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
@@ -168,7 +169,7 @@
         </address>
       </div>
     </section>
-
+    <div class="page-fotter-wrapper">
     <!-- logo cat Enerdji -->
     <div class="page-footer__logo">
       <a href="index.html" class="page-footer__link">
@@ -212,6 +213,7 @@
         </svg>
       </a>
     </section>
+    </div>
   </footer>
   </div>
 </body>

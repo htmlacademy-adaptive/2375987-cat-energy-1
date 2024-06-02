@@ -1,0 +1,42 @@
+.program-form__group {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.program-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.program-form__item {
+  color: inherit;
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+
+.program-form__title {
+  color: var(--color-text);
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 36px;
+}
+
+.program-form__feedback {
+  color: #444444;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+}

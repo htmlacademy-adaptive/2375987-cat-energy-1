@@ -1,5 +1,9 @@
 .contacts {
   padding: 20px 26px;
+
+  &--background{
+    background-color: var(--basic-grey);
+  }
 }
 
 .contacts__title {
@@ -11,6 +15,7 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
 .contacts__adress__office {
   font-style: normal;
   margin: 0;

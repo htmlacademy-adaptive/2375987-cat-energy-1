@@ -1,4 +1,9 @@
-// Начните писать стили здесь
+
+// миксины
+@import './mixins.scss';
+
+// переменные
+@import './layout/variable.scss';
 
 // базовые стили
 @import './base/base.scss';
@@ -20,8 +25,12 @@
 @import './blocks/footer-social.scss';
 @import './blocks/link-htmlacademy.scss';
 
-// переменные
-@import './layout/variable.scss';
+// компоненты страницы каталога
+// заголовок страницы каталога
+@import './blocks/catalog-product.scss';
+@import './blocks/product-card.scss';
+@import './blocks/product-additional.scss';
 
-// миксины не могу подлючить
-@import './mixins.scss';
+// компоненты страницы формы
+@import './blocks/program-diet.scss';
+@import './blocks/program-form.scss';
