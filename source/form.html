@@ -5,14 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <!-- header -->
-  <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
-      <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
+  <header class="page-header container">
+    <a href="index.html" class="page-logo__logo">
+      <img class="page-logo__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
+      <img class="page-logo__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
     </a>
     <nav class="page-navigation">
       <button class="page-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -32,15 +33,15 @@
   </header>
   <!-- main -->
 
-  <main class="main-container">
+  <main class="main-container container">
     <section class="program-diet">
-      <h1 class="program-diet__title">Подбор программы</h1>
+      <h1 class="program-diet__title title">Подбор программы</h1>
       <p class="program-diet__description">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
-      <form class="program-form" action="https://echo.htmlacademy.ru/" method="get">
 
+      <form class="program-form" action="https://echo.htmlacademy.ru/" method="get">
         <!-- cat profiles -->
-        <fieldset class="program-form__group">
+        <fieldset class="program-form__group program-form__group--profile">
           <legend class="visually-hidden">Данные кота</legend>
           <ul class="program-form__list">
             <li class="program-form__item">
@@ -108,8 +109,8 @@
 
         <fieldset class="program-form__group">
           <legend class="program-form__title">Комментарии</legend>
-          <label class="visually-hidden" for="feedback">Комментарии
-            <textarea name="feedback" id="feedback" rows="2" cols="20"
+          <label for="feedback">
+            <textarea class="program-form__feedback"  name="feedback" id="feedback" rows="10" cols="40"
               placeholder="Расскажите обо всех повадках кота."></textarea>
           </label>
         </fieldset>
@@ -146,18 +147,19 @@
             </li>
           </ul>
         </fieldset>
+
         <div class="program-form_submit">
-          <button class="button" type="submit">Отправить</button>
+          <button class="button button--form" type="submit">Отправить</button>
           <p class="required">* — Обязательные поля</p>
         </div>
       </form>
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer container">
 
     <!-- contacts -->
-    <section class="contacts">
+    <section class="contacts contacts--background">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts-wrapper">
         <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
@@ -166,7 +168,7 @@
         </address>
       </div>
     </section>
-
+    <div class="page-fotter-wrapper">
     <!-- logo cat Enerdji -->
     <div class="page-footer__logo">
       <a href="index.html" class="page-footer__link">
@@ -210,6 +212,7 @@
         </svg>
       </a>
     </section>
+    </div>
   </footer>
 </body>
 

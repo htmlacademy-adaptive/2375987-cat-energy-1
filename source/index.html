@@ -5,14 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <!-- header -->
-  <header class="page-header">
-    <a href="index.html" class="page-header__logo" aria-current="page">
-      <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
-      <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
+  <header class="page-header container">
+    <a href="index.html" class="page-logo__logo" aria-current="page">
+      <img class="page-logo__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
+      <img class="page-logo__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
     </a>
     <nav class="page-navigation">
       <button class="page-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -31,14 +32,17 @@
     </nav>
   </header>
   <!-- main -->
-  <main class="main-container">
+  <main class="main-container container">
 
     <!-- page-hero -->
     <section class="page-hero">
-      <h1 class="page-hero__title">Функциональное питание для котов</h1>
-      <p class="page-hero__text">Занялся собой? Займись котом!</p>
-      <img class="page-hero__img" src="img/img-hero.svg" width="280" height="270" alt="Изображение продукции магазина">
-      <a class="button" href="form.html">Подобрать программу</a>
+      <div class="page-hero__wrapper">
+      <h1 class="page-hero__title title title--color">Функциональное питание для котов </h1>
+      <p class="page-hero__text page-hero__text--color">Занялся собой? Займись котом!</p>
+      </div>
+      <img class="page-hero__img" src="img/img-hero.png" width="280" height="270" alt="Изображение продукции магазина">
+      <a class="button button--big" href="form.html">Подобрать программу</a>
+
     </section>
 
     <!-- ration -->
@@ -49,13 +53,13 @@
           <h3 class="ration__subtitle">Похудение</h3>
           <p class="ration__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
             диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="catalog.html" class="button">каталог slim</a>
+          <a href="catalog.html" class="button button--link">каталог slim</a>
         </li>
         <li class="ration__item">
           <h3 class="ration__subtitle">Набор массы</h3>
           <p class="ration__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
             вашему коту нарастить необходимые мышцы!</p>
-          <a href="catalog.html" class="button">каталог pro</a>
+          <a href="catalog.html" class="button button--link">каталог pro</a>
         </li>
       </ul>
     </section>
@@ -94,6 +98,7 @@
           <span class="result__discription">затрачено времени</span>
         </li>
       </ul>
+
       <p class="result__text">Затраты на питание: 15 000 РУБ. </p>
       <img class="result__before" src="img/cat-before.svg" width="280" height="256" alt="Изображение полного котика">
       <img class="result__after" src="img/cat-after.svg" width="280" height="256" alt="Изображение стройного котика">
@@ -105,7 +110,7 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer container">
 
     <!-- contacts -->
       <section class="contacts">
@@ -118,7 +123,8 @@
         </div>
       </section>
 
-      <!-- logo cat Enerdji -->
+      <div class="page-fotter-wrapper">
+         <!-- logo cat Enerdji -->
       <div class="page-footer__logo">
         <a href="index.html" class="page-footer__link">
           <img class="page-footer__img" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
@@ -131,19 +137,19 @@
         <ul class="footer-social__list">
           <li class="footer-social__item">
             <a class="footer-social__link footer-social-vk" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Вконтакте</span>
+              <span class="">Вконтакте</span>
             </a>
           </li>
 
           <li class="footer-social__item">
             <a class="footer-social__link footer-social-youtube" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Ютуб</span>
+              <span class="">Ютуб</span>
             </a>
 
           </li>
           <li class="footer-social__item">
             <a class="footer-social__link footer-social-telegram" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Телеграм</span>
+              <span class="">Телеграм</span>
             </a>
           </li>
         </ul>
@@ -162,6 +168,7 @@
           </svg>
         </a>
       </section>
+      </div>
     </footer>
 </body>
 

@@ -1,0 +1,23 @@
+.contacts {
+  padding: 20px 26px;
+
+  &--background {
+    background-color: var(--basic-grey);
+  }
+
+}
+
+.contacts__title {
+  margin: 0;
+  color: var(--color-text);
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__adress__office {
+  font-style: normal;
+  margin: 0;
+}

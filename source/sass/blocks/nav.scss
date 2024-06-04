@@ -1,0 +1,20 @@
+.page-navigation__list {
+  @include list ();
+  // margin:0;
+  // padding:0;
+  // list-style: none;
+}
+
+.page-navigation__link {
+  color: var(--color-text);
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  display: block;
+  padding: 24px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
