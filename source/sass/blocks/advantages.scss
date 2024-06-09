@@ -16,7 +16,25 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width:$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap:154px 37px;
   }
 
+  @media (min-width:$desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .advantages__item {
+  @media (min-width:$tablet-width) {
+    width: 230px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 250px;
+  }
 }
