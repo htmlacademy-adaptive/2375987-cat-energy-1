@@ -1,4 +1,20 @@
-.page-fotter-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+.page-footer{
+  background-color: var(--basic-grey);
 }
+
+.footer-social__list{
+  display: flex;
+  gap: 6px;
+}
+.page-footer__inner{
+  @media (min-width:$tablet-width){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 0;
+  }
+  @media (min-width:$desktop-width){
+    padding: 66px 0;
+  }
+}
+

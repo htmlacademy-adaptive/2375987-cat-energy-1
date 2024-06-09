@@ -1,17 +1,26 @@
-.ration {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .ration__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  @media (min-width:$desktop-width){
+    display: flex;
+    gap: 80px;
+  }
 }
 
 .ration__item {
   background-color: var(--basic-grey);
   margin-bottom: 20px;
+  @media (min-width:$tablet-width){
+    width: 708px;
+    padding: 77px 63px 57px 52px;
+    box-sizing: border-box;
+  }
+  @media (min-width:$desktop-width){
+    width: 570px;
+    box-sizing: border-box;
+    padding: 47px 61px 59px 52px;
+  }
 }
 
 .ration__subtitle {
