@@ -5,11 +5,31 @@
   margin-bottom: 24px;
 }
 
+.program-form__inner {
+  @media (min-width:$desktop-width) {
+    display: flex;
+  }
+}
+
 .program-form__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &--owner {
+    @media (min-width:$desktop-width) {
+      display: flex;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width:$tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }
+
 
 .program-form__item {
   color: inherit;
@@ -38,3 +58,9 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+  .program-form__submit {
+    @media (min-width:$tablet-width){
+      display: flex;
+    }
+  }

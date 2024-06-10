@@ -1,10 +1,17 @@
 .contacts {
-  padding: 26px 0;
-
-  &--background {
-    background-color: var(--basic-grey);
+  @media (min-width:$mobile-width) {
+    padding: 26px 0;
   }
+  @media (min-width:$tablet-width) {
+    padding: 61px 70px;
+  }
+}
 
+.contacts__wrapper {
+  @media (min-width:$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contacts__title {
