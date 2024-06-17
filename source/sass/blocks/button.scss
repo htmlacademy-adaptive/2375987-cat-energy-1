@@ -10,6 +10,7 @@
   appearance: none;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 
   &--big {
     padding: 13px 64px 10px;
@@ -24,12 +25,31 @@
 
   &--card {
     padding: 10px 109px;
-
+    @media (min-width:$tablet-width){
+      padding: 10px 94px;
+    }
+    @media (min-width:$desktop-width){
+      padding: 10px 53px;
+    }
+  }
+  &--additional {
+    @media (min-width:$tablet-width){
+      padding: 10px 94px;
+    }
+    @media (min-width:$desktop-width){
+      padding: 10px 91px;
+    }
   }
   &--card-more {
     background-color: var(--basic-grey);
     color: #444444;
     padding: 10px 95px;
+    @media (min-width:$tablet-width){
+      padding: 10px 94px;
+    }
+    @media (min-width:$desktop-width){
+      padding: 10px 53px;
+    }
   }
   &--form {
     padding: 10px 105px;

@@ -16,25 +16,36 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width:$mobile-width) {
+    gap: 22px;
+  }
 
   @media (min-width:$tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    gap:154px 37px;
+    gap: 34px 154px;
+  }
+  @media (min-width:$desktop-width) {
+    gap: 94px
   }
 
-  @media (min-width:$desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 .advantages__item {
+  box-sizing: border-box;
+
+  @media (min-width:$mobile-width) {
+    width: 280px;
+    padding: 2px 0 4px 80px;
+  }
+
   @media (min-width:$tablet-width) {
-    width: 230px;
+    width: 249px;
+    padding: 151px 0 57px 0;
   }
 
   @media (min-width:$desktop-width) {
-    width: 250px;
+    width: 234px;
   }
 }

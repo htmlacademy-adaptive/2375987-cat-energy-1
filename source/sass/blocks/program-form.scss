@@ -7,7 +7,10 @@
 
 .program-form__inner {
   @media (min-width:$desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+    margin-bottom: 70px;
   }
 }
 
@@ -15,30 +18,101 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  gap: 13px;
+  &--profile {
+    gap: 20px;
+  }
 
+  &--radio{
+    gap:13px;
+  }
   &--owner {
     @media (min-width:$desktop-width) {
-      display: flex;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px;
     }
   }
 
   &--checkbox {
-    @media (min-width:$tablet-width) {
-      display: flex;
-      flex-wrap: wrap;
+    @media (min-width:$mobile-width) {
+     gap:13px;
+    }
+
+    @media (min-width:$tablet-width) and (max-width:$desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px 123px;
+    }
+
+    @media (min-width:$desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 }
 
-
 .program-form__item {
-  color: inherit;
+  &--profile {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 13px;
+  }
+}
+
+.program-form__text {
+  display: inline-block;
+  text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+.program-form__input {
+  margin: 0;
+  display: inline-block;
+  appearance: none;
+  border: 1px solid rgb(205, 205, 205);
+  padding: 14px 15px 13px;
+  box-sizing: border-box;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #444444;
+
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 14px 20px;
+  }
+}
+
+.control {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
 }
 
 .program-form__title {
@@ -57,10 +131,14 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 14px 118px 15px;
+  border: 1px solid rgb(231, 231, 231);
 }
 
-  .program-form__submit {
-    @media (min-width:$tablet-width){
-      display: flex;
-    }
+.program-form__submit {
+  @media (min-width:$tablet-width) {
+    display: flex;
   }
+}

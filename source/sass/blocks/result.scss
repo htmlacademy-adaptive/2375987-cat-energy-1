@@ -2,6 +2,11 @@
   background-color: var(--basic-grey);
 }
 
+.result__wrapper {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
 .result__title {
   color: var(--color-text);
   font-family: "Oswald", sans-serif;
@@ -48,6 +53,14 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width:$mobile-width) {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  @media (min-width:$desktop-width) {
+ width: 367px;
+  }
 }
 
 .result__item {
@@ -87,4 +100,21 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width:$mobile-width) {
+    text-align: center;
+  }
+
+  @media (min-width:$tablet-width) {
+    // width: 174px;
+  }
+
+  @media (min-width:$desktop-width) {
+    text-align: left;
+  }
+}
+.result__block{
+  @media (min-width:$tablet-width)and(max-width:$desktop-width){
+    display: block;
+  }
 }
