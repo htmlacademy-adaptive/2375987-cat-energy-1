@@ -20,13 +20,15 @@
   list-style: none;
   display: grid;
   gap: 13px;
+
   &--profile {
     gap: 20px;
   }
 
-  &--radio{
-    gap:13px;
+  &--radio {
+    gap: 13px;
   }
+
   &--owner {
     @media (min-width:$desktop-width) {
       grid-template-columns: repeat(2, 1fr);
@@ -36,7 +38,7 @@
 
   &--checkbox {
     @media (min-width:$mobile-width) {
-     gap:13px;
+      gap: 13px;
     }
 
     @media (min-width:$tablet-width) and (max-width:$desktop-width) {

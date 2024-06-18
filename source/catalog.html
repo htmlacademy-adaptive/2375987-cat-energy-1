@@ -16,20 +16,21 @@
         <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
         <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
       </a>
-      <nav class="page-navigation">
+      <nav class="page-navigation main-nav--closed page-navigation-nav--nojs">
         <button class="page-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="page-navigation__list">
+        <div class="page-navigation__inner">
+        <ul class="page-navigation__list  navigation-list">
           <li class="page-navigation__item">
             <a class="page-navigation__link" href="index.html">Главное</a>
           </li>
-          <li class="page-navigation__item">
-            <a class="page-navigation__link page-navigation__link--current" href="catalog.html"
-              aria-current="page">Каталог продукции</a>
+          <li class="page-navigation__item page-navigation__item--active">
+            <a class="page-navigation__link page-navigation__link--current" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="page-navigation__item">
-            <a class="page-navigation__link" href="form.html">Подбор программы</a>
+            <a class="page-navigation__link" href="form.html" aria-current="page">Подбор программы</a>
           </li>
         </ul>
+      </div>
       </nav>
     </div>
   </header>

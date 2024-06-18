@@ -16,19 +16,22 @@
         <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
         <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
       </a>
-      <nav class="page-navigation">
+      <nav class="page-navigation main-nav--closed page-navigation-nav--nojs">
         <button class="page-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="page-navigation__list">
-          <li class="page-navigation__item">
-            <a class="page-navigation__link" href="index.html" aria-current="page">Главное</a>
-          </li>
-          <li class="page-navigation__item">
-            <a class="page-navigation__link " href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="page-navigation__item">
-            <a class="page-navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+        <div class="page-navigation__inner">
+          <ul class="page-navigation__list  navigation-list">
+            <li class="page-navigation__item page-navigation__item--avtive">
+              <a class="page-navigation__link page-navigation__link--current" href="index.html"
+                aria-current="page">Главное</a>
+            </li>
+            <li class="page-navigation__item">
+              <a class="page-navigation__link " href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="page-navigation__item">
+              <a class="page-navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -72,16 +75,28 @@
       <div class="advantages__container container">
         <h2 class="advantages__title">Как это работает</h2>
         <ol class="advantages__list">
-          <li class="advantages__item">Функциональное питание
-            содержит только полезные
-            питательные вещества.</li>
-          <li class="advantages__item">Выпускается в виде порошка,
-            который нужно лишь залить
-            кипятком и готово.</li>
-          <li class="advantages__item">Замените один-два приема
-            обычной еды на наше
-            функциональное питание.</li>
-          <li class="advantages__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          <li class="advantages__item">
+            <p class="advantages__description">Функциональное питание
+              содержит только полезные
+              питательные вещества.</p>
+          </li>
+
+          <li class="advantages__item">
+            <p class="advantages__description">Выпускается в виде порошка,
+              который нужно лишь залить
+              кипятком и готово.</p>
+          </li>
+
+          <li class="advantages__item">
+            <p class="advantages__description">
+              Замените один-два приема
+              обычной еды на наше
+              функциональное питание.</p>
+          </li>
+
+          <li class="advantages__item">
+            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
         </ol>
       </div>
     </section>
@@ -182,6 +197,7 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

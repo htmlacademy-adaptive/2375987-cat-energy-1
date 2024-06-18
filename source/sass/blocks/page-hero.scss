@@ -66,6 +66,9 @@
   line-height: 14px;
   text-transform: uppercase;
 
+  @media (min-width:$mobile-width) {
+    text-align: center;
+  }
   @media (min-width:$tablet-width) {
     margin-bottom: 40px;
   }
@@ -74,9 +77,7 @@
     color: #ffffff;
   }
 
-  @media (min-width:$mobile-width) {
-    text-align: center;
-  }
+
 }
 
 .page-hero__img {
