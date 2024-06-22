@@ -1,7 +1,5 @@
 .page-navigation {
   position: relative;
-  width: auto;
-  min-height: 51px;
   background-color: #ffffff;
 }
 
@@ -13,7 +11,7 @@
   border: none;
   width: 24px;
   height: 24px;
-  top: -31px;
+  top: -45px;
   right: 0;
   z-index: 2;
 
@@ -43,7 +41,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .page-navigation--closed .page-navigation__item {
+  .page-navigation--closed .page-navigation__list {
+    display: none;
+  }
+  .page-navigation:not(.page-navigation-nav--nojs) .page-navigation__list{
     display: none;
   }
 }
@@ -52,8 +53,9 @@
   @media (max-width:$tablet-width) {
     position: absolute;
     top: 0;
-    z-index: 10;
+    z-index: 1;
     background: #ffffff;
+    width: 100%;
   }
 }
 
@@ -112,8 +114,14 @@
 .page-navigation__list {
   @include list ();
 
-  @media (max-width:$tablet-width) {
-    // display: none;
+  @media (min-width:$mobile-width) {
+    background-color: rgb(255, 255, 255);
+    width: calc(100% + 2 * 20px);
+    margin-left: -20px;
+  }
+
+  @media (min-width:$tablet-width) {
+    display: none;
   }
 
   @media (min-width:$tablet-width) {
@@ -130,38 +138,35 @@
   }
 }
 
-.page-navigation__item {
+.page-navigation__link {
+  color: var(--color-text);
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  display: block;
+  text-transform: uppercase;
+  position: relative;
 
+  @media (max-width:$tablet-width) {
+    border-top: 1px solid #e6e6e6;
+    padding: 22px 42px;
+    text-align: center;
   }
 
-  .page-navigation__link {
-    color: var(--color-text);
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
-    text-decoration: none;
-    list-style-type: none;
-    display: block;
-    text-transform: uppercase;
-    position: relative;
-
-    @media (max-width:$tablet-width) {
-      border-top: 1px solid #e6e6e6;
-      padding: 22px 42px;
-      text-align: center;
+  &--current:after {
+    @media (min-width:$tablet-width) {
+      position: absolute;
+      display: block;
+      content: "";
+      background-color: var(--basic-green);
+      height: 2px;
+      bottom: -15px;
+      left: 0;
+      right: 0;
     }
-    &--current:after {
-      @media (min-width:$tablet-width) {
-        position: absolute;
-        display: block;
-        content: "";
-        background-color: var(--basic-green);
-        height: 2px;
-        bottom: -15px;
-        left: 0;
-        right: 0;
-      }
   }
 
 }

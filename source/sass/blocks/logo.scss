@@ -1,8 +1,12 @@
 .page-header__logo{
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
+height: 38px;
+@media (max-width:$tablet-width) {
+padding-top: 13px;
+padding-bottom: 15px;
 }
-.page-logo__img {
-  display: inline-block;
-  margin-right: 55px;
+@media (min-width:$desktop-width) {
+  height: 50px;
+}
 }

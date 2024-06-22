@@ -20,17 +20,35 @@
   position: relative;
 }
 
-.page-hero::after {
-  @media (max-width:$tablet-width) {
-    content: "";
-    position: absolute;
+.page-hero::before {
+  content: "";
+  display: block;
+  background-color: var(--basic-green);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url(../../img/hero-mobile-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 303px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+
+  @media (min-width:$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width:$desktop-width) {
     display: block;
-    background-color: (rgba(104, 183, 56, 0.85));
-    height: 302px;
-    z-index: -1;
-    top: 0;
+    width: 720px;
+    height: 694px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url(../../img/hero-desktop-background.png);
+    background-position: left;
+    position: absolute;
+    top:-50px;
     right: 0;
-    left: 0;
   }
 }
 
@@ -52,9 +70,12 @@
 .page-hero__title {
   @media (min-width:$mobile-width) {
     margin-bottom: 25px;
+    text-align: center;
   }
+
   @media (min-width:$tablet-width) {
     margin-bottom: 40px;
+    text-align: left;
   }
 }
 
@@ -69,15 +90,15 @@
   @media (min-width:$mobile-width) {
     text-align: center;
   }
+
   @media (min-width:$tablet-width) {
     margin-bottom: 40px;
   }
 
   @media(max-width:$tablet-width) {
     color: #ffffff;
+    margin-bottom: 29px;
   }
-
-
 }
 
 .page-hero__img {
