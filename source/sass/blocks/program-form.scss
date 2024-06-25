@@ -61,7 +61,8 @@
     align-items: center;
     gap: 13px;
   }
-  &--icon{
+
+  &--icon {
     position: relative;
   }
 }
@@ -111,11 +112,8 @@
   margin: 0;
 }
 
-// .program-form__input[type="number"] {
-//   -moz-appearance: textfield;
-// }
 
-.program-form__input{
+.program-form__input {
   appearance: textfield;
 }
 
