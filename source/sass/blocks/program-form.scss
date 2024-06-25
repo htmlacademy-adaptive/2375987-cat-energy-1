@@ -111,10 +111,13 @@
   margin: 0;
 }
 
-.program-form__input[type="number"] {
-  -moz-appearance: textfield;
-}
+// .program-form__input[type="number"] {
+//   -moz-appearance: textfield;
+// }
 
+.program-form__input{
+  appearance: textfield;
+}
 
 .control {
   text-transform: uppercase;
