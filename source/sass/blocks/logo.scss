@@ -2,11 +2,10 @@
 display: flex;
 align-items: center;
 height: 38px;
-@media (max-width:$tablet-width) {
-padding-top: 13px;
-padding-bottom: 15px;
-}
+
+
 @media (min-width:$desktop-width) {
   height: 50px;
 }
+
 }

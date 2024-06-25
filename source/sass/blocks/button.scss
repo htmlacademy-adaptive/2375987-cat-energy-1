@@ -19,37 +19,52 @@
   &--link {
     background-color: var(--basic-grey);
     color: var(--color-text);
-    padding: 4px 20px 4px 0px;
+    padding: 4px 40px 4px 0px;
+    background-image: url("../../img/icon/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 24px 12px;
   }
 
   &--card {
     padding: 10px 109px;
-    @media (min-width:$tablet-width){
+
+    @media (min-width:$tablet-width) {
       padding: 10px 94px;
     }
-    @media (min-width:$desktop-width){
+
+    @media (min-width:$desktop-width) {
       padding: 10px 53px;
     }
   }
+
   &--additional {
-    @media (min-width:$tablet-width){
-      padding: 10px 94px;
+    @media (min-width:$mobile-width) {
+  padding: 10px 109px;
     }
-    @media (min-width:$desktop-width){
+    @media (min-width:$tablet-width) {
+      padding: 10px 285px;
+    }
+
+    @media (min-width:$desktop-width) {
       padding: 10px 91px;
     }
   }
+
   &--card-more {
     background-color: var(--basic-grey);
     color: #444444;
     padding: 10px 95px;
-    @media (min-width:$tablet-width){
+
+    @media (min-width:$tablet-width) {
       padding: 10px 94px;
     }
-    @media (min-width:$desktop-width){
+
+    @media (min-width:$desktop-width) {
       padding: 10px 53px;
     }
   }
+
   &--form {
     padding: 10px 105px;
     margin-bottom: 21px;

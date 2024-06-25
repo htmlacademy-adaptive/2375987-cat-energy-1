@@ -16,7 +16,7 @@
         <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
         <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
       </a>
-      <nav class="page-navigation page-navigation--closed page-navigation-nav--nojs">
+      <nav class="page-navigation page-navigation--closed page-navigation--nojs">
         <button class="page-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="page-navigation__inner">
           <ul class="page-navigation__list  navigation-list">
@@ -283,11 +283,11 @@
           <a class="button button--additional" href="form.html">Заказать</a>
         </li>
       </ul>
-      <div class="product-additional__wrapper">
-        <p class="product-additional__promo">Закажите все
+      <!-- <div class="product-additional__wrapper"> -->
+        <p class="product-additional__promo">Закажите все<br>
           и получите чехол для
           кота в подарок!</p>
-      </div>
+      <!-- </div> -->
     </div>
     </section>
 
@@ -305,6 +305,9 @@
         </address>
       </div>
     </section>
+    <div class="page-footer__map" id="map">
+      <span class="visually-hidden"> карта</span>
+    </div>
     <div class="page-footer__wrapper">
       <div class="page-footer__inner">
         <!-- logo cat Enerdji -->
@@ -341,8 +344,7 @@
         <section class="link-htmlacademy">
           <h2 class="visually-hidden">Партнеры</h2>
           <div class="link-htmlacademy__wrapper">
-            <a class="link-htmlacademy__text" href="https://htmlacademy.ru/">HTML Academy</a>
-            <a class="link-htmlacademy__link" href="https://htmlacademy.ru/">
+            <a class="link-htmlacademy__text" href="https://htmlacademy.ru/"><span>HTML Academy</span>
               <svg class="link-htmlacademy__img" role="img" aria-label="Логотип HTML академии" width="27.000000"
                 height="34.000000" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -357,6 +359,9 @@
     </div>
   </footer>
   <script src="js/nav.js"></script>
+  <script src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=f3249e4c-1d7d-4f10-904e-e5b6633d35f4"
+    type="text/javascript"></script>
+  <script src="js/map.js" type="text/javascript"></script>
 </body>
 
 </html>

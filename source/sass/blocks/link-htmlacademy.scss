@@ -1,15 +1,22 @@
 .link-htmlacademy__wrapper {
+  position: relative;
+
   @media (min-width:$mobile-width) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+  }
+
+  @media (max-width:$tablet-width) {
+    padding-top: 20px;
   }
 }
 
 .link-htmlacademy__link {
+  display: block;
   text-decoration: none;
   list-style-type: none;
   cursor: pointer;
+  width: fit-content;
 }
 
 .link-htmlacademy__text {
@@ -21,4 +28,16 @@
   text-decoration: none;
   list-style-type: none;
   cursor: pointer;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+}
+
+.link-htmlacademy__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  @media (min-width:$tablet-width) {
+    position: static;
+  }
 }

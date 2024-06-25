@@ -16,12 +16,10 @@
   margin: 0 auto;
 
   @media (min-width:$mobile-width) {
-    width: 280px;
     padding: 40px 20px;
   }
 
   @media (min-width:$tablet-width) {
-    width: 708px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +27,6 @@
   }
 
   @media (min-width:$desktop-width) {
-    width: 1220px;
     padding: 66px 110px;
   }
 }
@@ -52,4 +49,10 @@
   @media (max-width:$tablet-width) {
     margin-bottom: 20px;
   }
+}
+
+.page-footer__map{
+  display: block;
+  width: 100%;
+  height: 320px;
 }

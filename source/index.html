@@ -16,19 +16,19 @@
         <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
         <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
       </a>
-      <nav class="page-navigation page-navigation--closed page-navigation-nav--nojs">
+      <nav class="page-navigation page-navigation--closed page-navigation--nojs">
         <button class="page-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="page-navigation__inner">
           <ul class="page-navigation__list  navigation-list">
             <li class="page-navigation__item page-navigation__item--avtive">
-              <a class="page-navigation__link page-navigation__link--current" href="index.html"
+              <a class="page-navigation__link page-navigation__link--current page-navigation__link--active page-navigation__link--color" href="index.html"
                 aria-current="page">Главное</a>
             </li>
             <li class="page-navigation__item">
-              <a class="page-navigation__link " href="catalog.html">Каталог продукции</a>
+              <a class="page-navigation__link page-navigation__link--color" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="page-navigation__item">
-              <a class="page-navigation__link" href="form.html">Подбор программы</a>
+              <a class="page-navigation__link page-navigation__link--color" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -55,13 +55,13 @@
         <h2 class="visually-hidden">Программы по рациону питания</h2>
         <ul class="ration__list">
           <li class="ration__item">
-            <h3 class="ration__subtitle">Похудение</h3>
+            <h3 class="ration__subtitle ration__subtitle--cat">Похудение</h3>
             <p class="ration__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
               диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a href="catalog.html" class="button button--link">каталог slim</a>
           </li>
           <li class="ration__item">
-            <h3 class="ration__subtitle">Набор массы</h3>
+            <h3 class="ration__subtitle ration__subtitle--tiger">Набор массы</h3>
             <p class="ration__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
               вашему коту нарастить необходимые мышцы!</p>
             <a href="catalog.html" class="button button--link">каталог pro</a>
@@ -76,26 +76,26 @@
         <h2 class="advantages__title">Как это работает</h2>
         <ol class="advantages__list">
           <li class="advantages__item">
-            <p class="advantages__description">Функциональное питание
+            <p class="advantages__description advantages__description--icon-structure">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
           </li>
 
           <li class="advantages__item">
-            <p class="advantages__description">Выпускается в виде порошка,
+            <p class="advantages__description advantages__description--icon-consentience">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
           </li>
 
           <li class="advantages__item">
-            <p class="advantages__description">
+            <p class="advantages__description advantages__description--icon-eat">
               Замените один-два приема
               обычной еды на наше
               функциональное питание.</p>
           </li>
 
           <li class="advantages__item">
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="advantages__description advantages__description--icon-time">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ol>
       </div>
@@ -146,6 +146,11 @@
         </address>
       </div>
     </section>
+
+    <div class="page-footer__map" id="map">
+      <span class="visually-hidden"> карта</span>
+    </div>
+
     <div class="page-footer__wrapper">
       <div class="page-footer__inner">
         <!-- logo cat Enerdji -->
@@ -161,7 +166,7 @@
           <ul class="footer-social__list">
             <li class="footer-social__item">
               <a class="footer-social__link footer-social-vk" href="https://vk.com/htmlacademy">
-                <span class="">Вконтакте</span>
+                <span class="">Вк</span>
               </a>
             </li>
 
@@ -173,7 +178,7 @@
             </li>
             <li class="footer-social__item">
               <a class="footer-social__link footer-social-telegram" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="">Телеграм</span>
+                <span class="">Тел</span>
               </a>
             </li>
           </ul>
@@ -182,8 +187,8 @@
         <section class="link-htmlacademy">
           <h2 class="visually-hidden">Партнеры</h2>
           <div class="link-htmlacademy__wrapper">
-            <a class="link-htmlacademy__text" href="https://htmlacademy.ru/">HTML Academy</a>
-            <a class="link-htmlacademy__link" href="https://htmlacademy.ru/">
+            <a class="link-htmlacademy__link" href="https://htmlacademy.ru/"><span class="link-htmlacademy__text">HTML
+                Academy</span>
               <svg class="link-htmlacademy__img" role="img" aria-label="Логотип HTML академии" width="27.000000"
                 height="34.000000" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -198,6 +203,9 @@
     </div>
   </footer>
   <script src="js/nav.js"></script>
+  <script src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=f3249e4c-1d7d-4f10-904e-e5b6633d35f4"
+    type="text/javascript"></script>
+  <script src="js/map.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -70,7 +70,6 @@
     bottom: 0;
     right: 19px;
   }
-
 }
 
 .advantages__description {
@@ -96,5 +95,58 @@
     height: 80px;
     left: 0;
     top: -124px;
+  }
+}
+
+.advantages__description::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 14px;
+  left: -63px;
+}
+
+.advantages__description--icon-structure::after {
+  background-image: url("../../img/icon/icon-structure.svg");
+  width: 25px;
+  height: 28px;
+
+  @media (min-width:$tablet-width) {
+    top: -97px;
+    left: 29px;
+  }
+}
+
+.advantages__description--icon-consentience::after {
+  background-image: url("../../img/icon/icon-consentience.svg");
+  width: 26px;
+  height: 27px;
+
+  @media (min-width:$tablet-width) {
+    top: -97px;
+    left: 29px;
+  }
+}
+
+.advantages__description--icon-eat::after {
+  background-image: url("../../img/icon/icon-eat.svg");
+  width: 25px;
+  height: 30px;
+
+  @media (min-width:$tablet-width) {
+    top: -97px;
+    left: 29px;
+  }
+}
+
+.advantages__description--icon-time::after {
+  background-image: url("../../img/icon/icon-time.svg");
+  width: 26px;
+  height: 31px;
+
+  @media (min-width:$tablet-width) {
+    top: -97px;
+    left: 29px;
   }
 }
