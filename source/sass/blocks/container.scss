@@ -2,15 +2,17 @@
   padding: 0 20px 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
-  width: 100%;
+  width: 320px;
 }
 @media  (min-width: $tablet-width){
   .container {
     padding: 0 30px;
+    width: 768px;
   }
 }
 @media  (min-width: $desktop-width){
   .container {
     padding: 0 110px;
+    width: 1440px;
   }
 }

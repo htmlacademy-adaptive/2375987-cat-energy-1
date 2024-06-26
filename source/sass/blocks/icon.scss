@@ -1,14 +1,27 @@
-
-.icon {
+.icon::before{
+  content: "";
   position: absolute;
-  right: 2%;
   width: 20px;
   height: 20px;
-  padding-left: 15px;
+  display: block;
+  right: 11px;
+  top:18px;
+  mask-size: cover;
+  mask-repeat: no-repeat;
 }
+.icon--email::before{
+mask-image: url("../../img/icon-email.svg");
+background-color: #000000;
+}
+.icon--tel::before{
+  mask-image: url("../../img/icon-tel.svg");
+  background-color: #000000;
+}
+
 .program-form__input:focus{
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
-.program-form__input:focus + .icon{
-  fill:#68b738;
+.program-form__input:focus + .icon::before {
+  background-color: var(--basic-green);
 }
+

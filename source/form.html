@@ -73,21 +73,21 @@
               <ul class="program-form__list program-form__list--radio">
                 <li class="program-form__item">
                   <label class="control" for="lose">
-                    <input class="control-input" type="radio" value="lose weight" name="name" id="lose" checked>
+                    <input class="control-input control-input--radio" type="radio" value="lose weight" name="name" id="lose" checked>
                     Похудение
                   </label>
                 </li>
 
                 <li class="program-form__item">
                   <label class="control" for="gain">
-                    <input class="control-input" type="radio" value="gain weight" name="name" id="gain">
+                    <input class="control-input control-input--radio" type="radio" value="gain weight" name="name" id="gain">
                     Набор массы
                   </label>
                 </li>
 
                 <li class="program-form__item">
                   <label class="control" for="advice">
-                    <input class="control-input" type="radio" value="advice" name="name" id="advice">
+                    <input class="control-input control-input--radio" type="radio" value="advice" name="name" id="advice">
                     Не знаю (Нужен ваш совет)
                   </label>
                 </li>
@@ -100,44 +100,19 @@
               (владельца кота)</legend>
             <ul class="program-form__list program-form__list--owner">
               <li class="program-form__item program-form__item--profile program-form__item--icon">
-                <label for="email" class="program-form__text">E-mail:*</label>
+                <label for="email" class="program-form__text">
+                  <span class="icon icon--email">E-mail:*</span>
+                </label>
                 <input class="program-form__input" type="email" name="mail" placeholder="kuklachev@gmail.com" id="email"
                   required>
-                <span class="icon icon--email">
-                  <svg class width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <clipPath id="a">
-                        <path fill="#fff" fill-opacity="0" d="M0 0h20v20H0z" />
-                      </clipPath>
-                    </defs>
-                    <path  d="M0 0h20v20H0z" />
-                    <g clip-path="url(#a)">
-                      <path d="M1.5 8.5v8h17v-8m0-5v2l-8.5 6-8.5-6v-2h17Z" stroke="#000" stroke-linejoin="round"
-                        stroke-linecap="round" />
-                    </g>
-                  </svg>
-                </span>
               </li>
 
               <li class="program-form__item program-form__item--profile program-form__item--icon">
-                <label for="number" class="program-form__text">Телефон:*</label>
+                <label for="number" class="program-form__text">
+                  <span class="icon icon--tel">Телефон:*</span>
+                </label>
                 <input class="program-form__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number"
                   required>
-                <span class="icon icon--tel">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <clipPath id="a">
-                        <path fill="#fff" fill-opacity="0" d="M0 0h20v20H0z" />
-                      </clipPath>
-                    </defs>
-                    <path fill="none" d="M0 0h20v20H0z" />
-                    <g clip-path="url(#a)">
-                      <path
-                        d="M10 10h8.5M16 12.5l2.5-2.5L16 7.5m-7.5 0h-3v5h3v5H6c-1.5 0-2.5-1-2.5-2.5V5c0-1.5 1-2.5 2.5-2.5h2.5v5Z"
-                        stroke="#000" stroke-linejoin="round" />
-                    </g>
-                  </svg>
-                </span>
               </li>
             </ul>
           </fieldset>
@@ -155,28 +130,28 @@
             <ul class="program-form__list program-form__list--checkbox">
               <li class="program-form__item">
                 <label class="control" for="sweetener">
-                  <input class="control-input" type="checkbox" name="sweetener" id="sweetener" checked>
+                  <input class="control-input control-input--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
                   Cахарозаменитель
                 </label>
 
               </li>
               <li class="program-form__item">
                 <label class="control" for="water">
-                  <input class="control-input" type="checkbox" name="water" id="water">
+                  <input class="control-input control-input--checkbox" type="checkbox" name="water" id="water">
                   Питьевая вода
                 </label>
 
               </li>
               <li class="program-form__item">
                 <label class="control" for="milk">
-                  <input class="control-input" type="checkbox" name="milk" id="milk">
+                  <input class="control-input control-input--checkbox" type="checkbox" name="milk" id="milk">
                   Молоко
                 </label>
 
               </li>
               <li class="program-form__item">
                 <label class="control" for="vitamins">
-                  <input class="control-input" type="checkbox" name="vitamins" id="vitamins">
+                  <input class="control-input control-input--checkbox" type="checkbox" name="vitamins" id="vitamins">
                   Витамины
                 </label>
               </li>
