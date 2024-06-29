@@ -1,3 +1,15 @@
+.ration {
+  margin-bottom: 20px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
 .ration__list {
   margin: 0;
   padding: 0;
@@ -49,7 +61,6 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
-  text-align: center;
   position: relative;
 
   @media (min-width:$tablet-width) {
@@ -58,6 +69,12 @@
 
   @media (min-width:$desktop-width) {
     text-align: center;
+  }
+
+}
+.ration__subtitle--position{
+  @media (max-width:$tablet-width) {
+    padding-left: 69px;
   }
 }
 
@@ -130,8 +147,8 @@
     width: 67px;
     height: 29px;
     background-image: url("../../img/icon/icon-ration-tiger-mobile.svg");
-    top:6px;
-    left:-13px;
+    top: 6px;
+    left: -13px;
   }
 
   @media (min-width:$tablet-width) {
@@ -139,7 +156,7 @@
     height: 112px;
     background-image: url("../../img/icon/icon-ration-tiger-tablet.svg");
     top: 33px;
-    left:50%;
+    left: 50%;
   }
 
   @media (min-width:$desktop-width) {
@@ -161,15 +178,17 @@
     width: 340px;
   }
 }
-.ration__text::after{
+
+.ration__text::after {
   position: absolute;
   content: "";
   display: block;
- @media (max-width:$tablet-width) {
-  background-color: #d9d9d9;
-  height: 1px;
-  right: 0;
-  left: 0;
-  bottom: -26px;
- }
+
+  @media (max-width:$tablet-width) {
+    background-color: #d9d9d9;
+    height: 1px;
+    right: 0;
+    left: 0;
+    bottom: -26px;
+  }
 }

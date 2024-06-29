@@ -42,7 +42,6 @@
 
   @media (min-width:$tablet-width) {
     width: 632px;
-
   }
 
   @media (min-width:$desktop-width) {
@@ -60,7 +59,7 @@
     padding: 27px 38px 29px 37px;
     display: grid;
     grid-template-columns: 387px auto;
-  
+    row-gap: 25px;
   }
 
   @media (min-width:$desktop-width) {
@@ -125,24 +124,35 @@
 }
 
 .product-additional__wrapper {
-  background-color: var(--basic-green);
+  width: 280px;
+  padding: 186px 61px 40px 58px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url(../../img/img-gift.png);
 
-  @media (max-width:$tablet-width) {
-    width: 280px;
-    padding: 186px 61px 40px 58px;
-    box-sizing: border-box;
-  }
+
 
   @media (min-width:$tablet-width) {
     width: 707px;
     padding: 71px 125px 69px 77px;
     box-sizing: border-box;
+
+    padding: 71px 125px 69px 421px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url(../../img/img-gift-tablet.png);
+
   }
 
   @media (min-width:$desktop-width) {
     width: 245px;
+    height: 288px;
     padding: 186px 42px 43px;
     box-sizing: border-box;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url(../../img/img-gift.png);
+    padding: 186px 42px 43px;
   }
 }
 
@@ -153,28 +163,33 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  padding: 186px 61px 40px 58px;
-  box-sizing: border-box;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url(../../img/img-gift.png);
-
-  @media (min-width:$tablet-width) {
-    padding: 71px 125px 69px 421px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url(../../img/img-gift-tablet.png);
-  }
-  @media (min-width:$desktop-width) {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url(../../img/img-gift.png);
-    padding: 186px 42px 43px;
-  }
+  position: relative;
 }
 
 .bg {
   @media (max-width:$tablet-width) {
     display: flex;
+  }
+}
+
+.product-additional__promo::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../../img/icon/gift-promo.svg");
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 83px;
+  top: -130px;
+  right: 39px;
+
+  @media (min-width:$tablet-width) {
+    top: -13px;
+    right: 436px;
+  }
+  @media (min-width:$desktop-width) {
+    top: -130px;
+  right: 39px;
   }
 }

@@ -1,4 +1,12 @@
-// заголовок
+.catalog-product{
+  margin-bottom: 25px;
+  @media (min-width:$tablet-width) {
+    margin-bottom: 70px;
+  }
+  @media (min-width:$tablet-width) {
+    margin-bottom: 76px;
+  }
+}
 .catalog-product__title {
   padding: 27px 0 41px 0;
 

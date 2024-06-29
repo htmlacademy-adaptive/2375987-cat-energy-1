@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   @media (min-width:$mobile-width) {
     width: 280px;
     padding: 26px 20px;
@@ -11,15 +12,24 @@
   }
   @media (min-width:$desktop-width) {
     width: 565px;
-    padding: 60px 80px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    padding:0;
+    margin: 0;
   }
 }
 
 .contacts__wrapper {
     display: flex;
     justify-content: space-between;
+    @media (min-width:$desktop-width) {
+      background-color: #ffffff;
+      width: 565px;
+      padding: 60px 80px;
+      box-sizing: border-box;
+      position: absolute;
+      left: 150px;
+      bottom: -212px;
+      z-index: 1;
+    }
 }
 
 .contacts__title {
