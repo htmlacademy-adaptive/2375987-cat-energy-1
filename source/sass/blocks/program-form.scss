@@ -4,11 +4,14 @@
   padding: 0;
   margin-bottom: 24px;
 }
-.program-form__group--checkbox{
+
+.program-form__group--checkbox {
   margin-bottom: 34px;
+
   @media (min-width:$tablet-width) {
     margin-bottom: 52px;
   }
+
   @media (min-width:$mobile-width) {
     margin-bottom: 60px;
   }
@@ -105,6 +108,13 @@
     font-weight: 400;
     line-height: 30px;
   }
+
+  &--profile {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 13px;
+  }
 }
 
 .program-form__input {
@@ -112,7 +122,7 @@
   display: inline-block;
   appearance: none;
   border: 1px solid rgb(205, 205, 205);
-  padding: 14px 15px 13px;
+  padding: 14px 33px 13px 15px;
   box-sizing: border-box;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
@@ -127,7 +137,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    padding: 11px 20px;
+    padding: 11px 40px 11px 20px;
   }
 }
 
@@ -137,10 +147,30 @@
   margin: 0;
 }
 
-
 .program-form__input {
   appearance: textfield;
 }
+
+.program-form__input:focus {
+  border: 1px solid #000000;
+}
+
+.program-form__input:focus+.icon::before {
+  background-color: var(--basic-green);
+}
+
+.program-form__input:invalid {
+  border: 2px solid #ff8282;
+}
+
+.program-form__input:valid+.icon::before {
+  color: var(--basic-green);
+}
+
+.program-form__input:invalid+.icon::before {
+  background-color: #ff8282;
+}
+
 
 .control {
   text-transform: uppercase;
@@ -169,7 +199,42 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  &--line {
+    position: relative;
+    z-index: 0;
+    width: fit-content;
+  }
 }
+
+.program-form__title--line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 2px;
+  background-color: var(--basic-green);
+  box-shadow: 100vw 0 0 var(--basic-green);
+  transform: translateY(-50%);
+}
+
+.program-form__title--line::after{
+  content: "";
+  position: absolute;
+  background-color:#ffffff;
+  top: 24px;
+  left: -30px;
+  z-index: -1;
+  width: calc(100% + -40px);
+  height: 20px;
+  @media (min-width:$tablet-width) {
+    top: 15px;
+    width: calc(100% + 57px);
+  }
+}
+
 
 .program-form__feedback {
   color: #444444;

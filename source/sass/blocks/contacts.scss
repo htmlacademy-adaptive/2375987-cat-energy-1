@@ -43,14 +43,27 @@
   @media (min-width:$mobile-width) {
     width: 140px;
   }
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
 }
 .contacts__adress{
   @media (min-width:$mobile-width) {
     width: 140px;
+  }
+  @media (min-width:$tablet-width) {
+    width: 157px;
   }
 }
 
 .contacts__adress__office {
   font-style: normal;
   margin: 0;
+  @media (min-width:$desktop-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }

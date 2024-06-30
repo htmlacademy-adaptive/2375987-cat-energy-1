@@ -18,10 +18,4 @@ background-color: #000000;
   background-color: #000000;
 }
 
-.program-form__input:focus{
-  border: 1px solid #000000;
-}
-.program-form__input:focus + .icon::before {
-  background-color: var(--basic-green);
-}
 

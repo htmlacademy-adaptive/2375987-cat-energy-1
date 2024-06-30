@@ -142,9 +142,13 @@
     height: 60px;
     background-image: url("../../img/icon/more-plus.svg");
     top: -106px;
-    right: 53px;
+    right: 103px;
   }
 
+  @media (min-width:$desktop-width) {
+    top: -106px;
+    right: 53px;
+  }
 }
 
 .product-card__list {

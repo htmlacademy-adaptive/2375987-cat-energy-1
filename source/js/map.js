@@ -8,7 +8,7 @@ function init () {
         // При инициализации карты обязательно нужно указать
         // её центр и коэффициент масштабирования.
         center:[59.938631, 30.323037],
-        zoom:16
+        zoom:13
     });
         // Создаём макет содержимого.
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(

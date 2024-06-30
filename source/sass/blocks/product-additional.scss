@@ -60,6 +60,7 @@
     display: grid;
     grid-template-columns: 387px auto;
     row-gap: 25px;
+    width: 100%;
   }
 
   @media (min-width:$desktop-width) {
