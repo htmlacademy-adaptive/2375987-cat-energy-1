@@ -1,14 +1,14 @@
 .link-htmlacademy__wrapper {
   position: relative;
 
-  @media (min-width:$mobile-width) {
-    display: flex;
-    align-items: center;
-  }
+  // @media (min-width:$mobile-width) {
+  //   display: flex;
+  //   align-items: center;
+  // }
 
-  @media (max-width:$tablet-width) {
-    padding-top: 20px;
-  }
+  // @media (max-width:$tablet-width) {
+  //   padding-top: 20px;
+  // }
 }
 
 .link-htmlacademy__link {
@@ -19,6 +19,10 @@
   width: fit-content;
   display: flex;
   align-items: center;
+
+  @media (min-width:$tablet-width) {
+    gap:23px;
+  }
 }
 
 .link-htmlacademy__text {
@@ -32,13 +36,13 @@
   cursor: pointer;
   padding-top: 7px;
   padding-bottom: 7px;
-
 }
 
 .link-htmlacademy__img {
   position: absolute;
   bottom: 0;
   right: 0;
+
   @media (min-width:$tablet-width) {
     position: static;
   }

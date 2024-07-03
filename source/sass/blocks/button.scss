@@ -15,6 +15,14 @@
   &--big {
     padding: 13px 64px 10px;
 
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+      opacity: 0.3;
+    }
   }
 
   &--link {
@@ -36,6 +44,15 @@
 
     @media (min-width:$desktop-width) {
       padding: 10px 53px;
+    }
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+      opacity: 0.3;
     }
   }
 
@@ -67,6 +84,15 @@
     @media (min-width:$desktop-width) {
       padding: 10px 37px;
     }
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      opacity: 0.3;
+    }
   }
 
   &--form {
@@ -80,38 +106,5 @@
     @media (min-width:$desktop-width) {
       margin-right: 80px;
     }
-  }
-}
-
-.button--big{
-  &:hover{
-    background-color: #5eaa2f;
-  }
-  &:active{
-    background-color: #5eaa2f;
-    opacity: 0.3;
-  }
-}
-.button--big{
-  &:active{
-    opacity: 0.3;
-  }
-}
-.button--card{
-  &:hover{
-    background-color: #5eaa2f;
-  }
-  &:active{
-    background-color: #5eaa2f;
-    opacity: 0.3;
-  }
-}
-.button--card-more{
-  &:hover{
-    background-color: #ebebeb;
-  }
-  &:active{
-    background-color: #ebebeb;
-    opacity: 0.3;
   }
 }

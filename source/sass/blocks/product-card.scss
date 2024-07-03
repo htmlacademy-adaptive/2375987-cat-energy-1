@@ -19,7 +19,7 @@
 
   @media (min-width:$tablet-width) {
     width: 324px;
-    background-color: var(--basic-grey);
+    background-image: linear-gradient(#ffffff 25%, #f2f2f2 25%);
     padding: 40px 37px;
     box-sizing: border-box;
   }
@@ -35,12 +35,12 @@
     }
 
     @media (min-width:$tablet-width) {
-      background-color: transparent;
+      background-image: none;
       border: 2px solid rgb(242, 242, 242);
       padding-top: 153px;
     }
 
-    @media (min-height:$desktop-width) {
+    @media (min-width:$desktop-width) {
       padding-top: 164px;
     }
   }
@@ -98,6 +98,9 @@
 
   @media (min-width:$tablet-width) {
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -109,18 +112,27 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   position: relative;
+
+
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 140px;
+    text-align: center;
+  }
 
   &--more {
     text-align: center;
     margin-bottom: 15px;
 
-    @media (min-height:$tablet-width) {
+    @media (min-width:$tablet-width) {
       margin-bottom: 23px;
+      width: 140px;
     }
 
-    @media (min-height:$desktop-width) {
+    @media (min-width:$desktop-width) {
       margin-bottom: 26px;
     }
   }
@@ -142,12 +154,12 @@
     height: 60px;
     background-image: url("../../img/icon/more-plus.svg");
     top: -106px;
-    right: 103px;
+    right: 40px;
   }
 
   @media (min-width:$desktop-width) {
     top: -106px;
-    right: 53px;
+    right: 37px;
   }
 }
 
@@ -175,6 +187,22 @@
 .product-card__item {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width:$tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.product-card__text {
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width:$tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
 }
 
 .product-card__description {

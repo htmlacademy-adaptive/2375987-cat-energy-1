@@ -10,6 +10,7 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 42px;
+
   @media (min-width:$tablet-width) {
     font-size: 60px;
     line-height: 60px;
@@ -79,27 +80,29 @@
 .advantages__description {
   margin: 0;
   position: relative;
-}
 
-.advantages__description::before {
-  display: block;
-  content: "";
-  background-color: var(--basic-green);
-  position: absolute;
+  &::before {
+    display: block;
+    content: "";
+    background-color: var(--basic-green);
+    position: absolute;
 
-  @media (min-width:$mobile-width) {
-    width: 60px;
-    height: 60px;
-    left: -80px;
-    top: -2px;
+    @media (min-width:$mobile-width) {
+      width: 60px;
+      height: 60px;
+      left: -80px;
+      top: -2px;
+    }
+
+    @media (min-width:$tablet-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: -124px;
+    }
   }
 
-  @media (min-width:$tablet-width) {
-    width: 80px;
-    height: 80px;
-    left: 0;
-    top: -124px;
-  }
+
 }
 
 .advantages__description::after {

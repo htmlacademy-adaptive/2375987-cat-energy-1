@@ -1,6 +1,15 @@
-.footer-social {
-  @media (min-width:$mobile-width) {
-    padding: 20px 74px;
+.footer-social__wrapper {
+  padding-top: 21px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgb(217, 217, 217);
+  border-bottom: 1px solid rgb(217, 217, 217);
+  margin-bottom: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width:$tablet-width) {
+    border: none;
+    padding: 0;
   }
 }
 
@@ -8,6 +17,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  width: 132px;
+
+  @media (min-width:$tablet-width) {}
 }
 
 .footer-social__link {

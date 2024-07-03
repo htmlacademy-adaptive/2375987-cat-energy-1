@@ -8,13 +8,10 @@
   &--color{
     color: #ffffff;
   }
-
-
   @media (min-width:$tablet-width) {
     font-size: 60px;
     line-height: 60px;
     width: 450px;
     color:#000000;
   }
-
 }
