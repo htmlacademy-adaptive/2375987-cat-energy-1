@@ -1,10 +1,44 @@
 .contacts {
+<<<<<<< HEAD
   padding: 20px 26px;
 
   &--background {
     background-color: var(--basic-grey);
   }
 
+=======
+  position: relative;
+  @media (min-width:$mobile-width) {
+    width: 280px;
+    padding: 26px 20px;
+    margin: 0 auto;
+  }
+  @media (min-width:$tablet-width) {
+    width:708px;
+    padding: 61px 30px;
+    margin: 0 auto;
+  }
+  @media (min-width:$desktop-width) {
+    width: 565px;
+    padding:0;
+    margin: 0;
+  }
+}
+
+.contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media (min-width:$desktop-width) {
+      background-color: #ffffff;
+      width: 565px;
+      padding: 60px 80px;
+      box-sizing: border-box;
+      position: absolute;
+      left: 150px;
+      bottom: -212px;
+      z-index: 1;
+    }
+>>>>>>> module4-task1
 }
 
 .contacts__title {
@@ -15,9 +49,36 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+<<<<<<< HEAD
+=======
+  @media (min-width:$mobile-width) {
+    width: 140px;
+  }
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+.contacts__adress{
+  @media (min-width:$mobile-width) {
+    width: 140px;
+  }
+  @media (min-width:$tablet-width) {
+    width: 157px;
+  }
+>>>>>>> module4-task1
 }
 
 .contacts__adress__office {
   font-style: normal;
   margin: 0;
+<<<<<<< HEAD
+=======
+  @media (min-width:$desktop-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+>>>>>>> module4-task1
 }

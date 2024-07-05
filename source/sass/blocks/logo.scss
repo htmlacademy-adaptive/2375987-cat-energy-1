@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 .page-logo__img {
   display: inline-block;
   margin-right: 55px;
+=======
+.page-header__logo{
+display: flex;
+align-items: center;
+height: 38px;
+@media (min-width:$desktop-width) {
+  height: 50px;
+}
+}
+.page-header__logo{
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+>>>>>>> module4-task1
 }

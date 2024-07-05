@@ -1,17 +1,67 @@
 .ration {
+<<<<<<< HEAD
   padding-left: 20px;
   padding-right: 20px;
+=======
+  margin-bottom: 20px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-bottom: 71px;
+  }
+>>>>>>> module4-task1
 }
 
 .ration__list {
   margin: 0;
   padding: 0;
   list-style: none;
+<<<<<<< HEAD
+=======
+  display: flex;
+
+  @media (min-width:$mobile-width) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media (min-width:$tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width:$desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+>>>>>>> module4-task1
 }
 
 .ration__item {
   background-color: var(--basic-grey);
+<<<<<<< HEAD
   margin-bottom: 20px;
+=======
+  box-sizing: border-box;
+
+  @media (min-width:$mobile-width) {
+    width: 280px;
+    padding: 30px 33px 15px 20px;
+  }
+
+  @media (min-width:$tablet-width) {
+    width: 708px;
+    padding: 77px 63px 57px 52px;
+
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 570px;
+    padding: 77px 61px 59px 52px;
+  }
+>>>>>>> module4-task1
 }
 
 .ration__subtitle {
@@ -23,10 +73,143 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
+<<<<<<< HEAD
   text-align: center;
 }
 
 .ration__text {
   margin: 0;
   margin-bottom: 42px;
+=======
+  position: relative;
+
+  @media (min-width:$tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width:$desktop-width) {
+    text-align: center;
+  }
+
+}
+.ration__subtitle--position{
+  @media (max-width:$tablet-width) {
+    padding-left: 69px;
+  }
+}
+
+.ration__subtitle::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  background-color: var(--basic-green);
+
+  @media (min-width:$mobile-width) {
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: -4px;
+  }
+
+  @media (min-width:$tablet-width) {
+    width: 200px;
+    height: 200px;
+    left: 378px;
+    top: 4px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 100px;
+    height: 100px;
+    left: -14px;
+    top: -46px;
+  }
+}
+
+.ration__subtitle--cat::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+
+  @media (min-width:$mobile-width) {
+    width: 36px;
+    height: 50px;
+    background-image: url("../../img/icon/icon-ration-cat-mobile.svg");
+    top: -9px;
+    left: 9px;
+  }
+
+  @media (min-width:$tablet-width) {
+    width: 141px;
+    height: 194px;
+    background-image: url("../../img/icon/icon-ration-cat-tablet.svg");
+    top: 0;
+    left: 69%;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 70px;
+    height: 97px;
+    background-image: url("../../img/icon/icon-ration-cat-desktop.svg");
+    top: -54px;
+    left: 2px;
+  }
+}
+
+.ration__subtitle--tiger::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+
+  @media (min-width:$mobile-width) {
+    width: 67px;
+    height: 29px;
+    background-image: url("../../img/icon/icon-ration-tiger-mobile.svg");
+    top: 6px;
+    left: -13px;
+  }
+
+  @media (min-width:$tablet-width) {
+    width: 268px;
+    height: 112px;
+    background-image: url("../../img/icon/icon-ration-tiger-tablet.svg");
+    top: 33px;
+    left: 50%;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 134px;
+    height: 56px;
+    background-image: url("../../img/icon/icon-ration-tiger-desktop.svg");
+    top: -16px;
+    left: -27px;
+  }
+}
+
+
+.ration__text {
+  margin: 0;
+  margin-bottom: 38px;
+  position: relative;
+
+  @media (min-width:$tablet-width) and (max-width:$desktop-width) {
+    width: 340px;
+  }
+}
+
+.ration__text::after {
+  position: absolute;
+  content: "";
+  display: block;
+
+  @media (max-width:$tablet-width) {
+    background-color: #d9d9d9;
+    height: 1px;
+    right: 0;
+    left: 0;
+    bottom: -26px;
+  }
+>>>>>>> module4-task1
 }

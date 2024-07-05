@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .catalog-product {
   padding-left: 20px;
   padding-right: 20px;
@@ -6,4 +7,25 @@
 .catalog-product__title {
   margin: 27px 0 41px 0;
 
+=======
+.catalog-product{
+  margin-bottom: 25px;
+  @media (min-width:$tablet-width) {
+    margin-bottom: 70px;
+  }
+  @media (min-width:$tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+.catalog-product__title {
+  padding: 27px 0 41px 0;
+
+  @media (min-width:$tablet-width) {
+    padding: 65px 0 84px 0;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 74px 0 84px 0;
+  }
+>>>>>>> module4-task1
 }
