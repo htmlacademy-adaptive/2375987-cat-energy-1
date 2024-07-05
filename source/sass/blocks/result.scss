@@ -1,10 +1,4 @@
 .result {
-<<<<<<< HEAD
-  padding: 25px 20px 0 20px;
-  background-color: var(--basic-grey);
-}
-
-=======
   background-color: var(--basic-grey);
 }
 
@@ -17,7 +11,6 @@
   }
 }
 
->>>>>>> module4-task1
 .result__title {
   color: var(--color-text);
   font-family: "Oswald", sans-serif;
@@ -26,13 +19,6 @@
   line-height: 36px;
   margin: 0;
   margin-bottom: 40px;
-<<<<<<< HEAD
-}
-
-.result__discription {
-  margin: 0;
-  margin-bottom: 20px;
-=======
 
   @media (min-width:$tablet-width) {
     font-size: 60px;
@@ -69,16 +55,12 @@
   @media (min-width:$desktop-width) {
     flex-direction: column;
   }
->>>>>>> module4-task1
 }
 
 .result__list {
   margin: 0;
   padding: 0;
   list-style: none;
-<<<<<<< HEAD
-  margin-bottom: 20px;
-=======
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
@@ -120,7 +102,6 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
->>>>>>> module4-task1
 }
 
 .result__definition {
@@ -129,11 +110,6 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-<<<<<<< HEAD
-}
-
-.result__text {
-=======
   text-transform: uppercase;
 }
 
@@ -155,7 +131,6 @@
 }
 
 .result__result {
->>>>>>> module4-task1
   margin: 0;
   color: var(--color-text);
   font-family: "Oswald", sans-serif;
@@ -163,10 +138,6 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-<<<<<<< HEAD
-  text-align: center;
-  margin-bottom: 20px;
-=======
 
   @media (min-width:$mobile-width) {
     text-align: center;
@@ -181,5 +152,4 @@
   @media (min-width:$tablet-width)and(max-width:$desktop-width) {
     display: block;
   }
->>>>>>> module4-task1
 }

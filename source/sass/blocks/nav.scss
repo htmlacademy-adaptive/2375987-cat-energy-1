@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-.page-navigation__list {
-  @include list ();
-  // margin:0;
-  // padding:0;
-  // list-style: none;
-=======
 .page-navigation {
   position: relative;
 }
@@ -163,7 +156,6 @@
   @media (min-width:$tablet-width) {
     border: none;
   }
->>>>>>> module4-task1
 }
 
 .page-navigation__link {
@@ -175,11 +167,6 @@
   text-decoration: none;
   list-style-type: none;
   display: block;
-<<<<<<< HEAD
-  padding: 24px 0;
-  text-transform: uppercase;
-  text-align: center;
-=======
   text-transform: uppercase;
   position: relative;
   text-align: center;
@@ -224,5 +211,4 @@
   &:hover {
     opacity: 0.6;
   }
->>>>>>> module4-task1
 }

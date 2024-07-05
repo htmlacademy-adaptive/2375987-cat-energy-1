@@ -1,12 +1,4 @@
 .contacts {
-<<<<<<< HEAD
-  padding: 20px 26px;
-
-  &--background {
-    background-color: var(--basic-grey);
-  }
-
-=======
   position: relative;
   @media (min-width:$mobile-width) {
     width: 280px;
@@ -38,7 +30,6 @@
       bottom: -212px;
       z-index: 1;
     }
->>>>>>> module4-task1
 }
 
 .contacts__title {
@@ -49,8 +40,6 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-<<<<<<< HEAD
-=======
   @media (min-width:$mobile-width) {
     width: 140px;
   }
@@ -67,18 +56,14 @@
   @media (min-width:$tablet-width) {
     width: 157px;
   }
->>>>>>> module4-task1
 }
 
 .contacts__adress__office {
   font-style: normal;
   margin: 0;
-<<<<<<< HEAD
-=======
   @media (min-width:$desktop-width) {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
   }
->>>>>>> module4-task1
 }

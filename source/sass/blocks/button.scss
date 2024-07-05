@@ -10,11 +10,6 @@
   appearance: none;
   text-decoration: none;
   border: none;
-<<<<<<< HEAD
-
-  &--big {
-    padding: 13px 64px 10px;
-=======
   cursor: pointer;
 
   &--big {
@@ -28,30 +23,21 @@
       background-color: #5eaa2f;
       opacity: 0.3;
     }
->>>>>>> module4-task1
   }
 
   &--link {
     background-color: var(--basic-grey);
     color: var(--color-text);
-<<<<<<< HEAD
-    padding: 4px 20px 4px 0px;
-    margin-bottom: 18px;
-=======
     padding: 4px 40px 4px 0px;
     background-image: url("../../img/icon/icon-arrow.svg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 24px 12px;
->>>>>>> module4-task1
   }
 
   &--card {
     padding: 10px 109px;
 
-<<<<<<< HEAD
-  }
-=======
     @media (min-width:$tablet-width) {
       padding: 10px 94px;
     }
@@ -86,17 +72,10 @@
     }
   }
 
->>>>>>> module4-task1
   &--card-more {
     background-color: var(--basic-grey);
     color: #444444;
     padding: 10px 95px;
-<<<<<<< HEAD
-  }
-  &--form {
-    padding: 10px 105px;
-    margin-bottom: 21px;
-=======
 
     @media (min-width:$tablet-width) {
       padding: 10px 78px;
@@ -127,6 +106,5 @@
     @media (min-width:$desktop-width) {
       margin-right: 80px;
     }
->>>>>>> module4-task1
   }
 }

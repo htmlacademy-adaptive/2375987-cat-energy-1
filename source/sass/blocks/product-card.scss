@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-.product-card {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-
-.product-card__link {
-  display: block;
-  text-decoration: none;
-=======
 .product-card__wrapper {
   @media (min-width:$tablet-width) {
     display: flex;
@@ -90,13 +79,10 @@
     width: 169px;
     margin-bottom: 31px;
   }
->>>>>>> module4-task1
 }
 
 .product-card__img {
   display: block;
-<<<<<<< HEAD
-=======
   object-fit: contain;
   object-position: center;
   margin: 0 auto;
@@ -116,7 +102,6 @@
     align-items: center;
     justify-content: center;
   }
->>>>>>> module4-task1
 }
 
 .product-card__title {
@@ -127,8 +112,6 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-<<<<<<< HEAD
-=======
   text-align: left;
   position: relative;
 
@@ -139,13 +122,10 @@
     width: 140px;
     text-align: center;
   }
->>>>>>> module4-task1
 
   &--more {
     text-align: center;
     margin-bottom: 15px;
-<<<<<<< HEAD
-=======
 
     @media (min-width:$tablet-width) {
       margin-bottom: 23px;
@@ -180,7 +160,6 @@
   @media (min-width:$desktop-width) {
     top: -106px;
     right: 37px;
->>>>>>> module4-task1
   }
 }
 
@@ -188,8 +167,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-<<<<<<< HEAD
-=======
 
   @media (min-width:$mobile-width) {
     width: 140px;
@@ -226,14 +203,11 @@
     padding-top: 2px;
     padding-bottom: 2px;
   }
->>>>>>> module4-task1
 }
 
 .product-card__description {
   text-align: center;
   margin: 0 0 23px 0;
-<<<<<<< HEAD
-=======
 
   @media (min-width:$tablet-width) {
     margin: 0 0 82px 0;
@@ -242,5 +216,4 @@
   @media (min-width:$tablet-width) {
     margin: 0 0 90px 0;
   }
->>>>>>> module4-task1
 }

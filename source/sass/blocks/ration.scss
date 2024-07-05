@@ -1,8 +1,4 @@
 .ration {
-<<<<<<< HEAD
-  padding-left: 20px;
-  padding-right: 20px;
-=======
   margin-bottom: 20px;
 
   @media (min-width:$tablet-width) {
@@ -12,15 +8,12 @@
   @media (min-width:$desktop-width) {
     margin-bottom: 71px;
   }
->>>>>>> module4-task1
 }
 
 .ration__list {
   margin: 0;
   padding: 0;
   list-style: none;
-<<<<<<< HEAD
-=======
   display: flex;
 
   @media (min-width:$mobile-width) {
@@ -36,14 +29,10 @@
     flex-direction: row;
     gap: 80px;
   }
->>>>>>> module4-task1
 }
 
 .ration__item {
   background-color: var(--basic-grey);
-<<<<<<< HEAD
-  margin-bottom: 20px;
-=======
   box-sizing: border-box;
 
   @media (min-width:$mobile-width) {
@@ -61,7 +50,6 @@
     width: 570px;
     padding: 77px 61px 59px 52px;
   }
->>>>>>> module4-task1
 }
 
 .ration__subtitle {
@@ -73,14 +61,6 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
-<<<<<<< HEAD
-  text-align: center;
-}
-
-.ration__text {
-  margin: 0;
-  margin-bottom: 42px;
-=======
   position: relative;
 
   @media (min-width:$tablet-width) {
@@ -211,5 +191,4 @@
     left: 0;
     bottom: -26px;
   }
->>>>>>> module4-task1
 }

@@ -5,8 +5,6 @@
   margin-bottom: 24px;
 }
 
-<<<<<<< HEAD
-=======
 .program-form__group--checkbox {
   margin-bottom: 34px;
 
@@ -28,17 +26,10 @@
   }
 }
 
->>>>>>> module4-task1
 .program-form__list {
   margin: 0;
   padding: 0;
   list-style: none;
-<<<<<<< HEAD
-}
-
-.program-form__item {
-  color: inherit;
-=======
   display: grid;
   gap: 13px;
 
@@ -107,15 +98,10 @@
 .program-form__text {
   display: inline-block;
   text-transform: uppercase;
->>>>>>> module4-task1
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-<<<<<<< HEAD
-  text-transform: uppercase;
-  margin-bottom: 14px;
-=======
 
   @media (min-width:$tablet-width) {
     font-size: 20px;
@@ -191,7 +177,6 @@
     font-weight: 400;
     line-height: 30px;
   }
->>>>>>> module4-task1
 }
 
 .program-form__title {
@@ -201,10 +186,6 @@
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 36px;
-<<<<<<< HEAD
-}
-
-=======
   padding: 0;
 
   @media (min-width:$tablet-width) {
@@ -253,7 +234,6 @@
 
 
 
->>>>>>> module4-task1
 .program-form__feedback {
   color: #444444;
   font-family: "Oswald", sans-serif;
@@ -261,8 +241,6 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-<<<<<<< HEAD
-=======
   width: 100%;
   box-sizing: border-box;
   padding: 14px 14px 118px 15px;
@@ -278,5 +256,4 @@
   @media (min-width:$tablet-width) {
     display: flex;
   }
->>>>>>> module4-task1
 }

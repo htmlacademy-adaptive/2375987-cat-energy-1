@@ -1,16 +1,4 @@
 .program-diet {
-<<<<<<< HEAD
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.program-diet__title {
-  margin: 27px 0 41px 0;
-}
-
-.program-diet__description {
-  margin: 0 0 39px 0;
-=======
   padding-top: 27px;
   padding-bottom: 32px;
 
@@ -39,16 +27,12 @@
 
 .program-diet__description {
   margin-bottom: 39px;
->>>>>>> module4-task1
   color: var(--color-text);
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-<<<<<<< HEAD
-}
-=======
 
   @media (min-width:$tablet-width) {
     font-size: 20px;
@@ -58,4 +42,3 @@
   }
 }
 
->>>>>>> module4-task1

@@ -1,9 +1,4 @@
 .advantages {
-<<<<<<< HEAD
-  padding-right: 20px;
-  padding-left: 20px;
-=======
->>>>>>> module4-task1
   margin-bottom: 49px;
 }
 
@@ -15,26 +10,17 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 42px;
-<<<<<<< HEAD
-=======
 
   @media (min-width:$tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
->>>>>>> module4-task1
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style: none;
-<<<<<<< HEAD
-}
-
-.advantages__item:not(:last-child) {
-  margin-bottom: 20px;
-=======
   display: flex;
   flex-wrap: wrap;
 
@@ -170,5 +156,4 @@
     top: -97px;
     left: 29px;
   }
->>>>>>> module4-task1
 }

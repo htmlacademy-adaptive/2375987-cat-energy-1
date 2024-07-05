@@ -1,11 +1,4 @@
 .product-additional {
-<<<<<<< HEAD
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 35px;
-}
-
-=======
   margin-bottom: 35px;
 }
 
@@ -17,7 +10,6 @@
   }
 }
 
->>>>>>> module4-task1
 .product-additional__title {
   color: var(--color-text);
   font-family: "Oswald", sans-serif;
@@ -25,8 +17,6 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-<<<<<<< HEAD
-=======
   margin: 0;
 
   @media (min-width:$mobile-width) {
@@ -38,7 +28,6 @@
     text-align: left;
     font-size: 36px;
   }
->>>>>>> module4-task1
 }
 
 .product-additional__list {
@@ -46,8 +35,6 @@
   padding: 0;
   list-style: none;
   margin-bottom: 35px;
-<<<<<<< HEAD
-=======
 
   @media (min-width:$mobile-width) {
     width: 280px;
@@ -117,7 +104,6 @@
   @media (min-width:$tablet-width) {
     font-size: 16px;
   }
->>>>>>> module4-task1
 }
 
 .product-additional__subtitle {
@@ -127,12 +113,6 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-<<<<<<< HEAD
-}
-
-.product-additional__wrapper {
-  background-color: var(--basic-green);
-=======
   margin: 0;
 
   @media (max-width:$tablet-width) {
@@ -175,7 +155,6 @@
       url(../../img/img-gift.png);
     padding: 186px 42px 43px;
   }
->>>>>>> module4-task1
 }
 
 .product-additional__promo {
@@ -185,8 +164,6 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-<<<<<<< HEAD
-=======
   text-align: center;
   position: relative;
 }
@@ -216,5 +193,4 @@
     top: -130px;
   right: 39px;
   }
->>>>>>> module4-task1
 }
