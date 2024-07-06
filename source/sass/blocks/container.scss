@@ -1,4 +1,21 @@
 .container {
-  width: 320px;
+  padding: 0 20px 0 20px;
   margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 320px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 30px;
+    max-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding: 0 110px;
+    max-width:1440px;
+  }
 }

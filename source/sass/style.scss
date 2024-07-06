@@ -1,9 +1,9 @@
 
-// миксины
-@import './mixins.scss';
-
 // переменные
 @import './layout/variable.scss';
+
+// миксины
+@import './mixins.scss';
 
 // базовые стили
 @import './base/base.scss';
@@ -25,6 +25,8 @@
 @import './blocks/page-footer__logo.scss';
 @import './blocks/footer-social.scss';
 @import './blocks/link-htmlacademy.scss';
+@import './blocks/icon.scss';
+@import './blocks/control.scss';
 
 // компоненты страницы каталога
 // заголовок страницы каталога
