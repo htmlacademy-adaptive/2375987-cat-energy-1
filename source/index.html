@@ -43,8 +43,11 @@
       <div class="container page-hero__wrapper">
         <h1 class="page-hero__title title title--color">Функциональное питание для котов </h1>
         <p class="page-hero__text page-hero__text--color">Занялся собой? Займись котом!</p>
-        <img class="page-hero__img" src="img/index-can-mobile.png" width="280" height="270"
-          alt="Изображение продукции магазина">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/index-can-desktop.png" width="557" height="499">
+          <source media="(min-width:768px)" srcset="img/index-can-tablet.png" width="709" height="609">
+          <img class="page-hero__img" src="img/index-can-mobile.png" width="280" height="270" alt="Изображение продукции магазина">
+          </picture>
         <a class="button button--big page-hero__button" href="form.html">Подобрать программу</a>
       </div>
     </section>
