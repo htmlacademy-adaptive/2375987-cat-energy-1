@@ -13,7 +13,11 @@
   <header class="page-header">
     <div class="page-header__wrapper container">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/logo-img-desktop.svg" width="70" height="59">
+          <source media="(min-width:768px)" srcset="img/logo-img-tablet.svg" width="60" height="50">
+          <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
+        </picture>
         <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
       </a>
       <nav class="page-navigation page-navigation--closed page-navigation--nojs">
@@ -244,4 +248,3 @@
 </body>
 
 </html>
-
