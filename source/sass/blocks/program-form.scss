@@ -151,6 +151,10 @@
   appearance: textfield;
 }
 
+.program-form__input:not(:disabled):hover {
+  border: 1px solid #bababa;
+}
+
 .program-form__input:not(:disabled):focus {
   border: 1px solid #000000;
 }
@@ -231,8 +235,6 @@
     }
   }
 }
-
-
 
 .program-form__feedback {
   color: #444444;
