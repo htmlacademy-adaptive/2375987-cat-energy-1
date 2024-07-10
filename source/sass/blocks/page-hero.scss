@@ -38,7 +38,7 @@
     @media (min-width:$tablet-width) {
       display: none;
     }
-    
+
     @media (min-width:$desktop-width) {
       display: block;
       width: 50%;
@@ -60,6 +60,11 @@
 
     @media (min-width:$tablet-width) {
       align-items: start;
+      padding-left: 118px;
+    }
+
+    @media (min-width:$desktop-width) {
+      padding-left: 186px;
     }
   }
 }
@@ -112,20 +117,17 @@
 
 .page-hero__img {
   display: block;
-  width: 280px;
-  height: 270px;
 
   @media (min-width:$tablet-width) {
     order: 1;
-    margin-top: -40px;
-    margin-left: 150px;
-
+    margin-top: -33px;
+    margin-left: -34px;
   }
 
   @media (min-width:$desktop-width) {
     position: absolute;
-    right: 473px;
-    top: 24px;
+    right: 163px;
+    top: 11px;
   }
 }
 

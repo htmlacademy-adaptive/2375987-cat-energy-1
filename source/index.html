@@ -13,7 +13,11 @@
   <header class="page-header">
     <div class="container page-header__wrapper">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/logo-img-desktop.svg" width="70" height="59">
+          <source media="(min-width:768px)" srcset="img/logo-img-tablet.svg" width="60" height="50">
+          <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
+        </picture>
         <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
       </a>
       <nav class="page-navigation page-navigation--closed page-navigation--nojs">
@@ -43,10 +47,10 @@
       <div class="container page-hero__wrapper">
         <h1 class="page-hero__title title title--color">Функциональное питание для котов </h1>
         <p class="page-hero__text page-hero__text--color">Занялся собой? Займись котом!</p>
-        <picture>
-          <source media="(min-width:1440px)" srcset="img/index-can-desktop.png" width="557" height="499">
-          <source media="(min-width:768px)" srcset="img/index-can-tablet.png" width="709" height="609">
-          <img class="page-hero__img" src="img/index-can-mobile.png" width="280" height="270" alt="Изображение продукции магазина">
+        <picture class="page-hero__img">
+          <source type="" media="(min-width:1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x" width="557" height="499">
+          <source media="(min-width:768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x" width="709" height="609">
+          <img class="page-hero__img" src="img/index-can-mobile.png" srcset="img/index-can-mobile.png 1x, img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Изображение продукции магазина">
           </picture>
         <a class="button button--big page-hero__button" href="form.html">Подобрать программу</a>
       </div>
