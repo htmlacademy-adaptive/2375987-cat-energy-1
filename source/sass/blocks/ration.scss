@@ -71,12 +71,13 @@
     text-align: center;
   }
 
-}
-.ration__subtitle--position{
-  @media (max-width:$tablet-width) {
-    padding-left: 69px;
+  &--position {
+    @media (max-width:$tablet-width) {
+      padding-left: 69px;
+    }
   }
 }
+
 
 .ration__subtitle::before {
   position: absolute;
