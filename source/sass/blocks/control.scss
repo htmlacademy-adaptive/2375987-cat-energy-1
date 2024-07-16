@@ -14,6 +14,7 @@
   width: 30px;
   height: 30px;
   margin-right: 15px;
+  border: 1px solid #cdcdcd;
 
   @media (min-width:$tablet-width) {
     width: 40px;
@@ -21,10 +22,17 @@
     margin-right: 20px;
   }
 
-  border: 1px solid #cdcdcd;
-
   &--radio {
     border-radius: 50%;
+  }
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:disabled {
+    border: 1px solid rgb(186, 186, 186);
+    opacity: 0.3;
   }
 }
 

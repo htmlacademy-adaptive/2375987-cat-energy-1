@@ -76,9 +76,12 @@
     background-color: var(--basic-grey);
     color: #444444;
     padding: 10px 95px;
+    align-self: center;
+    justify-self: start;
 
     @media (min-width:$tablet-width) {
       padding: 10px 78px;
+      align-self: self-end;
     }
 
     @media (min-width:$desktop-width) {

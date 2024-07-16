@@ -6,14 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon-apple.png">
 </head>
 
 <body>
   <!-- header -->
-  <header class="page-header">
+  <header class="page-header page-header--content">
     <div class="container page-header__wrapper">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/logo-img-desktop.svg" width="70" height="59">
+          <source media="(min-width:768px)" srcset="img/logo-img-tablet.svg" width="60" height="50">
+          <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
+        </picture>
         <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
       </a>
       <nav class="page-navigation page-navigation--closed page-navigation--nojs">
@@ -34,22 +41,25 @@
         </div>
       </nav>
     </div>
-  </header>
-  <!-- main -->
-  <main class="main-container">
-
-    <!-- page-hero -->
     <section class="page-hero">
       <div class="container page-hero__wrapper">
         <h1 class="page-hero__title title title--color">Функциональное питание для котов </h1>
         <p class="page-hero__text page-hero__text--color">Занялся собой? Займись котом!</p>
-        <img class="page-hero__img" src="img/index-can-mobile.png" width="280" height="270"
-          alt="Изображение продукции магазина">
+        <picture class="page-hero__img">
+          <source type="" media="(min-width:1440px)"
+            srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x" width="557" height="499">
+          <source media="(min-width:768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x"
+            width="709" height="609">
+          <img class="page-hero__img" src="img/index-can-mobile.png"
+            srcset="img/index-can-mobile.png 1x, img/index-can-mobile@2x.png 2x" width="280" height="270"
+            alt="Изображение продукции магазина">
+        </picture>
         <a class="button button--big page-hero__button" href="form.html">Подобрать программу</a>
       </div>
     </section>
-
-    <!-- ration -->
+  </header>
+  <!-- main -->
+  <main class="main-container">
     <section class="ration">
       <div class="ration__wrapper container">
         <h2 class="visually-hidden">Программы по рациону питания</h2>
@@ -127,16 +137,18 @@
                 class="result__block">15 000 РУБ.</span> </p>
           </div>
         </div>
-        <div>
-          <img class="result__before" src="img/cat-before.svg" width="280" height="256"
+
+        <div class="slider">
+          <img class="slider_img" src="img/cat-before.svg" width="280" height="256"
             alt="Изображение полного котика">
-          <!-- <img class="result__after" src="img/cat-after.svg" width="280" height="256"
-            alt="Изображение стройного котика"> -->
-          <div class="slider-toggles">
-            <button type="button" class="button">
-              <span class="visually-hidden">Ползунок</span>
-            </button>
-          </div>
+          <img class="slider_img slider_img--after" src="img/cat-after.svg" width="280" height="256"
+            alt="Изображение стройного котика">
+          <button type="button" class="slider_toggles">
+            <span class="visually-hidden">Ползунок</span>
+            <svg  class="toggle-img" width="24.000000" height="18.000000" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path id="Vector" d="M8 0L0 9L8 18L8 0ZM24 9L16 0L16 18L24 9Z"/>
+            </svg>
+          </button>
         </div>
 
       </div>
@@ -212,6 +224,7 @@
     src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=f3249e4c-1d7d-4f10-904e-e5b6633d35f4"
     type="text/javascript"></script>
   <script src="js/map.js" type="text/javascript"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>

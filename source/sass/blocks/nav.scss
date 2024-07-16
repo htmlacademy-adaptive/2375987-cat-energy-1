@@ -142,6 +142,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 33px;
+    justify-content: flex-start;
+    max-width: 500px;
   }
 
   @media (min-width:$desktop-width) {
