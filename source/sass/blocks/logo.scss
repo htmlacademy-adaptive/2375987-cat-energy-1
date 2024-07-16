@@ -23,7 +23,7 @@
 }
 
 .page-header__text {
-  @media (max-width:$tablet-width) {
+  @media (max-width:$mobile-width-only) {
     position: absolute;
     left: 50%;
     top: 50%;
