@@ -70,6 +70,15 @@
       padding: 10px 91px;
       grid-column: 3;
     }
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+      opacity: 0.3;
+    }
   }
 
   &--card-more {
