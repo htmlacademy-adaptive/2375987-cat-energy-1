@@ -1,14 +1,5 @@
 .link-htmlacademy__wrapper {
   position: relative;
-
-  // @media (min-width:$mobile-width) {
-  //   display: flex;
-  //   align-items: center;
-  // }
-
-  // @media (max-width:$tablet-width) {
-  //   padding-top: 20px;
-  // }
 }
 
 .link-htmlacademy__link {
@@ -22,6 +13,9 @@
 
   @media (min-width:$tablet-width) {
     gap:23px;
+  }
+  &--active{
+    opacity: 0.3;
   }
 }
 
@@ -42,8 +36,16 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  fill:#666666;
 
   @media (min-width:$tablet-width) {
     position: static;
   }
+}
+.link-htmlacademy__link:hover svg{
+  fill: #68b738;
+}
+.link-htmlacademy__link:active svg{
+  fill: #68b738;
+  opacity: 0.3;
 }

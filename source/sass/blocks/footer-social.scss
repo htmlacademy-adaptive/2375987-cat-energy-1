@@ -18,11 +18,10 @@
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, max-content);
+  align-items: center;
+  justify-content: center;
   gap: 24px;
-  width: 132px;
-
-  @media (min-width:$tablet-width) {}
 }
 
 .footer-social__link {
@@ -31,3 +30,15 @@
   list-style-type: none;
   cursor: pointer;
 }
+
+.footer-social__svg{
+  fill:#666666;
+}
+.footer-social__link:hover svg{
+  fill: #68b738;
+}
+.footer-social__link:active svg{
+  fill: #68b738;
+  opacity: 0.3;
+}
+

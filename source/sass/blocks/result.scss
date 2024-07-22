@@ -2,7 +2,7 @@
   background-image: linear-gradient(#f2f2f2 25%, #f2f2f2 25%);
 
   @media (min-width:$tablet-width) {
-    background-image: linear-gradient(#ffffff 63%, #f2f2f2 25%);
+    background-image: linear-gradient(#ffffff 57%, #f2f2f2 25%);
   }
 
   @media (min-width:$desktop-width) {
@@ -17,7 +17,17 @@
   @media (min-width:$desktop-width) {
     display: grid;
     grid-template-columns: 436px 1fr;
-    column-gap:224px;
+    column-gap: 224px;
+  }
+}
+
+.result__container {
+  @media(min-width:$mobile-width) {
+    margin-bottom: 20px;
+  }
+
+  @media(min-width:$tablet-width) {
+    margin-bottom: 99px;
   }
 }
 

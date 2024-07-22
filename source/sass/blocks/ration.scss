@@ -72,7 +72,7 @@
   }
 
   &--position {
-    @media (max-width:$tablet-width) {
+    @media (max-width:$mobile-width-only) {
       padding-left: 69px;
     }
   }
@@ -175,8 +175,14 @@
   margin-bottom: 38px;
   position: relative;
 
-  @media (min-width:$tablet-width) and (max-width:$desktop-width) {
+  @media (min-width:$tablet-width) and (max-width:1339px) {
     width: 340px;
+  }
+
+  @media (min-width:$tablet-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
   }
 }
 
@@ -185,7 +191,7 @@
   content: "";
   display: block;
 
-  @media (max-width:$tablet-width) {
+  @media (max-width:$mobile-width-only) {
     background-color: #d9d9d9;
     height: 1px;
     right: 0;

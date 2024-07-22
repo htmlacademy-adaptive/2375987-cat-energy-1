@@ -132,6 +132,7 @@
   width: 100%;
   box-sizing: border-box;
   color: #444444;
+  cursor: pointer;
 
   @media (min-width:$tablet-width) {
     font-size: 20px;
@@ -247,6 +248,18 @@
   box-sizing: border-box;
   padding: 14px 14px 118px 15px;
   border: 1px solid rgb(231, 231, 231);
+  cursor: pointer;
+  resize: vertical;
+
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    border-color: #bababa;
+    box-shadow: 0 0 5px var(--basic-green);
+  }
 
   &:disabled {
     opacity: 0.3;
@@ -258,4 +271,9 @@
   @media (min-width:$tablet-width) {
     display: flex;
   }
+}
+
+.program-form__required {
+  font-size: 16px;
+  line-height: 16px;
 }
