@@ -26,24 +26,14 @@
     @media (min-width:$tablet-width) {
       align-items: start;
       padding-left: 118px;
+      padding-right: 110px;
     }
 
     @media (min-width:$desktop-width) {
-      padding-left: 186px;
+      padding-left: 250px;
     }
   }
 
-
-.page-hero__wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (min-width:$tablet-width) {
-    align-items: start;
-  }
-}
 
 .page-hero__title {
   @media (min-width:$mobile-width) {

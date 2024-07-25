@@ -23,10 +23,17 @@
 }
 
 .page-header__text {
+  width: 101px;
+  height: 18px;
+
   @media (max-width:$mobile-width-only) {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
+ @media (min-width:$desktop-width) {
+  width: 118px;
+  height: 21px;
+ }
 }

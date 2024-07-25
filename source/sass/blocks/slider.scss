@@ -9,7 +9,7 @@
   }
 }
 
-.slider_img {
+.slider__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -39,12 +39,12 @@
   outline: 0;
 }
 
-.slider__input:focus-visible~.slider_toggles {
+.slider__input:focus-visible~.slider__toggles {
   outline: 5px solid black;
   outline-offset: 3px;
 }
 
-.slider_toggles {
+.slider__toggles {
   position: absolute;
   top: 50%;
   left: 120%;

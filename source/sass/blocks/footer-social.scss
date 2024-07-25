@@ -1,4 +1,4 @@
-.footer-social__wrapper {
+.footer-social {
   padding-top: 21px;
   padding-bottom: 20px;
   border-top: 1px solid rgb(217, 217, 217);
@@ -7,9 +7,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   @media (min-width:$tablet-width) {
     border: none;
     padding: 0;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    margin-bottom: 0;
   }
 }
 
@@ -25,20 +29,25 @@
 }
 
 .footer-social__link {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   list-style-type: none;
   cursor: pointer;
+  width: 28px;
+  height: 22px;
 }
 
-.footer-social__svg{
-  fill:#666666;
+
+.footer-social__svg {
+  fill: #666666;
 }
-.footer-social__link:hover svg{
+
+.footer-social__link:hover svg {
   fill: #68b738;
 }
-.footer-social__link:active svg{
+
+.footer-social__link:active svg {
   fill: #68b738;
   opacity: 0.3;
 }
-
