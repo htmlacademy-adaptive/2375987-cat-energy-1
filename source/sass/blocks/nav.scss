@@ -69,7 +69,7 @@
 .page-navigation--opened .page-navigation__inner {
   @media (max-width:$tablet-width) {
     position: absolute;
-    top: 0;
+    top: 9px;
     z-index: 1;
     background-color: #ffffff;
     width: 100%;
@@ -130,8 +130,6 @@
 
 .page-navigation__list {
   @include list ();
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
 
   @media (min-width:$mobile-width) {
     width: calc(100% + 2 * 20px);
@@ -161,7 +159,7 @@
   }
 }
 
-.page-navigation__item:not(:last-child) {
+.page-navigation__item {
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width:$tablet-width) {
@@ -186,10 +184,16 @@
   @media (min-width:$tablet-width) {
     border: none;
     padding: 14px 0 12px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
   }
 
   @media (min-width:$desktop-width) {
     padding: 16px 0 13px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
   }
 
   &--color {
@@ -205,7 +209,7 @@
       content: "";
       background-color: var(--basic-green);
       height: 2px;
-      bottom: -4px;
+      bottom: 1px;
       left: 0;
       right: 0;
     }

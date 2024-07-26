@@ -36,18 +36,19 @@
   cursor: pointer;
   width: 28px;
   height: 22px;
+  transition: color 0.3s ease-in-out;
+
+  &:hover svg {
+    fill: #68b738;
+  }
+
+  &:active svg {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }
 
 
 .footer-social__svg {
   fill: #666666;
-}
-
-.footer-social__link:hover svg {
-  fill: #68b738;
-}
-
-.footer-social__link:active svg {
-  fill: #68b738;
-  opacity: 0.3;
 }

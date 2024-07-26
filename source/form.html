@@ -63,7 +63,7 @@
           <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
         </picture>
         <!-- <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта"> -->
-        <svg role="img" width="101" height="18" class="page-header__text">
+        <svg aria-label="Кэт Энерджи" role="img" width="101" height="18" class="page-header__text">
           <use xlink:href="#logo-cat"></use>
         </svg>
       </a>
@@ -224,77 +224,78 @@
     </div>
   </main>
 
+ <!-- contacts -->
+ <footer class="page-footer">
   <!-- contacts -->
-  <footer class="page-footer">
-    <!-- contacts -->
-    <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper">
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__adress">
-          <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
-        </address>
-      </div>
-    </section>
-    <div class="page-footer__map" id="map">
-      <span class="visually-hidden"> карта</span>
+  <section class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
+    <div class="contacts__wrapper">
+      <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+      <address class="contacts__adress">
+        <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+      </address>
     </div>
+  </section>
 
-    <div class="page-footer__wrapper">
-      <div class="page-footer__inner container">
-        <!-- logo cat Enerdji -->
-        <div class="page-footer__logo">
-          <a href="index.html" class="page-footer__link" aria-label="Ссылка с логотипом сайта Кэт Энерджи">
-            <svg role="img" width="101" height="18" class="page-footer__img">
-              <use xlink:href="#logo-cat"></use>
-            </svg>
-          </a>
-        </div>
+  <div class="page-footer__map" id="map">
+    <span class="visually-hidden"> карта</span>
+  </div>
 
-        <!-- social -->
-        <div class="footer-social">
-          <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <a class="footer-social__link footer-social-vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Страница в Вконтакте</span>
-                <svg width="27" height="17" class="footer-social__svg" aria-hidden="true" focusable="false">
-                  <use xlink:href="#vk"></use>
-                </svg>
-              </a>
-            </li>
+  <div class="page-footer__wrapper">
+    <div class="page-footer__inner container">
+      <div class="page-footer__logo">
+        <a href="index.html" class="page-footer__link" aria-label="Ссылка с логотипом сайта Кэт Энерджи">
+          <svg width="128" height="24" class="page-footer__img" aria-hidden="true" focusable="false">
+            <use xlink:href="#logo-cat"></use>
+          </svg>
+        </a>
+      </div>
 
-            <li class="footer-social__item">
-              <a class="footer-social__link footer-social-youtube" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Ютуб канал Академии</span>
-                <svg width="24" height="19" class="footer-social__svg" aria-hidden="true" focusable="false">
-                  <use xlink:href="#youtube"></use>
-                </svg>
-              </a>
-            </li>
+      <!-- social -->
+      <div class="footer-social">
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a class="footer-social__link footer-social-vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Страница в Вконтакте</span>
+              <svg width="27" height="17" class="footer-social__svg" aria-hidden="true" focusable="false">
+                <use xlink:href="#vk"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="footer-social__item">
-              <a class="footer-social__link footer-social-telegram" href="https://www.youtube.com/user/htmlacademyru"
-                aria-label="Телеграмм канал HTML Академии">
-                <span class="visually-hidden">Телеграмм канал Академии</span>
-                <svg width="20" height="17" class="footer-social__svg" aria-hidden="true" focusable="false">
-                  <use xlink:href="#telegram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- logo HTML academy -->
-        <div class="link-htmlacademy">
-          <a class="link-htmlacademy__link" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
-            <span class="link-htmlacademy__text">HTML Academy</span>
-            <svg role="img" width="27" height="34" class="link-htmlacademy__img">
-              <use xlink:href="#logo-academy"></use>
-            </svg>
-          </a>
-        </div>
+          <li class="footer-social__item">
+            <a class="footer-social__link footer-social-youtube" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Ютуб канал Академии</span>
+              <svg width="24" height="19" class="footer-social__svg" aria-hidden="true" focusable="false">
+                <use xlink:href="#youtube"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer-social__item">
+            <a class="footer-social__link footer-social-telegram" href="https://www.youtube.com/user/htmlacademyru"
+              aria-label="Телеграмм канал HTML Академии">
+              <span class="visually-hidden">Телеграмм канал Академии</span>
+              <svg width="20" height="17" class="footer-social__svg" aria-hidden="true" focusable="false">
+                <use xlink:href="#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- logo HTML academy -->
+      <div class="link-htmlacademy">
+        <a class="link-htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Сайт HTML Academy">
+          <span class="link-htmlacademy__text">HTML Academy</span>
+          <svg aria-hidden="true" focusable="false" width="27" height="34" class="link-htmlacademy__img">
+            <use xlink:href="#logo-academy"></use>
+          </svg>
+        </a>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
   <script src="js/nav.js"></script>
   <script
     src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=f3249e4c-1d7d-4f10-904e-e5b6633d35f4"

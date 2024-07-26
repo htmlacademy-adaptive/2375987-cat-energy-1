@@ -1,4 +1,5 @@
 .slider {
+  margin: 0 auto;
   width: 280px;
   height: 256px;
   position: relative;
@@ -55,7 +56,7 @@
   border-radius: 20px;
   background-color: #ffffff;
   left: var(--position);
-  cursor: pointer;
+  pointer-events: none;
 
   &::before,
   &::after {

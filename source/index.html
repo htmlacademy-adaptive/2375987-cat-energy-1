@@ -63,7 +63,7 @@
           <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
         </picture>
         <!-- <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта"> -->
-        <svg role="img" width="101" height="18" class="page-header__text">
+        <svg role="img" aria-label="Кэт Энерджи" width="101" height="18" class="page-header__text">
           <use xlink:href="#logo-cat"></use>
         </svg>
       </a>
@@ -90,15 +90,16 @@
         <h1 class="page-hero__title title title--color">Функциональное питание для котов </h1>
         <p class="page-hero__text page-hero__text--color">Занялся собой? Займись котом!</p>
         <picture class="page-hero__img">
-          <source type="image/webp" media="(min-width:1440px)" srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 1x" width="552"
-            height="499">
+          <source type="image/webp" media="(min-width:1440px)"
+            srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 1x" width="552" height="499">
           <source media="(min-width:1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x"
             width="552" height="499">
-          <source type="image/webp" media="(min-width:768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 1x " width="709"
-            height="609">
+          <source type="image/webp" media="(min-width:768px)"
+            srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 1x " width="709" height="609">
           <source media="(min-width:768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x"
             width="709" height="609">
-          <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 1x" width="280" height="270">
+          <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 1x" width="280"
+            height="270">
           <img class="page-hero__img" src="img/index-can-mobile.png"
             srcset="img/index-can-mobile.png 1x, img/index-can-mobile@2x.png 2x" width="280" height="270"
             alt="Изображение продукции магазина">
@@ -183,8 +184,10 @@
               </li>
             </ul>
 
-            <p class="result__result"><span class="result__block">Затраты на питание:</span> <span
-                class="result__block">15 000 РУБ.</span> </p>
+            <p class="result__result">
+              <span class="result__block">Затраты на питание:</span>
+              <span class="result__block">15 000 РУБ.</span>
+            </p>
           </div>
         </div>
 
@@ -221,12 +224,12 @@
   <!-- contacts -->
   <footer class="page-footer">
     <!-- contacts -->
-    <section class="contacts">
+    <section class="container contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <address class="contacts__adress">
-          <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+          <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span class="contacts__block">Санкт-Петербург</span></p>
         </address>
       </div>
     </section>
@@ -239,7 +242,7 @@
       <div class="page-footer__inner container">
         <div class="page-footer__logo">
           <a href="index.html" class="page-footer__link" aria-label="Ссылка с логотипом сайта Кэт Энерджи">
-            <svg role="img" width="128" height="24" class="page-footer__img" aria-hidden="true" focusable="false">
+            <svg width="128" height="24" class="page-footer__img" aria-hidden="true" focusable="false">
               <use xlink:href="#logo-cat"></use>
             </svg>
           </a>
@@ -282,7 +285,7 @@
           <a class="link-htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive"
             aria-label="Сайт HTML Academy">
             <span class="link-htmlacademy__text">HTML Academy</span>
-            <svg role="img" width="27" height="34" class="link-htmlacademy__img">
+            <svg aria-hidden="true" focusable="false" width="27" height="34" class="link-htmlacademy__img">
               <use xlink:href="#logo-academy"></use>
             </svg>
           </a>

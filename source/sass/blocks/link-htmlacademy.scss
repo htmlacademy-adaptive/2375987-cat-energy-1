@@ -1,4 +1,4 @@
-.link-htmlacademy{
+.link-htmlacademy {
   position: relative;
 }
 
@@ -10,12 +10,22 @@
   width: fit-content;
   display: flex;
   align-items: center;
+  transition: color 0.3s ease-in-out;
 
   @media (min-width:$tablet-width) {
-    gap:23px;
+    gap: 23px;
   }
-  &--active{
+
+  &:hover svg {
+    fill: #68b738;
+  }
+
+  &:active {
     opacity: 0.3;
+
+    svg {
+      fill: #68b738;
+    }
   }
 }
 
@@ -36,16 +46,9 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  fill:#666666;
+  fill: #666666;
 
   @media (min-width:$tablet-width) {
     position: static;
   }
-}
-.link-htmlacademy__link:hover svg{
-  fill: #68b738;
-}
-.link-htmlacademy__link:active svg{
-  fill: #68b738;
-  opacity: 0.3;
 }

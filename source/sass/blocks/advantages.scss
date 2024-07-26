@@ -1,5 +1,5 @@
 .advantages {
-  margin-bottom: 49px;
+  margin-bottom: 67px;
 }
 
 .advantages__title {
@@ -25,11 +25,11 @@
   flex-wrap: wrap;
 
   @media (min-width:$mobile-width) {
-    gap: 22px;
+    gap: 20px;
   }
 
   @media (min-width:$tablet-width) {
-    gap: 34px 154px;
+    gap: 45px 135px;
     counter-reset: myCounter;
   }
 
@@ -50,7 +50,7 @@
 
   @media (min-width:$tablet-width) {
     width: 249px;
-    padding: 151px 0 57px 0;
+    padding: 142px 0 57px 0;
   }
 
   @media (min-width:$desktop-width) {
@@ -81,6 +81,12 @@
   margin: 0;
   position: relative;
 
+  @media (min-width:$tablet-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
   &::before {
     display: block;
     content: "";
@@ -98,11 +104,10 @@
       width: 80px;
       height: 80px;
       left: 0;
-      top: -124px;
+      top: -112px;
+      font-size: 16px;
     }
   }
-
-
 }
 
 .advantages__description::after {
@@ -120,8 +125,8 @@
   height: 28px;
 
   @media (min-width:$tablet-width) {
-    top: -97px;
-    left: 29px;
+    top: -85px;
+    left: 27px;
   }
 }
 
@@ -131,8 +136,8 @@
   height: 29px;
 
   @media (min-width:$tablet-width) {
-    top: -97px;
-    left: 29px;
+    top: -85px;
+    left: 27px;
   }
 }
 
@@ -142,8 +147,8 @@
   height: 30px;
 
   @media (min-width:$tablet-width) {
-    top: -97px;
-    left: 29px;
+    top: -87px;
+    left: 28px
   }
 }
 
@@ -153,7 +158,7 @@
   height: 31px;
 
   @media (min-width:$tablet-width) {
-    top: -97px;
-    left: 29px;
+    top: -87px;
+    left: 27px;
   }
 }
