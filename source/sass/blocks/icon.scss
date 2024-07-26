@@ -5,11 +5,16 @@
     width: 20px;
     height: 20px;
     display: block;
-    right: 11px;
-    top: 18px;
+    right: 13px;
+    top: 13px;
     mask-size: cover;
     mask-repeat: no-repeat;
     background-color: #000000;
+
+    @media (min-width:$tablet-width) {
+      right: 15px;
+      top: 16px;
+    }
   }
 
   &:focus-within::before {

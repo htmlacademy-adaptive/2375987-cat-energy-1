@@ -88,7 +88,7 @@
 
   <main class="main-container">
     <section class="program-diet">
-      <div class="program-diet__wrapper container">
+      <div class="container program-diet__wrapper ">
         <h1 class="program-diet__title title">Подбор программы</h1>
         <p class="program-diet__description">Заполните анкету, и мы подберем
           <span class="text">программу питания для вашего кота</span></p>
@@ -119,7 +119,7 @@
             </fieldset>
 
             <!-- choose a diet -->
-            <fieldset class="program-form__group">
+            <fieldset class="program-form__group program-form__group--radio">
               <legend class="visually-hidden">Выбрать программу по рациону питания</legend>
               <ul class="program-form__list program-form__list--radio">
                 <li class="program-form__item">
@@ -149,8 +149,8 @@
             </fieldset>
           </div>
           <!-- the questionnaire of the cat's owner -->
-          <fieldset class="program-form__group">
-            <legend class="program-form__title line">Контактные данные
+          <fieldset class="program-form__group program-form__group--owner">
+            <legend class="program-form__title program-form__title--owner line">Контактные данные
               (владельца кота)</legend>
             <ul class="program-form__list program-form__list--owner">
               <li class="program-form__item__profile program-form__item--icon">
@@ -172,8 +172,8 @@
             </ul>
           </fieldset>
 
-          <fieldset class="program-form__group">
-            <legend class="program-form__title line">Комментарии</legend>
+          <fieldset class="program-form__group program-form__group--feedback">
+            <legend class="program-form__title line program-form__title--feedback">Комментарии</legend>
             <label for="feedback">
               <textarea class="program-form__feedback" name="feedback" id="feedback"
                 placeholder="Расскажите обо всех повадках кота."></textarea>
@@ -181,7 +181,7 @@
           </fieldset>
 
           <fieldset class="program-form__group program-form__group--checkbox">
-            <legend class="program-form__title line">Дополнительно</legend>
+            <legend class="program-form__title line program-form__title--additionally">Дополнительно</legend>
             <ul class="program-form__list program-form__list--checkbox">
               <li class="program-form__item">
                 <label class="control" for="sweetener">
@@ -227,12 +227,12 @@
  <!-- contacts -->
  <footer class="page-footer">
   <!-- contacts -->
-  <section class="contacts">
+  <section class="contacts contacts--color">
     <h2 class="visually-hidden">Контакты</h2>
-    <div class="contacts__wrapper">
+    <div class="container contacts__wrapper">
       <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
       <address class="contacts__adress">
-        <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span class="contacts__block">Санкт-Петербург</span></p>
       </address>
     </div>
   </section>

@@ -7,7 +7,7 @@
   }
 
   @media (min-width:$desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 63px;
     margin-top: 0;
   }
 }
@@ -20,7 +20,7 @@
 
   @media (min-width:$mobile-width) {
     flex-direction: column;
-    gap: 20px;
+    gap: 23px;
   }
 
   @media (min-width:$tablet-width) {
@@ -75,11 +75,19 @@
 
   @media (min-width:$desktop-width) {
     text-align: center;
+    margin-bottom: 73px;
+    padding-left: 34px;
   }
 
   &--position {
     @media (max-width:$mobile-width-only) {
       padding-left: 69px;
+    }
+  }
+
+  &--left {
+    @media (min-width:$desktop-width) {
+      padding-left: 74px;
     }
   }
 }
@@ -108,8 +116,9 @@
   @media (min-width:$desktop-width) {
     width: 100px;
     height: 100px;
-    left: -14px;
-    top: -46px;
+    left: 2px;
+    top: -30px;
+
   }
 }
 
@@ -139,8 +148,8 @@
     width: 70px;
     height: 97px;
     background-image: url("../../img/icon/icon-ration-cat-desktop.svg");
-    top: -54px;
-    left: 2px;
+    top: -38px;
+    left: 17px;
   }
 }
 
@@ -170,8 +179,8 @@
     width: 134px;
     height: 56px;
     background-image: url("../../img/icon/icon-ration-tiger-desktop.svg");
-    top: -16px;
-    left: -27px;
+    top: -11px;
+    left: -17px;
   }
 }
 
@@ -191,18 +200,22 @@
     line-height: 24px;
     margin-bottom: 52px;
   }
-}
 
-.ration__text::after {
-  position: absolute;
-  content: "";
-  display: block;
+  @media (min-width:$desktop-width) {
+    margin-bottom: 27px;
+  }
 
-  @media (max-width:$mobile-width-only) {
-    background-color: #d9d9d9;
-    height: 1px;
-    right: 0;
-    left: 0;
-    bottom: -26px;
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+
+    @media (max-width:$mobile-width-only) {
+      background-color: #d9d9d9;
+      height: 1px;
+      right: 0;
+      left: 0;
+      bottom: -22px;
+    }
   }
 }

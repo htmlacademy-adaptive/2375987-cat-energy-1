@@ -18,6 +18,12 @@
     padding: 0;
     margin: 0;
   }
+
+  &--color {
+    @media (min-width:$tablet-width) and (max-width:1339px) {
+      background-color: var(--basic-grey);
+    }
+  }
 }
 
 .contacts__wrapper {
@@ -30,8 +36,8 @@
     padding: 60px 80px;
     box-sizing: border-box;
     position: absolute;
-    left: 150px;
-    bottom: -212px;
+    left: 112px;
+    bottom: -296px;
     z-index: 1;
   }
 }
@@ -87,8 +93,9 @@
     line-height: 20px;
   }
 }
-.contacts__block{
-  @media (min-width:$tablet-width){
+
+.contacts__block {
+  @media (min-width:$tablet-width) {
     display: block;
     padding-top: 20px;
   }
