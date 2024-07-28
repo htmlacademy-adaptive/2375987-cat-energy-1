@@ -89,13 +89,13 @@
   <main class="main-container container">
     <!-- catalog -->
     <section class="catalog-product">
-      <h1 class="catalog-product__title title">Каталог продукции</h1>
+      <h1 class="title catalog-product__title ">Каталог продукции</h1>
 
       <!-- card-1 -->
       <div class="product-card__wrapper">
         <article class="product-card">
           <div class="product-card__container">
-            <a class="product-card__link" href="#">
+            <a class="product-card__link product-card__link--card" href="#">
               <picture>
                 <source media="(min-width:768px)" srcset="img/img-chicken-pro500-tablet.png 1x" width="161"
                   height="172">
@@ -103,7 +103,7 @@
                   height="86">
               </picture>
             </a>
-            <a class="product-card__link-title">
+            <a class="product-card__link-title product-card__link-title--name">
               <h3 class="product-card__title">Cat Energy PRO 500&nbsp;г</h3>
             </a>
 
@@ -136,7 +136,7 @@
               </picture>
             </a>
             <a class="product-card__link-title">
-              <h3 class="product-card__title">Cat Energy PRO 1000&nbsp;г</h3>
+              <h3 class="product-card__title product-card__link-title--name">Cat Energy PRO 1000&nbsp;г</h3>
             </a>
 
             <ul class="product-card__list">
@@ -160,14 +160,14 @@
         <!-- card-3 -->
         <article class="product-card">
           <div class="product-card__container">
-            <a class="product-card__link" href="#">
+            <a class="product-card__link product-card__link--card" href="#">
               <picture>
                 <source media="(min-width:768px)" srcset="img/img-fish-pro500-tablet.png" width="163" height="174">
                 <img class="product-card__img" src="img/img-fish-pro500.png" alt="Изображение продукции" width="68"
                   height="86">
               </picture>
             </a>
-            <a class="product-card__link-title">
+            <a class="product-card__link-title product-card__link-title--name">
               <h3 class="product-card__title">Cat Energy PRO 1000&nbsp;г</h3>
             </a>
 
@@ -200,7 +200,7 @@
               </picture>
             </a>
             <a class="product-card__link-title">
-              <h3 class="product-card__title">Cat Energy PRO 1000&nbsp;г</h3>
+              <h3 class="product-card__title product-card__link-title--name">Cat Energy PRO 1000&nbsp;г</h3>
             </a>
 
             <ul class="product-card__list">
@@ -219,19 +219,20 @@
             </ul>
           </div>
           <a class="button button--card" href="form.html">Заказать</a>
+
         </article>
 
         <!-- card-5-->
         <article class="product-card">
           <div class="product-card__container">
-            <a class="product-card__link" href="#">
+            <a class="product-card__link product-card__link--card" href="#">
               <picture>
                 <source media="(min-width:768px)" srcset="img/img-buckwheat-pro500-tablet.png" width="161" height="172">
                 <img class="product-card__img" src="img/img-buckwheat-pro500.png" alt="Изображение продукции" width="68"
                   height="86">
               </picture>
             </a>
-            <a class="product-card__link-title">
+            <a class="product-card__link-title product-card__link-title--name">
               <h3 class="product-card__title">Cat Energy slim
                 500&nbsp;г</h3>
             </a>
@@ -265,7 +266,7 @@
                   width="84" height="100">
               </picture>
             </a>
-            <a class="product-card__link-title">
+            <a class="product-card__link-title product-card__link-title--name">
               <h3 class="product-card__title">Cat Energy slim
                 1000&nbsp;г</h3>
             </a>
@@ -288,10 +289,11 @@
           <a class="button button--card" href="form.html">Заказать</a>
         </article>
 
+
         <!-- card-7-->
         <article class="product-card">
           <div class="product-card__container">
-            <a class="product-card__link" href="#">
+            <a class="product-card__link product-card__link--card" href="#">
               <picture>
                 <source media="(min-width:768px)" srcset="img/img-rice-pro500-tablet.png" width="163" height="174">
                 <img class="product-card__img" src="img/img-rice-pro500.png" alt="Изображение продукции" width="68"
@@ -299,7 +301,7 @@
               </picture>
             </a>
 
-            <a class="product-card__link-title">
+            <a class="product-card__link-title product-card__link-title--name">
               <h3 class="product-card__title">Cat Energy SLIM
                 500&nbsp;г</h3>
             </a>
@@ -321,12 +323,16 @@
           </div>
           <a class="button button--card" href="form.html">Заказать</a>
         </article>
+
+
         <div class="product-card product-card--more">
           <div class="product-card__container product-card__container--more">
             <a class="product-card__link-title product-card__link-title--more">
               <h3 class="product-card__title product-card__title--more">Показать еще 100500 товаров</h3>
             </a>
-            <p class="product-card__description">На самом деле вкусов гораздо больше!</p>
+            <p class="product-card__description">На самом деле вкусов
+              <span class="product-card__text">гораздо больше!</span>
+            </p>
             <button class="button button--card-more" type="button">Показать все</button>
           </div>
         </div>
@@ -383,78 +389,77 @@
 
   </main>
 
-<!-- contacts -->
-<footer class="page-footer">
   <!-- contacts -->
-  <section class="contacts">
-    <h2 class="visually-hidden">Контакты</h2>
-    <div class="contacts__wrapper">
-      <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__adress">
-        <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
-      </address>
+  <footer class="page-footer">
+    <!-- contacts -->
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__wrapper">
+        <p class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+        <address class="contacts__adress">
+          <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span class="contacts__block">Санкт-Петербург</span></p>
+        </address>
+      </div>
+    </section>
+    <div class="page-footer__map" id="map">
+      <span class="visually-hidden"> карта</span>
     </div>
-  </section>
 
-  <div class="page-footer__map" id="map">
-    <span class="visually-hidden"> карта</span>
-  </div>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__inner container">
+        <div class="page-footer__logo">
+          <a href="index.html" class="page-footer__link" aria-label="Ссылка с логотипом сайта Кэт Энерджи">
+            <svg width="128" height="24" class="page-footer__img" aria-hidden="true" focusable="false">
+              <use xlink:href="#logo-cat"></use>
+            </svg>
+          </a>
+        </div>
 
-  <div class="page-footer__wrapper">
-    <div class="page-footer__inner container">
-      <div class="page-footer__logo">
-        <a href="index.html" class="page-footer__link" aria-label="Ссылка с логотипом сайта Кэт Энерджи">
-          <svg width="128" height="24" class="page-footer__img" aria-hidden="true" focusable="false">
-            <use xlink:href="#logo-cat"></use>
-          </svg>
-        </a>
-      </div>
+        <!-- social -->
+        <div class="footer-social">
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a class="footer-social__link footer-social-vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Страница в Вконтакте</span>
+                <svg width="27" height="17" class="footer-social__svg" aria-hidden="true" focusable="false">
+                  <use xlink:href="#vk"></use>
+                </svg>
+              </a>
+            </li>
 
-      <!-- social -->
-      <div class="footer-social">
-        <ul class="footer-social__list">
-          <li class="footer-social__item">
-            <a class="footer-social__link footer-social-vk" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Страница в Вконтакте</span>
-              <svg width="27" height="17" class="footer-social__svg" aria-hidden="true" focusable="false">
-                <use xlink:href="#vk"></use>
-              </svg>
-            </a>
-          </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link footer-social-youtube" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Ютуб канал Академии</span>
+                <svg width="24" height="19" class="footer-social__svg" aria-hidden="true" focusable="false">
+                  <use xlink:href="#youtube"></use>
+                </svg>
+              </a>
+            </li>
 
-          <li class="footer-social__item">
-            <a class="footer-social__link footer-social-youtube" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Ютуб канал Академии</span>
-              <svg width="24" height="19" class="footer-social__svg" aria-hidden="true" focusable="false">
-                <use xlink:href="#youtube"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="footer-social__item">
-            <a class="footer-social__link footer-social-telegram" href="https://www.youtube.com/user/htmlacademyru"
-              aria-label="Телеграмм канал HTML Академии">
-              <span class="visually-hidden">Телеграмм канал Академии</span>
-              <svg width="20" height="17" class="footer-social__svg" aria-hidden="true" focusable="false">
-                <use xlink:href="#telegram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- logo HTML academy -->
-      <div class="link-htmlacademy">
-        <a class="link-htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive"
-          aria-label="Сайт HTML Academy">
-          <span class="link-htmlacademy__text">HTML Academy</span>
-          <svg aria-hidden="true" focusable="false" width="27" height="34" class="link-htmlacademy__img">
-            <use xlink:href="#logo-academy"></use>
-          </svg>
-        </a>
+            <li class="footer-social__item">
+              <a class="footer-social__link footer-social-telegram" href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="Телеграмм канал HTML Академии">
+                <span class="visually-hidden">Телеграмм канал Академии</span>
+                <svg width="20" height="17" class="footer-social__svg" aria-hidden="true" focusable="false">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- logo HTML academy -->
+        <div class="link-htmlacademy">
+          <a class="link-htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="Сайт HTML Academy">
+            <span class="link-htmlacademy__text">HTML Academy</span>
+            <svg aria-hidden="true" focusable="false" width="27" height="34" class="link-htmlacademy__img">
+              <use xlink:href="#logo-academy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
   <script src="js/nav.js"></script>
   <script
     src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=f3249e4c-1d7d-4f10-904e-e5b6633d35f4"
