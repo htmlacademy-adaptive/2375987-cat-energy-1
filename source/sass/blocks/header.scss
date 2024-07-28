@@ -1,23 +1,26 @@
 .page-header {
-  padding-top: 13px;
-  padding-bottom: 15px;
+  // padding-top: 13px;
+  // padding-bottom: 15px;
 
-  @media (min-width:$tablet-width) {
-    padding-top: 25px;
-    padding-bottom: 0;
-  }
+  // @media (min-width:$tablet-width) {
+  //   padding-top: 25px;
+  //   padding-bottom: 0;
+  //   border: none;
+  // }
 
-  @media (min-width:$desktop-width) {
-    padding-top: 55px;
-  }
-    position: relative;
+  // @media (min-width:$desktop-width) {
+  //   padding-top: 55px;
+  // }
+
+  position: relative;
 
   &--content::before {
     content: "";
     display: block;
     background-color: var(--basic-green);
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url(../../img/hero-mobile-background.png);
+      image-set(url(../../img/hero-mobile-background.png) 1x,
+        url(../../img/hero-mobile-background2x.png) 2x);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -25,7 +28,7 @@
     height: 303px;
     z-index: -1;
     position: absolute;
-    top: 60px;
+    top: 67px;
 
     @media (min-width:$tablet-width) {
       display: none;
@@ -36,22 +39,77 @@
       width: 50%;
       height: 694px;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url(../../img/hero-desktop-background.png);
+        image-set(url(../../img/hero-desktop-background.png) 1x, url(../../img/hero-desktop-background2x.png)2x);
       background-position: left;
       position: absolute;
       top: 0;
       right: 0;
     }
+  }
+
+  .page-header__wrapper {
+     padding-top: 13px;
+  padding-bottom: 15px;
+
+  @media (min-width:$tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 0;
+    border: none;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-top: 55px;
+  }
+    border-bottom: 1px solid #e6e6e6;
+    @media (min-width:$tablet-width) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: none;
+    }
+
+    @media (max-width:$tablet-width) {
+      position: relative;
+    }
+
+  }
+}
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  height: 38px;
+
+  @media (min-width:$desktop-width) {
+    height: 50px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-.page-header__wrapper {
+.page-header__img {
   @media (min-width:$tablet-width) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin-right: 13px;
   }
-  @media (max-width:$tablet-width) {
-    position: relative;
-  }
+}
 
-}}
+.page-header__text {
+  width: 101px;
+  height: 18px;
+
+  @media (max-width:$mobile-width-only) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+ @media (min-width:$desktop-width) {
+  width: 118px;
+  height: 21px;
+ }
+}

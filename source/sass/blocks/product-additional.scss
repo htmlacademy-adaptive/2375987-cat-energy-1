@@ -20,13 +20,14 @@
   margin: 0;
 
   @media (min-width:$mobile-width) {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 
   @media (min-width:$tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 87px;
     text-align: left;
     font-size: 36px;
+    margin-left: 40px;
   }
 }
 
@@ -41,11 +42,13 @@
   }
 
   @media (min-width:$tablet-width) {
-    width: 632px;
+    width: 708px;
+    border: 1px solid rgb(205, 205, 205);
   }
 
   @media (min-width:$desktop-width) {
     width: 894px;
+    border: none;
   }
 }
 
@@ -58,10 +61,15 @@
   @media (min-width:$tablet-width) {
     padding: 27px 38px 29px 37px;
     display: grid;
-    grid-template-columns: 387px auto;
-    row-gap: 25px;
-    width: 100%;
+    grid-template-columns: 400px auto;
+    row-gap: 9px;
+    border-top: none;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgb(205, 205, 205);
+    }
   }
+
 
   @media (min-width:$desktop-width) {
     padding: 15px 0 17px 0;
@@ -81,6 +89,10 @@
   @media (min-width:$mobile-width) {
     display: grid;
     grid-template-columns: 132px auto;
+  }
+
+  @media (max-width:$mobile-width-only) {
+    gap: 112px;
   }
 
   @media (min-width:$tablet-width) {
@@ -116,7 +128,7 @@
   margin: 0;
 
   @media (max-width:$tablet-width) {
-    margin-bottom: 13px;
+    margin-bottom: 8px;
   }
 
   @media (min-width:$tablet-width) {
@@ -126,7 +138,7 @@
 
 .product-additional__wrapper {
   width: 280px;
-  padding: 186px 61px 40px 58px;
+  padding: 186px 61px 44px 58px;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,7 +154,7 @@
     padding: 71px 125px 69px 421px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       image-set(url(../../img/img-gift-tablet.png) 1x,
-        url(../img/image-gift-tablet2x.png)2x);
+        url(../img/image-gift-tablet2x.png) 2x);
 
   }
 
@@ -152,7 +164,8 @@
     padding: 186px 42px 43px;
     box-sizing: border-box;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url(../../img/img-gift.png);
+      image-set(url(../../img/img-gift.png) 1x,
+        url(../../img/img-gift2x.png) 2x);
     padding: 186px 42px 43px;
   }
 }

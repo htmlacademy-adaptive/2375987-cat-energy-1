@@ -1,42 +1,62 @@
 .slider {
+  margin: 0 auto;
   width: 280px;
   height: 256px;
   position: relative;
-
+  --position: 50%;
   @media (min-width:$tablet-width) {
     width: 560px;
     height: 512px;
   }
 }
 
-.slider_img {
-  width: 280px;
-  height: 256px;
+.slider__img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: right;
+  position: absolute;
+  top: 0;
+
+  &--before {
+    left: 0;
+    width: var(--position);
+    object-position: left;
+  }
 
   &--after {
-    position: absolute;
-    top: 0;
     right: 0;
-  }
-
-  @media (min-width:$tablet-width) {
-    width: 560px;
-    height: 512px;
+    width: calc(100% - var(--position));
+    object-position: right;
   }
 }
 
-.slider_toggles {
+.slider__input {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  inset: 0;
+  cursor: pointer;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  outline: 0;
+}
+
+.slider__input:focus-visible~.slider__toggles {
+  outline: 5px solid black;
+  outline-offset: 3px;
+}
+
+.slider__toggles {
+  position: absolute;
+  top: 50%;
+  left: 120%;
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   border: 2px solid #666666;
   border-radius: 20px;
   background-color: #ffffff;
+  left: var(--position);
+  pointer-events: none;
 
   &::before,
   &::after {
@@ -44,12 +64,12 @@
     position: absolute;
     display: block;
     width: 4px;
-    height: calc(256px / 2 - 64px / 2);
+    height: calc(280px / 2 - 40px / 2);
     background-color: #666666;
     right: 16px;
 
     @media (min-width:$tablet-width) {
-      height: calc(512px/ 2 - 64px / 2);
+      height: calc(512px/ 2 - 40px / 2);
     }
   }
 
@@ -62,7 +82,7 @@
   }
 
   &:hover {
-    border: 2px solid var(--basic-green);
+    border-color: var(--basic-green);
 
     &::before {
       background-color: var(--basic-green);
@@ -74,7 +94,7 @@
   }
 
   &:active {
-    border: 2px solid rgb(94, 170, 47);
+    border-color: rgb(94, 170, 47);
 
     &::before {
       background-color: rgb(94, 170, 47);
@@ -84,9 +104,10 @@
       background-color: rgb(94, 170, 47);
     }
   }
-
+}
   .toggle-img {
     fill: #666666;
+
 
     &:hover {
       fill: var(--basic-green);
@@ -96,4 +117,7 @@
       fill: #5eaa2f;
     }
   }
-}
+
+// .toggle-img:has(.slider_toggles:hover) {
+//   fill: var(--basic-green);
+// }

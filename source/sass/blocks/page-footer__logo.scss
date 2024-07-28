@@ -1,4 +1,16 @@
-.page-footer__link{
+.page-footer__link {
   display: block;
   text-align: center;
+}
+
+.page-footer__img {
+  fill: #111111;
+}
+
+.page-footer__link:hover svg {
+  fill: #3e3e3e;
+}
+
+.page-footer__link:active svg {
+  fill: #6b6b6b;
 }
