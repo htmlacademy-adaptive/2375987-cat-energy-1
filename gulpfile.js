@@ -18,6 +18,10 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
+//HTML
+const html = () =>{
+  return gulp.src('sourve/*.html')
+}
 // Server
 
 const server = (done) => {
