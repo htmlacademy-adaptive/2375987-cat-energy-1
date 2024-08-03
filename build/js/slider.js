@@ -1,0 +1,1 @@
+const slider=document.querySelector(".slider"),slider__input=document.querySelector(".slider__input");document.addEventListener("input",(e=>{slider.style.setProperty("--position",slider__input.value+"%")}));
