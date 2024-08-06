@@ -84,7 +84,8 @@ const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh({
       webp: {}
-    }))
+    })
+  )
     .pipe(gulp.dest('build/img'))
 }
 
@@ -155,9 +156,42 @@ const watcher = () => {
 }
 
 
-export default gulp.series(
-  clean, copy, sprite, svg, createWebp, copyImages, optimizeImageS, js, html, styles, server, watcher
+// export default gulp.series(
+//   clean, copy, sprite, svg, createWebp, copyImages, optimizeImageS, js, html, styles, server, watcher
+// );
+
+// build
+
+export const build = gulp.series(
+  clean,
+  copy,
+  optimizeImageS,
+  gulp.parallel(
+    styles,
+    html,
+    js,
+    svg,
+    sprite,
+    createWebp,
+  )
 );
 
+// default
 
-
+export default gulp.series(
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    js,
+    svg,
+    sprite,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  )
+);
