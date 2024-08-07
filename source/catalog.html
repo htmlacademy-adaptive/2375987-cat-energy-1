@@ -100,8 +100,11 @@
               <picture>
                 <source media="(min-width:768px)" srcset="img/img-chicken-pro500-tablet.png 1x" width="161"
                   height="172">
-                <img class="product-card__img" src="img/img-chicken-pro500.png" alt="Изображение продукции" width="68"
+                <source type="image/webp"
+                  srcset="img/img-chicken-pro500-tablet.webp 1x, img/img-chicken-pro500-tablet@2x.webp 2x" width="68"
                   height="86">
+                <img class="product-card__img" src="img/img-chicken-pro500.png 1x, img/img-chicken-pro500@2x.png 2x"
+                  alt="Изображение продукции" width="68" height="86">
               </picture>
             </a>
             <a class="product-card__link-title product-card__link-title--name">
@@ -398,7 +401,8 @@
       <div class="contacts__wrapper">
         <p class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <address class="contacts__adress">
-          <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span class="contacts__block">Санкт-Петербург</span></p>
+          <p class="contacts__adress__office"> ул. Большая Конюшенная, д. 19/8 <span
+              class="contacts__block">Санкт-Петербург</span></p>
         </address>
       </div>
     </section>
