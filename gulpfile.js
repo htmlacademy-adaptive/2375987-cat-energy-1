@@ -18,14 +18,11 @@ import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
 // оптимизирую графику svg
 import svgo from 'gulp-svgo';
-// создаю спрайт
-// не создаю спрайт, не получается
-import svgstore from 'gulp-svgstore';
+// создаю стек
+import {stacksvg} from 'gulp-stacksvg';
 
 //  плагин удаления файлов
-import {
-  deleteAsync
-} from 'del';
+import {deleteAsync} from 'del';
 
 // Styles
 
@@ -84,8 +81,7 @@ const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh({
       webp: {}
-    })
-  )
+    }))
     .pipe(gulp.dest('build/img'))
 }
 
@@ -96,17 +92,13 @@ const svg = () => {
     .pipe(svgo())
     .pipe(gulp.dest('build/img'))
 }
-// sprite
-const sprite = () => {
+
+//stacksvg
+const createStack = () => {
   return gulp.src('source/img/svg/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
+    .pipe(stacksvg())
     .pipe(gulp.dest('build/img'))
 }
-
 // copy fonts, favicon
 
 const copy = (done) => {
@@ -121,7 +113,6 @@ const copy = (done) => {
 }
 
 // Clean
-
 const clean = () => {
   return deleteAsync('build');
 }
@@ -171,7 +162,7 @@ export const build = gulp.series(
     html,
     js,
     svg,
-    sprite,
+    createStack,
     createWebp,
   )
 );
@@ -187,7 +178,7 @@ export default gulp.series(
     html,
     js,
     svg,
-    sprite,
+    createStack,
     createWebp
   ),
   gulp.series(

@@ -63,11 +63,12 @@
           <source media="(min-width:768px)" srcset="img/logo-img-tablet.svg" width="60" height="50">
           <img class="page-header__img" src="img/logo-img.svg" width="33" height="38" alt="Логотип изображение кота">
         </picture>
-        <!-- <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта"> -->
-        <svg role="img" aria-label="Кэт Энерджи" width="101" height="18" class="page-header__text">
-          <use xlink:href="#logo-cat"></use>
-        </svg>
+        <picture>
+          <source media="(min-width:768px)" srcset="img/logo-tablet.svg" width="101" height="18">
+          <img class="page-header__text" src="img/logo.svg" width="101" height="18" alt="Логотип сайта">
+        </picture>
       </a>
+
       <nav class="page-navigation page-navigation--closed page-navigation--nojs">
         <button class="page-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="page-navigation__inner">
@@ -209,13 +210,15 @@
               height="256" alt="Изображение полного котика">
           </picture>
           <picture>
-            <source media="(min-width:768px)" type="image/webp"  srcset="img/slider/cat-after-tablet.webp 1x, img/slider/cat-after-tablet@2x.webp 2x" width="560"
-            height="512">
+            <source media="(min-width:768px)" type="image/webp"
+              srcset="img/slider/cat-after-tablet.webp 1x, img/slider/cat-after-tablet@2x.webp 2x" width="560"
+              height="512">
             <source media="(min-width:768px)"
               srcset="img/slider/cat-after-tablet.png 1x, img/slider/cat-after-tablet@2x.png 2x" width="560"
               height="512">
-              <source type="image/webp"
-              srcset="img/slider/cat-after-mobile.webp 1x, img/slider/cat-after-mobile@2x.webp 2x" width="280" height="256">
+            <source type="image/webp"
+              srcset="img/slider/cat-after-mobile.webp 1x, img/slider/cat-after-mobile@2x.webp 2x" width="280"
+              height="256">
             <img class="slider__img slider__img--after" src="img/slider/cat-after-mobile.png" width="280" height="256"
               srcset="img/slider/cat-after-mobile.png 1x, img/slider/cat-after-mobile@2x.png 2x"
               alt="Изображение стройного котика">
@@ -265,30 +268,21 @@
         <div class="footer-social">
           <ul class="footer-social__list">
             <li class="footer-social__item">
-              <a class="footer-social__link footer-social-vk" href="https://vk.com/htmlacademy">
+              <a class="footer-social__link footer-social__link--vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Страница в Вконтакте</span>
-                <svg width="27" height="17" class="footer-social__svg" aria-hidden="true" focusable="false">
-                  <use xlink:href="#vk"></use>
-                </svg>
               </a>
             </li>
 
             <li class="footer-social__item">
-              <a class="footer-social__link footer-social-youtube" href="https://t.me/htmlacademy">
+              <a class="footer-social__link footer-social__link--youtube" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Ютуб канал Академии</span>
-                <svg width="24" height="19" class="footer-social__svg" aria-hidden="true" focusable="false">
-                  <use xlink:href="#youtube"></use>
-                </svg>
               </a>
             </li>
 
             <li class="footer-social__item">
-              <a class="footer-social__link footer-social-telegram" href="https://www.youtube.com/user/htmlacademyru"
-                aria-label="Телеграмм канал HTML Академии">
+              <a class="footer-social__link footer-social__link--telegram"
+                href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Телеграмм канал Академии</span>
-                <svg width="20" height="17" class="footer-social__svg" aria-hidden="true" focusable="false">
-                  <use xlink:href="#telegram"></use>
-                </svg>
               </a>
             </li>
           </ul>
