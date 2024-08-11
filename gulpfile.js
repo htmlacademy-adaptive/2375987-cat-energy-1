@@ -19,10 +19,17 @@ import squoosh from 'gulp-libsquoosh';
 // оптимизирую графику svg
 import svgo from 'gulp-svgo';
 // создаю стек
-import {stacksvg} from 'gulp-stacksvg';
+import {
+  stacksvg
+} from 'gulp-stacksvg';
 
 //  плагин удаления файлов
-import {deleteAsync} from 'del';
+import {
+  deleteAsync
+} from 'del';
+
+import posthtml from 'gulp-posthtml';
+import include from 'posthtml-include';
 
 // Styles
 
@@ -36,6 +43,7 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', {
       sourcemaps: '.'
     }))
@@ -45,6 +53,10 @@ export const styles = () => {
 //HTML
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(posthtml([
+      include()
+    ]))
+
     .pipe(htmlmin({
       removeComments: true,
       collapseWhitespace: true
@@ -145,11 +157,6 @@ const watcher = () => {
   gulp.watch('source/js/script.js', gulp.series(js));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
-
-
-// export default gulp.series(
-//   clean, copy, sprite, svg, createWebp, copyImages, optimizeImageS, js, html, styles, server, watcher
-// );
 
 // build
 
