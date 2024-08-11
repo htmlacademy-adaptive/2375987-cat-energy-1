@@ -56,7 +56,7 @@
   border-radius: 20px;
   background-color: #ffffff;
   left: var(--position);
-  pointer-events: none;
+  // pointer-events: none;
 
   &::before,
   &::after {
@@ -118,6 +118,3 @@
     }
   }
 
-// .toggle-img:has(.slider_toggles:hover) {
-//   fill: var(--basic-green);
-// }

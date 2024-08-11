@@ -167,8 +167,8 @@ export const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    js,
     svg,
+    js,
     createStack,
     createWebp,
   )
