@@ -164,10 +164,10 @@ export const build = gulp.series(
   clean,
   copy,
   optimizeImageS,
+  svg,
   gulp.parallel(
     styles,
     html,
-    svg,
     js,
     createStack,
     createWebp,
