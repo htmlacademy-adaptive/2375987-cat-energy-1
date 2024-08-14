@@ -38,17 +38,36 @@
   height: 22px;
   transition: color 0.3s ease-in-out;
 
-  &:hover svg {
-    fill: #68b738;
-  }
-
-  &:active svg {
-    fill: #68b738;
-    opacity: 0.3;
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    mask-repeat: no-repeat;
+    mask-size: 28px 22px;
+    mask-position: center;
+    background-color: #666666;
   }
 }
 
 
-.footer-social__svg {
-  fill: #666666;
+.footer-social__link--vk::before {
+  mask-image: url("../img/stack.svg#vkontakte");
+
+}
+
+.footer-social__link--youtube::before {
+  mask-image: url("../img/stack.svg#youtube");
+}
+
+.footer-social__link--telegram::before {
+  mask-image: url("../img/stack.svg#telegram");
+}
+
+.footer-social__link:hover:before {
+  background-color: #68b738;
+}
+.footer-social__link:active:before {
+  background-color: #68b738;
+      opacity: 0.3;
 }
