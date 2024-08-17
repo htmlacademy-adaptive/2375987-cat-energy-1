@@ -29,6 +29,7 @@
     font-size: 36px;
     margin-left: 40px;
   }
+
   @media (min-width:$desktop-width) {
     margin-left: 0;
   }
@@ -113,6 +114,12 @@
 .product-additional__volume {
   @media (min-width:$tablet-width) {
     font-size: 16px;
+    display: inline;
+    text-align: right;
+  }
+
+  @media (min-width:$desktop-width) {
+    text-align: left;
   }
 }
 
