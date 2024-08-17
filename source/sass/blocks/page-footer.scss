@@ -69,8 +69,15 @@
   display: block;
   width: 100%;
   height: 365px;
+  background-image: url("../../img/map-mobile.jpg");
+  background-color: #5b9f33;
 
   @media (min-width:$tablet-width) {
     height: 400px;
+    background-image: url("../../img/map-tablet.jpg");
+  }
+
+  @media (min-width:$desktop-width) {
+    background-image: url("../../img/map-desktop.jpg");
   }
 }

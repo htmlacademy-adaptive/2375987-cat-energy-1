@@ -1,9 +1,9 @@
 .catalog-product{
   margin-bottom: 25px;
   @media (min-width:$tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
-  @media (min-width:$tablet-width) {
+  @media (min-width:$desktop-width) {
     margin-bottom: 76px;
   }
 }

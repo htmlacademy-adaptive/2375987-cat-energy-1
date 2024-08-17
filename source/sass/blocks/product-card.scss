@@ -6,7 +6,7 @@
   }
 
   @media (min-width:$desktop-width) {
-    gap:48px 80px;
+    gap: 60px 80px;
   }
 }
 
@@ -21,7 +21,7 @@
   @media (min-width:$tablet-width) {
     width: 324px;
     background-image: linear-gradient(#ffffff 85px, #f2f2f2 85px);
-    padding: 10px 37px 40px;
+    padding: 15px 37px 40px;
     box-sizing: border-box;
     border: none;
   }
@@ -40,6 +40,10 @@
       padding: 163px 37px 40px;
       border: 1px solid #ebebeb;
       margin-top: 84px;
+    }
+    @media (min-width:$desktop-width) {
+      margin-top: 68px;
+
     }
   }
 }
@@ -81,16 +85,13 @@
   }
 
   @media (min-width:$tablet-width) {
-    width: 200px;
+    margin: 0 auto;
+    width: 169px;
     height: 210px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 26px
+    margin-bottom: 22px;
   }
-
   @media (min-width:$desktop-width) {
-    width: 200px;
-    height: 210px;
+    margin-bottom: 12px;
   }
 }
 
@@ -99,6 +100,22 @@
   object-fit: cover;
   object-position: center;
   margin: 0 auto;
+
+  &--small {
+    @media (min-width:$tablet-width) {
+      padding: 19px 0;
+    }
+  }
+
+  &--big {
+    @media (min-width:$tablet-width) {
+      padding: 5px 0;
+    }
+
+    @media (min-width:$desktop-width) {
+      padding: 7px 0;
+    }
+  }
 }
 
 
@@ -129,7 +146,7 @@
 
     @media (min-width:$desktop-width) {
       margin-bottom: 30px;
-      padding-left:15px;
+      padding-left: 15px;
     }
   }
 
@@ -145,7 +162,7 @@
 .product-card__title {
   margin: 0;
   color: var(--color-text);
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -185,8 +202,8 @@
     width: 60px;
     height: 60px;
     background-image: url("../../img/icon/more-plus.svg");
-    top: -106px;
-    right: 40px;
+    top: -112px;
+    right: 41px;
   }
 
   @media (min-width:$desktop-width) {
