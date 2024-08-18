@@ -1,13 +1,13 @@
 .ration {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   @media (min-width:$tablet-width) {
-    margin-bottom: 39px;
+    margin-bottom: 42px;
     margin-top: -21px;
   }
 
   @media (min-width:$desktop-width) {
-    margin-bottom: 63px;
+    margin-bottom: 70px;
     margin-top: 0;
   }
 }
@@ -24,7 +24,7 @@
   }
 
   @media (min-width:$tablet-width) {
-    gap: 30px;
+    gap: 27px;
   }
 
   @media (min-width:$desktop-width) {
@@ -50,7 +50,7 @@
 
   @media (min-width:$desktop-width) {
     width: 570px;
-    padding: 77px 61px 59px 52px;
+    padding: 77px 61px 54px 52px;
   }
 }
 

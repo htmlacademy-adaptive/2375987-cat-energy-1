@@ -1,5 +1,4 @@
 .page-header {
-
   @media (min-width:$desktop-width) {
     position: relative;
   }
@@ -55,6 +54,10 @@
   align-items: center;
   height: 38px;
 
+  @media (max-width:$mobile-width-only) {
+    padding-bottom: 14px;
+  }
+
   @media (min-width:$desktop-width) {
     height: 50px;
   }
@@ -80,8 +83,8 @@
 
   @media (max-width:$mobile-width-only) {
     position: absolute;
-    top: 21px;
-    right: 93px;
+    top: 23px;
+    right: 110px;
   }
 
   @media (min-width:$desktop-width) {

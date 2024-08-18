@@ -1,5 +1,9 @@
 .product-additional {
   margin-bottom: 35px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 74px;
+  }
 }
 
 .product-additional__inner {
@@ -102,11 +106,12 @@
 
   @media (min-width:$tablet-width) {
     display: grid;
-    grid-template-columns: 132px auto;
+    grid-template-columns: 139px auto;
     gap: 49px;
   }
 
   @media (min-width:$desktop-width) {
+    grid-template-columns: 132px auto;
     gap: 112px;
   }
 }
@@ -190,6 +195,10 @@
   line-height: 20px;
   text-align: center;
   position: relative;
+
+  @media (min-width:$tablet-width) {
+    text-align: left;
+  }
 }
 
 .bg {
