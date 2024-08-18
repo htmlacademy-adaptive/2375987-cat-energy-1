@@ -8,6 +8,7 @@
     @media (min-width:$tablet-width) {
       margin-bottom: 72px;
     }
+
     @media (min-width:$desktop-width) {
       margin-bottom: 0;
     }
@@ -17,6 +18,7 @@
     @media (min-width:$tablet-width) {
       margin-bottom: 64px;
     }
+
     @media (min-width:$desktop-width) {
       margin-bottom: 0;
     }
@@ -36,13 +38,21 @@
 
   &--owner {
     @media (min-width:$tablet-width) {
-      margin-bottom: 68px;
+      margin-bottom: 66px;
+    }
+
+    @media (min-width:$desktop-width) {
+      margin-bottom: 69px;
     }
   }
 
   &--feedback {
     @media (min-width:$tablet-width) {
       margin-bottom: 63px;
+    }
+
+    @media (min-width:$desktop-width) {
+      margin-bottom: 67px;
     }
   }
 }
@@ -96,7 +106,7 @@
     @media (min-width:$desktop-width) {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap:80px;
+      gap: 80px;
     }
   }
 }
@@ -173,7 +183,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    padding: 6px 40px 13px 20px;
+    padding: 7px 40px 13px 20px;
   }
 }
 
@@ -221,7 +231,7 @@
 
 .program-form__title {
   color: var(--color-text);
-  font-family: "Oswald","Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
@@ -243,8 +253,9 @@
 
   &--owner {
     @media (min-width:$tablet-width) {
-      margin-bottom: 78px;
+      margin-bottom: 76px;
     }
+
     @media (min-width:$desktop-width) {
       margin-bottom: 75px;
     }
@@ -254,8 +265,9 @@
     @media (min-width:$tablet-width) {
       margin-bottom: 84px;
     }
+
     @media (min-width:$desktop-width) {
-      margin-bottom: 83px;
+      margin-bottom: 79px;
     }
   }
 }
@@ -270,7 +282,7 @@
   text-transform: uppercase;
   width: 100%;
   box-sizing: border-box;
-  padding: 14px 14px 99px 15px;
+  padding: 14px 5px 99px 15px;
   border: 1px solid rgb(231, 231, 231);
   cursor: pointer;
   resize: vertical;
@@ -278,6 +290,11 @@
   @media (min-width:$tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 10px 5px 104px 21px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 7px 5px 104px 21px;
   }
 
   &:hover {
@@ -302,4 +319,11 @@
   line-height: 16px;
   margin: 0;
   text-align: center;
+
+  @media (min-width:$tablet-width) {
+    padding-top: 16px;
+  }
+  @media (min-width:$desktop-width) {
+    padding-top: 19px;
+  }
 }

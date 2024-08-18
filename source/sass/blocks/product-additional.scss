@@ -4,6 +4,10 @@
   @media (min-width:$tablet-width) {
     margin-bottom: 74px;
   }
+
+  @media (min-width:$desktop-width) {
+    margin-bottom: 17px;
+  }
 }
 
 .product-additional__inner {
@@ -36,6 +40,7 @@
 
   @media (min-width:$desktop-width) {
     margin-left: 0;
+    margin-bottom: 84px;
   }
 }
 
@@ -75,6 +80,16 @@
     border-top: none;
 
     &:not(:last-child) {
+      border-bottom: 1px solid rgb(205, 205, 205);
+    }
+
+    &:first-child {
+      @media (min-width:$desktop-width) {
+        border-top: 1px solid rgb(205, 205, 205);
+      }
+    }
+
+    @media (min-width:$desktop-width) {
       border-bottom: 1px solid rgb(205, 205, 205);
     }
   }
@@ -198,6 +213,10 @@
 
   @media (min-width:$tablet-width) {
     text-align: left;
+  }
+
+  @media (min-width:$desktop-width) {
+    text-align: center;
   }
 }
 

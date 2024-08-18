@@ -3,8 +3,7 @@
   padding-bottom: 32px;
 
   @media (min-width:$tablet-width) {
-    padding: 65px;
-    padding-bottom: 40px;
+    padding: 65px 65px 36px;
   }
 
   @media (min-width:$desktop-width) {
