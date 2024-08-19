@@ -1,5 +1,9 @@
 .link-htmlacademy {
   position: relative;
+
+  @media (min-width:$tablet-width) {
+    max-width: 200px;
+  }
 }
 
 .link-htmlacademy__link {

@@ -1,6 +1,7 @@
 .control {
   display: flex;
   align-items: center;
+
 }
 
 .control-input {
@@ -35,6 +36,7 @@
     border: 1px solid rgb(186, 186, 186);
     opacity: 0.3;
   }
+
 }
 
 .control-input--radio:checked::before {

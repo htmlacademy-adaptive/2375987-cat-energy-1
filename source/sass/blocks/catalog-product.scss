@@ -1,12 +1,27 @@
-.catalog-product{
+.catalog-product {
   margin-bottom: 29px;
+
   @media (min-width:$tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 75px;
   }
+
   @media (min-width:$desktop-width) {
     margin-bottom: 80px;
   }
 }
+
+.catalog-product__wrapper {
+  @media (min-width:$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 57px 60px;
+  }
+
+  @media (min-width:$desktop-width) {
+    gap: 62px 80px;
+  }
+}
+
 .catalog-product__title {
   padding: 27px 0 41px 0;
 

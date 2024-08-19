@@ -42,7 +42,7 @@
   }
 
   @media (min-width:$desktop-width) {
-    gap: 92px
+    gap:83px;
   }
 
 }
@@ -62,7 +62,7 @@
   }
 
   @media (min-width:$desktop-width) {
-    width: 234px;
+    width: 242px;
   }
 
   &::before {
@@ -97,12 +97,9 @@
       position: absolute;
       display: inline-block;
       bottom: 0;
-      right: 9px;
+      right: 15px;
     }
   }
-
-
-
 
   .advantages__description {
     margin: 0;
@@ -135,16 +132,16 @@
         font-size: 16px;
       }
     }
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      top: 14px;
+      left: -63px;
+    }
   }
 
-  .advantages__description::after {
-    display: block;
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    top: 14px;
-    left: -63px;
-  }
 
   .advantages__description--icon-structure::after {
     background-image: url("../../img/icon/icon-structure.svg");
