@@ -36,23 +36,16 @@
   &--link {
     background-color: var(--basic-grey);
     color: var(--color-text);
-    padding: 1px 39px 6px 1px;
-    background-image: url("../../img/icon/icon-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: right;
     background-size: 24px 12px;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
-
+    padding-right: 25px;
     @media (min-width:$tablet-width) {
-      padding: 1px 50px 6px 1px;
       font-size: 20px;
       font-weight: 400;
       line-height: 30px;
-      background-position: right 9px;
     }
-
   }
 
   &--card {

@@ -221,3 +221,35 @@
     }
   }
 }
+
+.ration__link {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/icon/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: -8px center;
+    width: 32px;
+    height: 12px;
+    right: -31px;
+    top: 3px;
+    transition: background-position .2s;
+    @media (min-width:$tablet-width) {
+      top: 9px;
+    }
+  }
+  &:active{
+    opacity: 0.3;
+  }
+}
+
+.ration__link:hover::after {
+  background-position: 0 center;
+}
+.ration__link:active::after {
+  background-position: 0 center;
+}
+

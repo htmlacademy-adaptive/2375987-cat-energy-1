@@ -14,9 +14,6 @@
 
 .program-diet__wrapper {
   @media (min-width:$tablet-width) and (max-width:1339px) {
-    padding: 0 4px;
-  }
-  @media (min-width:$desktop-width) {
     padding: 0 45px;
   }
 }

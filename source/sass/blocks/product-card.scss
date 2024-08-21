@@ -129,23 +129,22 @@
     justify-content: center;
     margin-bottom: 20px;
     max-width: 140px;
-    padding-left: 54px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width:$desktop-width) {
     margin-bottom: 25px;
-    padding-left: 14px;
+
   }
 
   &--more {
     @media (min-width:$tablet-width) {
       margin-bottom: 23px;
-      padding-left: 54px;
     }
 
     @media (min-width:$desktop-width) {
       margin-bottom: 26px;
-      padding-left: 15px;
     }
   }
 

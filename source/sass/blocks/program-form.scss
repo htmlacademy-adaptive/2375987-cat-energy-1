@@ -130,9 +130,12 @@
 .program-form__item {
   &--profile {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto  minmax(150px, 1fr);
     align-items: center;
     gap: 13px;
+    @media (min-width:$tablet-width) {
+      grid-template-columns: auto minmax(200px, 1fr);
+    }
   }
 
   &--icon {
@@ -156,9 +159,12 @@
 
   &--profile {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto minmax(200px, 1fr);
     align-items: center;
     column-gap: 13px;
+    @media (min-width:$tablet-width) {
+      grid-template-columns: auto minmax(300px, 1fr);
+    }
   }
 }
 
@@ -177,6 +183,7 @@
   width: 100%;
   box-sizing: border-box;
   color: #444444;
+  background-color: #ffffff;
   cursor: pointer;
 
   @media (min-width:$tablet-width) {
@@ -275,7 +282,7 @@
 
 .program-form__feedback {
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
