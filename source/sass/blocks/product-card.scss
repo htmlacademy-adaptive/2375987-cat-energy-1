@@ -198,7 +198,7 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  background-image: url("../../img/icon/plus.svg");
+  background-image: url("../img/icon/plus.svg");
   top: -53px;
   right: 125px;
   background-repeat: no-repeat;
@@ -206,7 +206,7 @@
   @media (min-width:$tablet-width) {
     width: 60px;
     height: 60px;
-    background-image: url("../../img/icon/more-plus.svg");
+    background-image: url("../img/icon/more-plus.svg");
     top: -112px;
     right: 41px;
   }
