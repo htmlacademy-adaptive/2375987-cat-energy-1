@@ -48,7 +48,10 @@
 }
 
 .page-navigation--nojs .page-navigation__list {
-  display: block;
+   @media (max-width:767px) {
+    display: block;
+  }
+
 }
 
 .page-navigation--opened .page-navigation__list {
