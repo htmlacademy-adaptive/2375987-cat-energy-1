@@ -1,5 +1,5 @@
 .advantages {
-  margin-bottom: 52px;
+  margin-bottom: 50px;
 
   @media (min-width:$tablet-width) {
     margin-bottom: 66px;
@@ -12,7 +12,7 @@
 
 .advantages__title {
   color: var(--color-text);
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -42,7 +42,7 @@
   }
 
   @media (min-width:$desktop-width) {
-    gap: 92px
+    gap:83px;
   }
 
 }
@@ -62,111 +62,128 @@
   }
 
   @media (min-width:$desktop-width) {
-    width: 234px;
-  }
-}
-
-.advantages__item::before {
-  @media (min-width:$tablet-width) {
-    counter-increment: myCounter;
-    content: counter(myCounter);
-    width: 112px;
-    height: 280px;
-    color: #f2f2f2;
-    font-family: "Oswald", sans-serif;
-    font-size: 280px;
-    font-weight: 400;
-    line-height: 280px;
-    z-index: -1;
-    position: absolute;
-    display: inline-block;
-    bottom: 0;
-    right: 7px;
-  }
-}
-
-.advantages__description {
-  margin: 0;
-  position: relative;
-
-  @media (min-width:$tablet-width) {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+    width: 242px;
   }
 
   &::before {
-    display: block;
-    content: "";
-    background-color: var(--basic-green);
-    position: absolute;
-
-    @media (min-width:$mobile-width) {
-      width: 60px;
-      height: 60px;
-      left: -80px;
-      top: -2px;
+    @media (min-width:$tablet-width) {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      width: 112px;
+      height: 280px;
+      color: #f2f2f2;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      z-index: -1;
+      position: absolute;
+      display: inline-block;
+      bottom: 0;
+      right: 23px;
     }
+
+    @media (min-width:$desktop-width) {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      width: 112px;
+      height: 280px;
+      color: #f2f2f2;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      z-index: -1;
+      position: absolute;
+      display: inline-block;
+      bottom: 0;
+      right: 15px;
+    }
+  }
+
+  .advantages__description {
+    margin: 0;
+    position: relative;
 
     @media (min-width:$tablet-width) {
-      width: 80px;
-      height: 80px;
-      left: 0;
-      top: -112px;
       font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      background-color: var(--basic-green);
+      position: absolute;
+
+      @media (min-width:$mobile-width) {
+        width: 60px;
+        height: 60px;
+        left: -80px;
+        top: -2px;
+      }
+
+      @media (min-width:$tablet-width) {
+        width: 80px;
+        height: 80px;
+        left: 0;
+        top: -112px;
+        font-size: 16px;
+      }
+    }
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      top: 14px;
+      left: -63px;
     }
   }
-}
 
-.advantages__description::after {
-  display: block;
-  content: "";
-  position: absolute;
-  background-repeat: no-repeat;
-  top: 14px;
-  left: -63px;
-}
 
-.advantages__description--icon-structure::after {
-  background-image: url("../../img/icon/icon-structure.svg");
-  width: 25px;
-  height: 28px;
+  .advantages__description--icon-structure::after {
+    background-image: url("../../img/icon/icon-structure.svg");
+    width: 25px;
+    height: 28px;
 
-  @media (min-width:$tablet-width) {
-    top: -85px;
-    left: 27px;
+    @media (min-width:$tablet-width) {
+      top: -85px;
+      left: 27px;
+    }
   }
-}
 
-.advantages__description--icon-consentience::after {
-  background-image: url("../../img/icon/icon-consentience.svg");
-  width: 26px;
-  height: 29px;
+  .advantages__description--icon-consentience::after {
+    background-image: url("../../img/icon/icon-consentience.svg");
+    width: 26px;
+    height: 29px;
 
-  @media (min-width:$tablet-width) {
-    top: -85px;
-    left: 27px;
+    @media (min-width:$tablet-width) {
+      top: -85px;
+      left: 27px;
+    }
   }
-}
 
-.advantages__description--icon-eat::after {
-  background-image: url("../../img/icon/icon-eat.svg");
-  width: 25px;
-  height: 30px;
+  .advantages__description--icon-eat::after {
+    background-image: url("../../img/icon/icon-eat.svg");
+    width: 25px;
+    height: 30px;
 
-  @media (min-width:$tablet-width) {
-    top: -87px;
-    left: 28px
+    @media (min-width:$tablet-width) {
+      top: -87px;
+      left: 28px
+    }
   }
-}
 
-.advantages__description--icon-time::after {
-  background-image: url("../../img/icon/icon-time.svg");
-  width: 26px;
-  height: 31px;
+  .advantages__description--icon-time::after {
+    background-image: url("../../img/icon/icon-time.svg");
+    width: 26px;
+    height: 31px;
 
-  @media (min-width:$tablet-width) {
-    top: -87px;
-    left: 27px;
+    @media (min-width:$tablet-width) {
+      top: -87px;
+      left: 27px;
+    }
   }
 }

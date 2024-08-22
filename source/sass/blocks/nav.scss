@@ -10,7 +10,7 @@
   border: none;
   width: 24px;
   height: 24px;
-  top: -35px;
+  top: -42px;
   right: 0;
   z-index: 2;
 
@@ -37,7 +37,7 @@
   width: 24px;
   height: 2px;
   background-color: #000000;
-  top: 8px;
+  top: 1px;
   left: 0px;
   box-shadow: 0 7px 0 0 #000000, 0 14px 0 0 #000000;
 }
@@ -47,29 +47,26 @@
   box-shadow: 0 6px 0 0 #000000, 0 14px 0 0 #000000;
 }
 
-@media (max-width: $mobile-width-only) {
-  .page-navigation__list {
-    display: none;
-  }
-}
-
 .page-navigation--nojs .page-navigation__list {
   display: block;
 }
 
 .page-navigation--opened .page-navigation__list {
-  display: block;
+  @media (max-width:767px) {
+    display: block;
+  }
 }
 
-// .page-navigation--closed:not(.page-navigation--nojs) .page-navigation__list {
-//   display: none;
-// }
-
+.page-navigation--closed:not(.page-navigation--nojs) .page-navigation__list {
+  @media (max-width:767px) {
+    display: none;
+  }
+}
 
 .page-navigation--opened .page-navigation__inner {
   @media (max-width:$tablet-width) {
     position: absolute;
-    top: 9px;
+    top: 1px;
     z-index: 1;
     background-color: #ffffff;
     width: 100%;
@@ -141,14 +138,10 @@
   }
 
   @media (min-width:$tablet-width) {
-    display: none;
     border: none;
-  }
-
-  @media (min-width:$tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 33px;
+    gap: 35px;
     justify-content: flex-start;
     max-width: 500px;
   }
@@ -209,7 +202,7 @@
       content: "";
       background-color: var(--basic-green);
       height: 2px;
-      bottom: 1px;
+      bottom: 5px;
       left: 0;
       right: 0;
     }

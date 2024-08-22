@@ -10,9 +10,7 @@
 
   @media (min-width:$tablet-width) {
     border: none;
-    padding: 0;
-    padding-top: 8px;
-    padding-bottom: 7px;
+    padding: 0 0 0 37px;
     margin-bottom: 0;
   }
 }
@@ -26,6 +24,9 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
+  @media (min-width:$tablet-width) {
+
+  }
 }
 
 .footer-social__link {
@@ -44,7 +45,6 @@
     width: 28px;
     height: 22px;
     mask-repeat: no-repeat;
-    mask-size: 28px 22px;
     mask-position: center;
     background-color: #666666;
   }
@@ -53,15 +53,18 @@
 
 .footer-social__link--vk::before {
   mask-image: url("../img/stack.svg#vkontakte");
+  mask-size: 27px 17px;
 
 }
 
 .footer-social__link--youtube::before {
   mask-image: url("../img/stack.svg#youtube");
+  mask-size: 24px 17px;
 }
 
 .footer-social__link--telegram::before {
   mask-image: url("../img/stack.svg#telegram");
+  mask-size: 20px 17px;
 }
 
 .footer-social__link:hover:before {

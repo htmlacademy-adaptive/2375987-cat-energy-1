@@ -3,8 +3,7 @@
   padding-bottom: 32px;
 
   @media (min-width:$tablet-width) {
-    padding: 65px;
-    padding-bottom: 40px;
+    padding: 65px 65px 36px;
   }
 
   @media (min-width:$desktop-width) {
@@ -15,9 +14,6 @@
 
 .program-diet__wrapper {
   @media (min-width:$tablet-width) and (max-width:1339px) {
-    padding: 0 4px;
-  }
-  @media (min-width:$desktop-width) {
     padding: 0 45px;
   }
 }
@@ -37,7 +33,7 @@
 .program-diet__description {
   margin-bottom: 39px;
   color: var(--color-text);
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald","Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;

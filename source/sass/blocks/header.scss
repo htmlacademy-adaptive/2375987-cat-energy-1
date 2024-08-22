@@ -1,38 +1,11 @@
 .page-header {
-  // padding-top: 13px;
-  // padding-bottom: 15px;
-
-  // @media (min-width:$tablet-width) {
-  //   padding-top: 25px;
-  //   padding-bottom: 0;
-  //   border: none;
-  // }
-
-  // @media (min-width:$desktop-width) {
-  //   padding-top: 55px;
-  // }
-
-  position: relative;
+  @media (min-width:$desktop-width) {
+    position: relative;
+  }
 
   &--content::before {
     content: "";
     display: block;
-    background-color: var(--basic-green);
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      image-set(url(../../img/hero-mobile-background.png) 1x,
-        url(../../img/hero-mobile-background2x.png) 2x);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 303px;
-    z-index: -1;
-    position: absolute;
-    top: 67px;
-
-    @media (min-width:$tablet-width) {
-      display: none;
-    }
 
     @media (min-width:$desktop-width) {
       display: block;
@@ -48,19 +21,20 @@
   }
 
   .page-header__wrapper {
-     padding-top: 13px;
-  padding-bottom: 15px;
+    padding-top: 13px;
 
-  @media (min-width:$tablet-width) {
-    padding-top: 25px;
-    padding-bottom: 0;
-    border: none;
-  }
+    @media (min-width:$tablet-width) {
+      padding-top: 25px;
+      padding-bottom: 0;
+      border: none;
+    }
 
-  @media (min-width:$desktop-width) {
-    padding-top: 55px;
-  }
+    @media (min-width:$desktop-width) {
+      padding-top: 55px;
+    }
+
     border-bottom: 1px solid #e6e6e6;
+
     @media (min-width:$tablet-width) {
       display: flex;
       align-items: center;
@@ -74,10 +48,15 @@
 
   }
 }
+
 .page-header__logo {
   display: flex;
   align-items: center;
   height: 38px;
+
+  @media (max-width:$mobile-width-only) {
+    padding-bottom: 14px;
+  }
 
   @media (min-width:$desktop-width) {
     height: 50px;
@@ -104,12 +83,12 @@
 
   @media (max-width:$mobile-width-only) {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 23px;
+    right: 110px;
   }
- @media (min-width:$desktop-width) {
-  width: 118px;
-  height: 21px;
- }
+
+  @media (min-width:$desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
 }

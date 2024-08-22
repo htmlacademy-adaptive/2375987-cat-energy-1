@@ -1,13 +1,13 @@
 .ration {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   @media (min-width:$tablet-width) {
-    margin-bottom: 39px;
+    margin-bottom: 42px;
     margin-top: -21px;
   }
 
   @media (min-width:$desktop-width) {
-    margin-bottom: 63px;
+    margin-bottom: 70px;
     margin-top: 0;
   }
 }
@@ -17,6 +17,7 @@
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 
   @media (min-width:$mobile-width) {
     flex-direction: column;
@@ -24,7 +25,7 @@
   }
 
   @media (min-width:$tablet-width) {
-    gap: 30px;
+    gap: 27px;
   }
 
   @media (min-width:$desktop-width) {
@@ -50,7 +51,7 @@
 
   @media (min-width:$desktop-width) {
     width: 570px;
-    padding: 77px 61px 59px 52px;
+    padding: 77px 61px 54px 52px;
   }
 }
 
@@ -58,7 +59,7 @@
   margin: 0;
   margin-bottom: 29px;
   color: var(--color-text);
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -71,12 +72,13 @@
     font-weight: 400;
     line-height: 36px;
     margin-bottom: 24px;
+    padding-right: 184px;
   }
 
   @media (min-width:$desktop-width) {
-    text-align: center;
     margin-bottom: 73px;
-    padding-left: 34px;
+    padding-left: 161px;
+    padding-right: 0;
   }
 
   &--position {
@@ -87,7 +89,7 @@
 
   &--left {
     @media (min-width:$desktop-width) {
-      padding-left: 74px;
+      padding-left: 162px;
     }
   }
 }
@@ -219,3 +221,35 @@
     }
   }
 }
+
+.ration__link {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/icon/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: -8px center;
+    width: 32px;
+    height: 12px;
+    right: -31px;
+    top: 3px;
+    transition: background-position .2s;
+    @media (min-width:$tablet-width) {
+      top: 9px;
+    }
+  }
+  &:active{
+    opacity: 0.3;
+  }
+}
+
+.ration__link:hover::after {
+  background-position: 0 center;
+}
+.ration__link:active::after {
+  background-position: 0 center;
+}
+

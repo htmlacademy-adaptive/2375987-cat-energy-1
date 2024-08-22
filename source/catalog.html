@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="css/style.min.css" as="style">
-  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
 </head>
 
 <body>
@@ -57,11 +57,17 @@
       <h1 class="title catalog-product__title ">Каталог продукции</h1>
 
       <!-- card-1 -->
-      <div class="product-card__wrapper">
+      <div class="catalog-product__wrapper">
         <article class="product-card">
           <div class="product-card__container">
             <a class="product-card__link product-card__link--card" href="#">
               <picture>
+                <source media="(min-width:1440px)" type="image/webp"
+                  srcset="img/img-chicken-pro500-desktop.webp 1x, img/img-chicken-pro500-desktop@2x.webp 2x" width="162"
+                  height="172">
+                <source media="(min-width:1440px)"
+                  srcset="img/img-chicken-pro500-desktop.png 1x, img/img-chicken-pro500-desktop@2x.png 2x" width="162"
+                  height="172">
                 <source media="(min-width:768px)" type="image/webp"
                   srcset="img/img-chicken-pro500-tablet.webp 1x, img/img-chicken-pro500-tablet@2x.webp 2x" width="161"
                   height="172">
@@ -69,7 +75,7 @@
                   srcset="img/img-chicken-pro500-tablet.png 1x, img/img-chicken-pro500-tablet@2x.png 2x" width="161"
                   height="172">
                 <source type="image/webp" srcset="img/img-chicken-pro500.webp 1x, img/img-chicken-pro500@2x.webp 2x">
-                <img class="product-card__img" src="img/img-chicken-pro500.png"
+                <img class="product-card__img product-card__img--small" src="img/img-chicken-pro500.png"
                   srcset="img/img-chicken-pro500@2x.png 2x" alt="Изображение продукции" width="68" height="86">
               </picture>
             </a>
@@ -80,15 +86,15 @@
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__text">Масса</span>
-                <span class="product-card__text">500 г</span>
+                <span class="product-card__text product-card__text--right">500 г</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Вкус</span>
-                <span class="product-card__text">Курица</span>
+                <span class="product-card__text product-card__text--right">Курица</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Цена</span>
-                <span class="product-card__text">700 ₽</span>
+                <span class="product-card__text product-card__text--right">700 ₽</span>
               </li>
             </ul>
           </div>
@@ -100,6 +106,12 @@
           <div class="product-card__container">
             <a class="product-card__link" href="#">
               <picture>
+                <source media="(min-width:1440px)" type="image/webp"
+                  srcset="img/img-chicken-pro1000-desktop.webp 1x, img/img-chicken-pro1000-desktop@2x.webp 2x"
+                  width="172" height="196">
+                <source media="(min-width:1440px)"
+                  srcset="img/img-chicken-pro1000-desktop.png 1x, img/img-chicken-pro1000-desktop@2x.png 2x" width="172"
+                  height="196">
                 <source media="(min-width:768px)" type="image/webp"
                   srcset="img/img-chicken-pro1000-tablet.webp 1x, img/img-chicken-pro1000-tablet@2x.webp 2x" width="168"
                   height="206">
@@ -108,26 +120,26 @@
                   height="206">
                 <source type="image/webp" srcset="img/img-chicken-pro1000.webp1x, img/img-chicken-pro1000@2x.webp 2x"
                   width="84" height="100">
-                <img class="product-card__img" src="img/img-chicken-pro1000.png"
+                <img class="product-card__img product-card__img--big" src="img/img-chicken-pro1000.png"
                   srcset="img/img-chicken-pro1000@2x.png 2x" alt="Изображение продукции" width="84" height="100">
               </picture>
             </a>
-            <a class="product-card__link-title">
-              <h3 class="product-card__title product-card__link-title--name">Cat Energy PRO 1000&nbsp;г</h3>
+            <a class="product-card__link-title product-card__link-title--name">
+              <h3 class="product-card__title ">Cat Energy PRO 1000&nbsp;г</h3>
             </a>
 
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__text">Масса</span>
-                <span class="product-card__text">1000 г</span>
+                <span class="product-card__text product-card__text--right">1000 г</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Вкус</span>
-                <span class="product-card__text">Курица</span>
+                <span class="product-card__text product-card__text--right">Курица</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Цена</span>
-                <span class="product-card__text">1000 ₽</span>
+                <span class="product-card__text product-card__text--right">1000 ₽</span>
               </li>
             </ul>
           </div>
@@ -139,6 +151,12 @@
           <div class="product-card__container">
             <a class="product-card__link product-card__link--card" href="#">
               <picture>
+                <source media="(min-width:1440px)" type="image/webp"
+                  srcset="img/img-fish-pro500-desktop.webp 1x, img/img-fish-pro500-desktop@2x.webp 2x" width="163"
+                  height="174">
+                <source media="(min-width:1440px)"
+                  srcset="img/img-fish-pro500-desktop.png 1x, img/img-fish-pro500-desktop.png@2x.png 2x" width="163"
+                  height="174">
                 <source media="(min-width:768px)" type="image/webp"
                   srcset="img/img-fish-pro500-tablet.webp 1x, img/img-fish-pro500-tablet@2x.webp 2x" width="163"
                   height="174">
@@ -146,26 +164,26 @@
                   srcset="img/img-fish-pro500-tablet.png 1x, img/img-fish-pro500-tablet@2x.png 2x" width="163"
                   height="174">
                 <source type="image/webp" srcset="img/img-fish-pro500.webp 1x,img/img-fish-pro500@2x.webp 2x">
-                <img class="product-card__img" src="img/img-fish-pro500.png" srcset="img/img-fish-pro500@2x.png 2x"
-                  alt="Изображение продукции" width="68" height="86">
+                <img class="product-card__img product-card__img--small" src="img/img-fish-pro500.png"
+                  srcset="img/img-fish-pro500@2x.png 2x" alt="Изображение продукции" width="68" height="86">
               </picture>
             </a>
             <a class="product-card__link-title product-card__link-title--name">
-              <h3 class="product-card__title">Cat Energy PRO 1000&nbsp;г</h3>
+              <h3 class="product-card__title">Cat Energy PRO 500&nbsp;г</h3>
             </a>
 
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__text">Масса</span>
-                <span class="product-card__text">500 г</span>
+                <span class="product-card__text product-card__text--right">500 г</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Вкус</span>
-                <span class="product-card__text">Рыба</span>
+                <span class="product-card__text product-card__text--right">Рыба</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Цена</span>
-                <span class="product-card__text">700 ₽</span>
+                <span class="product-card__text product-card__text--right">700 ₽</span>
               </li>
             </ul>
           </div>
@@ -177,6 +195,12 @@
           <div class="product-card__container">
             <a class="product-card__link" href="#">
               <picture>
+                <source media="(min-width:1440px)" type="image/webp"
+                  srcset="img/img-fish-pro1000-desktop.webp 1x, img/img-fish-pro1000-desktop.webp 2x" width="172"
+                  height="196">
+                <source media="(min-width:1440px)"
+                  srcset="img/img-fish-pro1000-desktop.png 1x, img/img-fish-pro1000-desktop.png 2x" width="172"
+                  height="196">
                 <source media="(min-width:768px)" type="image/webp"
                   srcset="img/img-fish-pro1000-tablet.webp 1x, img/img-fish-pro1000-tablet@2x.webp 2x" width="168"
                   height="200">
@@ -185,26 +209,26 @@
                   height="200">
                 <source type="image/webp" srcset="img/img-fish-pro1000.webp 1x, img/img-fish-pro1000@2x.webp 2x"
                   width="84" height="100">
-                <img class="product-card__img" src="img/img-fish-pro1000.png" srcset="img/img-fish-pro1000@2x.png 2x"
-                  alt="Изображение продукции" width="84" height="100">
+                <img class="product-card__img product-card__img--big" src="img/img-fish-pro1000.png"
+                  srcset="img/img-fish-pro1000@2x.png 2x" alt="Изображение продукции" width="84" height="100">
               </picture>
             </a>
-            <a class="product-card__link-title">
-              <h3 class="product-card__title product-card__link-title--name">Cat Energy PRO 1000&nbsp;г</h3>
+            <a class="product-card__link-title product-card__link-title--name">
+              <h3 class="product-card__title">Cat Energy PRO 1000&nbsp;г</h3>
             </a>
 
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__text">Масса</span>
-                <span class="product-card__text">1000 г</span>
+                <span class="product-card__text product-card__text--right">1000 г</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Вкус</span>
-                <span class="product-card__text">Рыба</span>
+                <span class="product-card__text product-card__text--right">Рыба</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Цена</span>
-                <span class="product-card__text">1000 ₽</span>
+                <span class="product-card__text product-card__text--right">1000 ₽</span>
               </li>
             </ul>
           </div>
@@ -217,6 +241,12 @@
           <div class="product-card__container">
             <a class="product-card__link product-card__link--card" href="#">
               <picture>
+                <source media="(min-width:1440px)" type="image/webp"
+                  srcset="img/img-buckwheat-pro500-desktop.webp 1x, img/img-buckwheat-pro500-desktop@2x.webp 2x"
+                  width="161" height="171">
+                <source media="(min-width:1440px)"
+                  srcset="img/img-buckwheat-pro500-desktop.png 1x, img/img-buckwheat-pro500-desktop@2x.png 2x"
+                  width="161" height="171">
                 <source media="(min-width:768px)" type="image/webp"
                   srcset="img/img-buckwheat-pro500-tablet.webp 1x, img/img-buckwheat-pro500-tablet@2x.webp 2x"
                   width="161" height="172">
@@ -225,7 +255,7 @@
                   height="172">
                 <source type="image/webp"
                   srcset="img/img-buckwheat-pro500.webp 1x, img/img-buckwheat-pro500@2x.webp 2x">
-                <img class="product-card__img" src="img/img-buckwheat-pro500.png"
+                <img class="product-card__img product-card__img--small" src="img/img-buckwheat-pro500.png"
                   srcset="img/img-buckwheat-pro500@2x.png 2x" alt="Изображение продукции" width="68" height="86">
               </picture>
             </a>
@@ -237,15 +267,15 @@
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__text">Масса</span>
-                <span class="product-card__text">500 г</span>
+                <span class="product-card__text product-card__text--right">500 г</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Вкус</span>
-                <span class="product-card__text">Гречка</span>
+                <span class="product-card__text product-card__text--right">Гречка</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Цена</span>
-                <span class="product-card__text">400 ₽</span>
+                <span class="product-card__text product-card__text--right">400 ₽</span>
               </li>
             </ul>
           </div>
@@ -257,6 +287,12 @@
           <div class="product-card__container">
             <a class="product-card__link" href="#">
               <picture>
+                <source media="(min-width:1440px)" type="image/type"
+                  srcset="img/img-buckwheat-pro1000-desktop.webp 1x, img/img-buckwheat-pro1000-desktop.webp 2x"
+                  width="172" height="196">
+                <source media="(min-width:1440px)"
+                  srcset="img/img-buckwheat-pro1000-desktop.png 1x, img/img-buckwheat-pro1000-desktop.png 2x"
+                  width="172" height="196">
                 <source media="(min-width:768px)" type="image/type"
                   srcset="img/img-buckwheat-pro1000-tablet.webp 1x, img/img-buckwheat-pro1000-tablet@2x.webp 2x"
                   width="168" height="200">
@@ -266,7 +302,7 @@
                 <source type="image/webp"
                   srcset="img/img-buckwheat-pro1000.webp 1x, img/img-buckwheat-pro1000@2x.webp 2x" width="84"
                   height="100">
-                <img class="product-card__img" src="img/img-buckwheat-pro1000.png"
+                <img class="product-card__img product-card__img--big" src="img/img-buckwheat-pro1000.png"
                   srcset="img/img-buckwheat-pro1000@2x.png 2x" alt="Изображение продукции" width="84" height="100">
               </picture>
             </a>
@@ -278,15 +314,15 @@
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__text">Масса</span>
-                <span class="product-card__text">1000 г</span>
+                <span class="product-card__text product-card__text--right">1000 г</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Вкус</span>
-                <span class="product-card__text">Гречка</span>
+                <span class="product-card__text product-card__text--right">Гречка</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Цена</span>
-                <span class="product-card__text">700 ₽</span>
+                <span class="product-card__text product-card__text--right">700 ₽</span>
               </li>
             </ul>
           </div>
@@ -299,15 +335,22 @@
           <div class="product-card__container">
             <a class="product-card__link product-card__link--card" href="#">
               <picture>
+                <source media="(min-width:1440px)" type="image/webp"
+                  srcset="img/img-rice-pro500-desktop.webp 1x, img/img-rice-pro500-desktop@2x.webp 2x" width="163"
+                  height="174">
+                <source media="(min-width:1440px)"
+                  srcset="img/img-rice-pro500-desktop.png 1x, img/img-rice-pro500-desktop@2x.png 2x" width="163"
+                  height="174">
                 <source media="(min-width:768px)" type="image/webp"
                   srcset="img/img-rice-pro500-tablet.webp 1x, img/img-rice-pro500-tablet@2x.webp 2x" width="163"
                   height="174">
                 <source media="(min-width:768px)"
                   srcset="img/img-rice-pro500-tablet.png 1x, img/img-rice-pro500-tablet@2x.png 2x" width="163"
                   height="174">
-                <source srcset="img/img-rice-pro500.webp 1x, img/img-rice-pro500@2x.webp 2x" width="68" height="86">
-                <img class="product-card__img" src="img/img-rice-pro500.png" srcset="img/img-rice-pro500@2x.png 2x"
-                  alt="Изображение продукции" width="68" height="86">
+                <source type="image/webp" srcset="img/img-rice-pro500.webp 1x, img/img-rice-pro500@2x.webp 2x"
+                  width="68" height="86">
+                <img class="product-card__img product-card__img--small" src="img/img-rice-pro500.png"
+                  srcset="img/img-rice-pro500@2x.png 2x" alt="Изображение продукции" width="68" height="86">
               </picture>
             </a>
 
@@ -319,15 +362,15 @@
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__text">Масса</span>
-                <span class="product-card__text">500 г</span>
+                <span class="product-card__text product-card__text--right">500 г</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Вкус</span>
-                <span class="product-card__text">Рис</span>
+                <span class="product-card__text product-card__text--right">Рис</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__text">Цена</span>
-                <span class="product-card__text">500 ₽</span>
+                <span class="product-card__text product-card__text--right">500 ₽</span>
               </li>
             </ul>
           </div>
@@ -343,7 +386,7 @@
             <p class="product-card__description">На самом деле вкусов
               <span class="product-card__text">гораздо больше!</span>
             </p>
-            <button class="button button--card-more" type="button">Показать все</button>
+            <a class="button button--card-more" href="form.html" >Показать все</a>
           </div>
         </div>
       </div>
@@ -402,7 +445,7 @@
   <!-- contacts -->
   <footer class="page-footer">
     <!-- contacts -->
-    <section class="contacts">
+    <section class="contacts contacts--color">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
         <p class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</p>
@@ -421,6 +464,10 @@
         <div class="page-footer__logo">
           <a href="index.html" class="page-footer__link">
             <span class="visually-hidden">Ссылка с логотипом сайта Кэт Энерджи</span>
+            <svg role="img" class="page-footer__img" width="128" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.62 21.95a9.331 9.331 0 01-1.6-5.72V7.76c-.14-2.06.39-4.1 1.5-5.82C2.62.61 4.32 0 6.83 0c2.5 0 4.1.61 5.1 1.73a7.434 7.434 0 011.51 5.01v2.04H8.53V6.43c.04-.7-.06-1.39-.3-2.04-.13-.27-.33-.49-.58-.63-.25-.15-.54-.21-.82-.19-.71 0-1.21.2-1.41.71-.22.73-.32 1.49-.3 2.25v10.93c-.05.74.09 1.48.4 2.14.2.51.71.72 1.41.72s1.1-.21 1.3-.72c.23-.69.33-1.41.3-2.14v-2.45h4.91v2.04c.1 1.83-.43 3.64-1.51 5.11-1 1.22-2.7 1.84-5.1 1.84-2.41-.11-4.21-.72-5.21-2.05zM19.34.3h5.71l4.21 23.29h-4.61l-.8-4.91h-3.3l-.81 4.91h-4.7L19.34.3zm4.11 15.32l-1.2-9.09-1.2 9.09h2.4zM32.76 4.18h-3.4V.3h11.91v3.78h-3.4v19.51h-5.11V4.18zM50.39.3h8.81v2.45h-5.71v7.66h4.61v2.35h-4.61v8.58h5.71v2.35h-8.91V.3h.1zM61.8.3h2.21l6.5 15.42V.3h2.61v23.29h-2L64.51 7.65v15.94H61.8V.3zM76.12.3h8.81v2.45h-5.7v7.66h4.6v2.35h-4.6v8.58h5.7v2.35h-8.81V.3zM87.54.3h4.6a7.89 7.89 0 015.11 1.43c1.1.92 1.6 2.55 1.6 4.7 0 2.96-.9 4.8-2.8 5.41l3.2 11.64h-3.1l-3-10.92h-2.51v10.92h-3.2V.3h.1zm4.4 10.01c1.04.09 2.07-.2 2.91-.82.6-.51.9-1.53.9-3.06.03-.76-.07-1.52-.3-2.25-.23-.52-.61-.95-1.1-1.22-.69-.32-1.45-.46-2.21-.41h-1.4v7.66h1.2v.1zM102.86 21.85a10.48 10.48 0 01-1.4-5.92V8.17c-.03-1.48.14-2.96.5-4.4.33-1.07 1-2 1.9-2.65 1.12-.68 2.41-1 3.71-.92 2.1 0 3.6.51 4.5 1.63a7.933 7.933 0 011.41 5.11v.82h-3.01v-.72c.01-.85-.06-1.71-.2-2.55-.08-.53-.37-1.01-.8-1.33a2.99 2.99 0 00-1.9-.51c-.72-.05-1.43.17-2.01.61a2.414 2.414 0 00-.8 1.64c-.13.91-.2 1.83-.2 2.75v8.69c-.07 1.32.13 2.64.6 3.88.4.81 1.21 1.12 2.41 1.12.47.06.95-.02 1.38-.24.43-.22.78-.56 1.02-.99.53-1.29.77-2.68.7-4.08V14.4h-2.9v-2.35h5.81v11.54h-2.01l-.3-2.66c-.26.89-.81 1.67-1.55 2.2-.74.54-1.64.81-2.55.76-.83.05-1.66-.11-2.41-.46-.75-.36-1.4-.9-1.9-1.58zM119.98 15.42L115.08.4h3l3.51 11.24L124.99.4H128l-4.91 15.02v8.17h-3.01v-8.17h-.1z" />
+              </svg>
           </a>
         </div>
 
@@ -450,23 +497,25 @@
         <!-- logo HTML academy -->
         <div class="link-htmlacademy">
           <a class="link-htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive"
-          aria-label="Сайт HTML Academy">
-          <span class="link-htmlacademy__text">HTML Academy</span>
-          <svg width="27.000000" height="34.000000" viewBox="0 0 27 34" class="link-htmlacademy__img"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs/>
-            <path d="M13.64 0.01L13.5 0L0 1.4L0 26.01L13.5 34L27 26.01L27 1.4L13.64 0.01ZM25.23 25.01L13.5 31.95L1.76 25.01L1.76 14.92L13.45 21.84L13.47 23.09L5.45 18.35L5.44 19.58L13.48 24.38L13.5 25.67L5.46 20.91L5.45 22.14L13.5 26.95L21.62 22.11L21.62 20.89L21.62 16.9L25.24 14.75L25.23 25.01ZM25.23 13.45L22.01 15.33L20.53 16.2L13.46 12.02L13.45 13.24L19.49 16.81L19.44 16.84L19.31 16.92L18.45 17.41L13.46 14.46L13.45 15.69L17.39 18.02L16.45 18.63L16.43 18.64L13.46 16.9L13.45 18.12L15.4 19.26L13.41 20.44L1.79 13.57L13.43 6.61L25.23 13.45ZM25.23 12.22L13.44 5.31L1.76 12.21L1.76 2.98L13.5 1.76L25.23 2.98L25.23 12.22Z"/>
-          </svg>
+            aria-label="Сайт HTML Academy">
+            <span class="link-htmlacademy__text">HTML Academy</span>
+            <svg width="27.000000" height="34.000000" viewBox="0 0 27 34" class="link-htmlacademy__img"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs />
+              <path
+                d="M13.64 0.01L13.5 0L0 1.4L0 26.01L13.5 34L27 26.01L27 1.4L13.64 0.01ZM25.23 25.01L13.5 31.95L1.76 25.01L1.76 14.92L13.45 21.84L13.47 23.09L5.45 18.35L5.44 19.58L13.48 24.38L13.5 25.67L5.46 20.91L5.45 22.14L13.5 26.95L21.62 22.11L21.62 20.89L21.62 16.9L25.24 14.75L25.23 25.01ZM25.23 13.45L22.01 15.33L20.53 16.2L13.46 12.02L13.45 13.24L19.49 16.81L19.44 16.84L19.31 16.92L18.45 17.41L13.46 14.46L13.45 15.69L17.39 18.02L16.45 18.63L16.43 18.64L13.46 16.9L13.45 18.12L15.4 19.26L13.41 20.44L1.79 13.57L13.43 6.61L25.23 13.45ZM25.23 12.22L13.44 5.31L1.76 12.21L1.76 2.98L13.5 1.76L25.23 2.98L25.23 12.22Z" />
+            </svg>
 
-        </a>
+          </a>
         </div>
       </div>
     </div>
   </footer>
   <script src="js/nav.js"></script>
   <script
-    src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=f3249e4c-1d7d-4f10-904e-e5b6633d35f4"
-    type="text/javascript"></script>
-  <script src="js/map.js" type="text/javascript"></script>
+    src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=f3249e4c-1d7d-4f10-904e-e5b6633d35f4">
+  </script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>

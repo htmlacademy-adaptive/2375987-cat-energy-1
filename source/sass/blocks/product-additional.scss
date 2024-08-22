@@ -1,5 +1,13 @@
 .product-additional {
   margin-bottom: 35px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 74px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-bottom: 17px;
+  }
 }
 
 .product-additional__inner {
@@ -12,7 +20,7 @@
 
 .product-additional__title {
   color: var(--color-text);
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -29,6 +37,11 @@
     font-size: 36px;
     margin-left: 40px;
   }
+
+  @media (min-width:$desktop-width) {
+    margin-left: 0;
+    margin-bottom: 84px;
+  }
 }
 
 .product-additional__list {
@@ -44,6 +57,7 @@
   @media (min-width:$tablet-width) {
     width: 708px;
     border: 1px solid rgb(205, 205, 205);
+    margin-bottom: 68px;
   }
 
   @media (min-width:$desktop-width) {
@@ -66,6 +80,16 @@
     border-top: none;
 
     &:not(:last-child) {
+      border-bottom: 1px solid rgb(205, 205, 205);
+    }
+
+    &:first-child {
+      @media (min-width:$desktop-width) {
+        border-top: 1px solid rgb(205, 205, 205);
+      }
+    }
+
+    @media (min-width:$desktop-width) {
       border-bottom: 1px solid rgb(205, 205, 205);
     }
   }
@@ -97,11 +121,12 @@
 
   @media (min-width:$tablet-width) {
     display: grid;
-    grid-template-columns: 132px auto;
+    grid-template-columns: 139px auto;
     gap: 49px;
   }
 
   @media (min-width:$desktop-width) {
+    grid-template-columns: 132px auto;
     gap: 112px;
   }
 }
@@ -109,6 +134,12 @@
 .product-additional__volume {
   @media (min-width:$tablet-width) {
     font-size: 16px;
+    display: inline;
+    text-align: right;
+  }
+
+  @media (min-width:$desktop-width) {
+    text-align: left;
   }
 }
 
@@ -120,7 +151,7 @@
 
 .product-additional__subtitle {
   color: var(--color-text);
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -179,32 +210,40 @@
   line-height: 20px;
   text-align: center;
   position: relative;
+
+  @media (min-width:$tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width:$desktop-width) {
+    text-align: center;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../../img/icon/gift-promo.svg");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 83px;
+    top: -130px;
+    right: 39px;
+
+    @media (min-width:$tablet-width) {
+      top: -13px;
+      right: 424px;
+    }
+
+    @media (min-width:$desktop-width) {
+      top: -130px;
+      right: 39px;
+    }
+  }
 }
 
 .bg {
   @media (max-width:$tablet-width) {
     display: flex;
-  }
-}
-
-.product-additional__promo::before {
-  content: "";
-  position: absolute;
-  display: block;
-  background-image: url("../../img/icon/gift-promo.svg");
-  background-repeat: no-repeat;
-  width: 80px;
-  height: 83px;
-  top: -130px;
-  right: 39px;
-
-  @media (min-width:$tablet-width) {
-    top: -13px;
-    right: 436px;
-  }
-
-  @media (min-width:$desktop-width) {
-    top: -130px;
-    right: 39px;
   }
 }

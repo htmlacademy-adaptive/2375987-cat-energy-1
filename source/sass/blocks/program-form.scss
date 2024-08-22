@@ -8,6 +8,7 @@
     @media (min-width:$tablet-width) {
       margin-bottom: 72px;
     }
+
     @media (min-width:$desktop-width) {
       margin-bottom: 0;
     }
@@ -17,6 +18,7 @@
     @media (min-width:$tablet-width) {
       margin-bottom: 64px;
     }
+
     @media (min-width:$desktop-width) {
       margin-bottom: 0;
     }
@@ -36,13 +38,21 @@
 
   &--owner {
     @media (min-width:$tablet-width) {
-      margin-bottom: 68px;
+      margin-bottom: 66px;
+    }
+
+    @media (min-width:$desktop-width) {
+      margin-bottom: 69px;
     }
   }
 
   &--feedback {
     @media (min-width:$tablet-width) {
       margin-bottom: 63px;
+    }
+
+    @media (min-width:$desktop-width) {
+      margin-bottom: 67px;
     }
   }
 }
@@ -96,7 +106,7 @@
     @media (min-width:$desktop-width) {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap:80px;
+      gap: 80px;
     }
   }
 }
@@ -120,9 +130,12 @@
 .program-form__item {
   &--profile {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto  minmax(150px, 1fr);
     align-items: center;
     gap: 13px;
+    @media (min-width:$tablet-width) {
+      grid-template-columns: auto minmax(200px, 1fr);
+    }
   }
 
   &--icon {
@@ -133,7 +146,7 @@
 .program-form__text {
   display: inline-block;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -146,9 +159,12 @@
 
   &--profile {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto minmax(200px, 1fr);
     align-items: center;
     column-gap: 13px;
+    @media (min-width:$tablet-width) {
+      grid-template-columns: auto minmax(300px, 1fr);
+    }
   }
 }
 
@@ -160,20 +176,21 @@
   padding: 14px 33px 11px 15px;
   box-sizing: border-box;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   width: 100%;
   box-sizing: border-box;
   color: #444444;
+  background-color: #ffffff;
   cursor: pointer;
 
   @media (min-width:$tablet-width) {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    padding: 6px 40px 13px 20px;
+    padding: 7px 40px 13px 20px;
   }
 }
 
@@ -206,7 +223,7 @@
 
 .control {
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -221,7 +238,7 @@
 
 .program-form__title {
   color: var(--color-text);
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
@@ -243,8 +260,9 @@
 
   &--owner {
     @media (min-width:$tablet-width) {
-      margin-bottom: 78px;
+      margin-bottom: 76px;
     }
+
     @media (min-width:$desktop-width) {
       margin-bottom: 75px;
     }
@@ -254,8 +272,9 @@
     @media (min-width:$tablet-width) {
       margin-bottom: 84px;
     }
+
     @media (min-width:$desktop-width) {
-      margin-bottom: 83px;
+      margin-bottom: 79px;
     }
   }
 }
@@ -263,14 +282,14 @@
 
 .program-form__feedback {
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   width: 100%;
   box-sizing: border-box;
-  padding: 14px 14px 99px 15px;
+  padding: 14px 5px 99px 15px;
   border: 1px solid rgb(231, 231, 231);
   cursor: pointer;
   resize: vertical;
@@ -278,6 +297,11 @@
   @media (min-width:$tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 10px 5px 104px 21px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 7px 5px 104px 21px;
   }
 
   &:hover {
@@ -302,4 +326,11 @@
   line-height: 16px;
   margin: 0;
   text-align: center;
+
+  @media (min-width:$tablet-width) {
+    padding-top: 16px;
+  }
+  @media (min-width:$desktop-width) {
+    padding-top: 19px;
+  }
 }
