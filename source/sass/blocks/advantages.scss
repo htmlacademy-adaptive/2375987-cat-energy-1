@@ -42,7 +42,7 @@
   }
 
   @media (min-width:$desktop-width) {
-    gap:83px;
+    gap: 83px;
   }
 
 }
@@ -132,6 +132,7 @@
         font-size: 16px;
       }
     }
+
     &::after {
       display: block;
       content: "";
@@ -144,7 +145,7 @@
 
 
   .advantages__description--icon-structure::after {
-    background-image: url("../../img/icon/icon-structure.svg");
+    background-image: url("../img/icon/icon-structure.svg");
     width: 25px;
     height: 28px;
 
@@ -155,7 +156,7 @@
   }
 
   .advantages__description--icon-consentience::after {
-    background-image: url("../../img/icon/icon-consentience.svg");
+    background-image: url("../img/icon/icon-consentience.svg");
     width: 26px;
     height: 29px;
 
@@ -166,7 +167,7 @@
   }
 
   .advantages__description--icon-eat::after {
-    background-image: url("../../img/icon/icon-eat.svg");
+    background-image: url("../img/icon/icon-eat.svg");
     width: 25px;
     height: 30px;
 
@@ -177,7 +178,7 @@
   }
 
   .advantages__description--icon-time::after {
-    background-image: url("../../img/icon/icon-time.svg");
+    background-image: url("../img/icon/icon-time.svg");
     width: 26px;
     height: 31px;
 
@@ -185,5 +186,11 @@
       top: -87px;
       left: 27px;
     }
+  }
+}
+
+.advantages__text {
+  @media (min-width:$tablet-width) {
+    display: block;
   }
 }
