@@ -9,10 +9,10 @@
 
     @media (min-width: $desktop-width) {
       display: block;
-      width: 720px;
+      width: 50%;
       height: 694px;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        image-set(url("../../img/hero-desktop-background.jpg") 1x, url("../../img/hero-desktop-background2x.jpg") 2x);
+        image-set(url("../../img/hero-desktop-background.jpeg") 1x, url("../../img/hero-desktop-background@2x.jpeg") 2x);
       background-position: left;
       position: absolute;
       top: 0;
