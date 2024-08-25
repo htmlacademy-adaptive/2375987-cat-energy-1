@@ -2,18 +2,18 @@
   padding-top: 27px;
   padding-bottom: 32px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 65px 65px 36px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 74px;
     padding-bottom: 60px;
   }
 }
 
 .program-diet__wrapper {
-  @media (min-width:$tablet-width) and (max-width:1339px) {
+  @media (min-width: $tablet-width) and (max-width: 1339px) {
     padding: 0 45px;
   }
 }
@@ -21,11 +21,11 @@
 .program-diet__title {
   margin-bottom: 37px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 54px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 55px;
   }
 }
@@ -33,13 +33,13 @@
 .program-diet__description {
   margin-bottom: 39px;
   color: var(--color-text);
-  font-family: "Oswald","Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;

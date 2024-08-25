@@ -16,7 +16,7 @@
   &--big {
     padding: 13px 64px 10px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: 20px;
       font-weight: 400;
       line-height: 26px;
@@ -41,7 +41,8 @@
     font-weight: 400;
     line-height: 16px;
     padding-right: 47px;
-    @media (min-width:$tablet-width) {
+
+    @media (min-width: $tablet-width) {
       padding-right: 57px;
       font-size: 20px;
       font-weight: 400;
@@ -52,11 +53,11 @@
   &--card {
     padding: 10px 109px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       padding: 10px 94px;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       padding: 10px 55px;
     }
 
@@ -71,16 +72,16 @@
   }
 
   &--additional {
-    @media (min-width:$mobile-width) {
+    @media (min-width: $mobile-width) {
       padding: 10px 109px;
     }
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       padding: 10px 285px;
       grid-column: 1 / -1;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       padding: 10px 91px;
       grid-column: 3;
     }
@@ -102,12 +103,12 @@
     align-self: center;
     justify-self: start;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       padding: 10px 78px;
       align-self: self-end;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       padding: 11px 39px;
     }
 
@@ -129,7 +130,7 @@
     padding: 10px 78px;
     margin-bottom: 21px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       margin-right: 60px;
       padding: 14px 65px;
       font-size: 20px;
@@ -137,7 +138,7 @@
       line-height: 26px;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       margin-right: 76px;
       padding: 14px 209px;
     }

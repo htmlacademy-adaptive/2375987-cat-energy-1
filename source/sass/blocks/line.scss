@@ -28,7 +28,7 @@
     height: 20px;
     transform: translateY(-50%);
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       top: 50%;
       width: calc(100% + 57px);
     }

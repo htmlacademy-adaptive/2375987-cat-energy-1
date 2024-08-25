@@ -1,5 +1,5 @@
 .page-header {
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     position: relative;
   }
 
@@ -7,12 +7,12 @@
     content: "";
     display: block;
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       display: block;
       width: 50%;
       height: 694px;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        image-set(url(../../img/hero-desktop-background.png) 1x, url(../../img/hero-desktop-background2x.png)2x);
+        image-set(url("../../img/hero-desktop-background.png") 1x, url("../../img/hero-desktop-background2x.png") 2x);
       background-position: left;
       position: absolute;
       top: 0;
@@ -23,29 +23,28 @@
   .page-header__wrapper {
     padding-top: 13px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       padding-top: 25px;
       padding-bottom: 0;
       border: none;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       padding-top: 55px;
     }
 
     border-bottom: 1px solid #e6e6e6;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       display: flex;
       align-items: center;
       justify-content: space-between;
       border: none;
     }
 
-    @media (max-width:$tablet-width) {
+    @media (max-width: $tablet-width) {
       position: relative;
     }
-
   }
 }
 
@@ -54,11 +53,11 @@
   align-items: center;
   height: 38px;
 
-  @media (max-width:$mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     padding-bottom: 14px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     height: 50px;
   }
 
@@ -72,7 +71,7 @@
 }
 
 .page-header__img {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 13px;
   }
 }
@@ -81,13 +80,13 @@
   width: 101px;
   height: 18px;
 
-  @media (max-width:$mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     position: absolute;
     top: 23px;
     right: 110px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 118px;
     height: 21px;
   }

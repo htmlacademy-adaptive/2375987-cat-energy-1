@@ -1,22 +1,22 @@
 .contacts {
   position: relative;
 
-  @media (min-width:$mobile-width) {
+  @media (min-width: $mobile-width) {
     margin: 0 auto;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0 auto;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 565px;
     padding: 0;
     margin: 0;
   }
 
   &--color {
-    @media (max-width:1339px) {
+    @media (max-width: 1339px) {
       background-color: var(--basic-grey);
     }
   }
@@ -31,14 +31,14 @@
   width: 100%;
   padding: 26px 20px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 62px 69px;
     max-width: 768px;
     grid-template-columns: repeat(2, 350px);
     gap: 122px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: repeat(2, 140px);
     background-color: #ffffff;
     width: 565px;
@@ -61,11 +61,11 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  @media (min-width:$mobile-width) {
+  @media (min-width: $mobile-width) {
     width: 140px;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
@@ -73,16 +73,16 @@
 }
 
 .contacts__adress {
-  @media (min-width:$mobile-width) {
+  @media (min-width: $mobile-width) {
     width: 140px;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 157px;
     text-align: right;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     text-align: left;
   }
 }
@@ -91,13 +91,13 @@
   font-style: normal;
   margin: 0;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -105,7 +105,7 @@
 }
 
 .contacts__block {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: block;
     padding-top: 20px;
   }
