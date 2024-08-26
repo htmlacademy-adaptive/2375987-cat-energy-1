@@ -2,7 +2,7 @@
   background-image: linear-gradient(#f2f2f2 25%, #f2f2f2 25%);
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(#fff 56%, #f2f2f2 56%);
+    background-image: linear-gradient(#ffffff 56%, #f2f2f2 56%);
   }
 
   @media (min-width: $desktop-width) {
@@ -216,8 +216,9 @@
     line-height: 20px;
   }
 }
-.result__text-block{
-  @media (min-width:$desktop-width) {
-display: block;
+
+.result__text-block {
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

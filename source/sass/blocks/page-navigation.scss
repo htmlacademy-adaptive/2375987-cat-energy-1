@@ -202,7 +202,8 @@
       left: 0;
       right: 0;
     }
-    @media (min-width:$desktop-width) {
+
+    @media (min-width: $desktop-width) {
       bottom: 5px;
     }
   }

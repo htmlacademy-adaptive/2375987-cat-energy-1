@@ -37,13 +37,13 @@
 
   &--mob {
     &::after {
-      @media (max-width:$mobile-width-only) {
+      @media (max-width: $mobile-width-only) {
         width: calc(100% + -40px);
       }
     }
 
     &::before {
-      @media (max-width:$mobile-width-only) {
+      @media (max-width: $mobile-width-only) {
         top: 37%;
       }
     }
