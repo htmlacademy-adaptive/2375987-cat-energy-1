@@ -188,7 +188,8 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    padding: 7px 40px 13px 20px;
+    // padding: 7px 40px 13px 20px;
+    padding: 10px 40px 10px 20px;
   }
 }
 
@@ -301,13 +302,12 @@
 }
 
 .program-form__required {
-  font-size: 16px;
-  line-height: 16px;
   margin: 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     padding-top: 16px;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {

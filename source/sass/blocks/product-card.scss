@@ -25,12 +25,13 @@
     padding-bottom: 22px;
 
     @media (min-width: $tablet-width) {
-      padding: 150px 37px 40px;
+      padding: 160px 37px 40px;
       border: 1px solid #ebebeb;
       margin-top: 84px;
     }
 
     @media (min-width: $desktop-width) {
+      padding: 150px 37px 40px;
       margin-top: 80px;
     }
   }

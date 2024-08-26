@@ -198,9 +198,12 @@
       content: "";
       background-color: var(--basic-green);
       height: 2px;
-      bottom: 5px;
+      bottom: 2px;
       left: 0;
       right: 0;
+    }
+    @media (min-width:$desktop-width) {
+      bottom: 5px;
     }
   }
 

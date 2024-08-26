@@ -1,5 +1,5 @@
 .ration {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 47px;
@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 71px;
     margin-top: 0;
   }
 }
@@ -21,7 +21,7 @@
 
   @media (min-width: $mobile-width) {
     flex-direction: column;
-    gap: 23px;
+    gap: 19px;
   }
 
   @media (min-width: $tablet-width) {
@@ -40,7 +40,7 @@
 
   @media (min-width: $mobile-width) {
     width: 280px;
-    padding: 30px 33px 15px 20px;
+    padding: 30px 33px 21px 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -50,7 +50,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding: 77px 61px 54px 52px;
+    padding: 77px 61px 59px 52px;
   }
 }
 
@@ -104,7 +104,7 @@
     width: 50px;
     height: 50px;
     left: 0;
-    top: -4px;
+    top: -7px;
   }
 
   @media (min-width: $tablet-width) {
@@ -133,7 +133,7 @@
     height: 50px;
     background-image: url("../img/icon/icon-ration-cat-mobile.svg");
     top: -9px;
-    left: 9px;
+    left: 6px;
   }
 
   @media (min-width: $tablet-width) {
@@ -164,7 +164,7 @@
     height: 29px;
     background-image: url("../img/icon/icon-ration-tiger-mobile.svg");
     top: 6px;
-    left: -13px;
+    left: -7px;
   }
 
   @media (min-width: $tablet-width) {
@@ -187,7 +187,7 @@
 
 .ration__text {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 41px;
   position: relative;
 
   @media (min-width: $tablet-width) and (max-width: 1339px) {
