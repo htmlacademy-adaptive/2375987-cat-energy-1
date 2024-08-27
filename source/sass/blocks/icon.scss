@@ -11,7 +11,7 @@
     mask-repeat: no-repeat;
     background-color: #000000;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       right: 15px;
       top: 16px;
     }
@@ -28,7 +28,6 @@
 
 .icon--email::before {
   mask-image: url("../../img/icon-email.svg");
-
 }
 
 .icon--tel::before {

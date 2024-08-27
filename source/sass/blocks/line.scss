@@ -24,13 +24,28 @@
     top: 50%;
     left: -30px;
     z-index: -1;
-    width: calc(100% + 40px);
+    width: calc(100% + 50px);
     height: 20px;
     transform: translateY(-50%);
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       top: 50%;
-      width: calc(100% + 57px);
+      width: calc(100% + 80px);
+      left: -40px;
+    }
+  }
+
+  &--mob {
+    &::after {
+      @media (max-width: $mobile-width-only) {
+        width: calc(100% + -40px);
+      }
+    }
+
+    &::before {
+      @media (max-width: $mobile-width-only) {
+        top: 37%;
+      }
     }
   }
 }

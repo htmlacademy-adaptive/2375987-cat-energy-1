@@ -22,11 +22,11 @@
     opacity: 0.3;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -38,36 +38,35 @@
   height: 2px;
   background-color: #000000;
   top: 1px;
-  left: 0px;
+  left: 0;
   box-shadow: 0 7px 0 0 #000000, 0 14px 0 0 #000000;
 }
 
-.page-navigation--closed .page-navigation__toggle:active:before {
+.page-navigation--closed .page-navigation__toggle:active::before {
   background-color: #000000;
   box-shadow: 0 6px 0 0 #000000, 0 14px 0 0 #000000;
 }
 
 .page-navigation--nojs .page-navigation__list {
-   @media (max-width:767px) {
+  @media (max-width: 767px) {
     display: block;
   }
-
 }
 
 .page-navigation--opened .page-navigation__list {
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     display: block;
   }
 }
 
 .page-navigation--closed:not(.page-navigation--nojs) .page-navigation__list {
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
 
 .page-navigation--opened .page-navigation__inner {
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     position: absolute;
     top: 1px;
     z-index: 1;
@@ -89,10 +88,6 @@
   display: block;
 }
 
-.page-navigation--nojs .page-navigation__item {
-  display: block;
-}
-
 .page-navigation--nojs .page-navigation-list__item--active a {
   padding-right: 21px;
   padding-left: 21px;
@@ -100,7 +95,6 @@
 }
 
 .page-navigation--opened .page-navigation__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -109,7 +103,7 @@
     height: 2px;
     background-color: #000000;
     top: 10px;
-    left: 0px;
+    left: 0;
   }
 
   &::before {
@@ -125,22 +119,21 @@
   &:active::after {
     background-color: #000000;
   }
-
 }
 
 .page-navigation__list {
   @include list ();
 
-  @media (min-width:$mobile-width) {
+  @media (min-width: $mobile-width) {
     width: calc(100% + 2 * 20px);
     margin-left: -20px;
   }
 
-  @media (max-width:$tablet-width) {
+  @media (max-width: $tablet-width) {
     background-color: #ffffff;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     border: none;
     display: flex;
     flex-wrap: wrap;
@@ -149,7 +142,7 @@
     max-width: 500px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -158,7 +151,7 @@
 .page-navigation__item {
   border-bottom: 1px solid #e6e6e6;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     border: none;
   }
 }
@@ -177,7 +170,7 @@
   text-align: center;
   padding: 23px 0 24px 0;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     border: none;
     padding: 14px 0 12px 0;
     font-size: 18px;
@@ -185,7 +178,7 @@
     line-height: 24px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 16px 0 13px 0;
     font-size: 20px;
     font-weight: 400;
@@ -193,32 +186,34 @@
   }
 
   &--color {
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       color: #ffffff;
     }
   }
 
-  &--current:after {
-    @media (min-width:$tablet-width) {
+  &--current::after {
+    @media (min-width: $tablet-width) {
       position: absolute;
       display: block;
       content: "";
       background-color: var(--basic-green);
       height: 2px;
-      bottom: 5px;
+      bottom: 2px;
       left: 0;
       right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 5px;
     }
   }
 
   &--active::after {
-    @media(min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       background-color: #ffffff;
     }
   }
-}
 
-.page-navigation__link {
   &:hover {
     opacity: 0.6;
   }

@@ -3,6 +3,7 @@
 
   "rules": {
     "declaration-no-important": true,
+    "unit-no-unknown": [true, {"ignoreFunctions": ["image-set"]}],
     "indentation": [2, {"ignore": ["inside-parens"]}]
   }
 }

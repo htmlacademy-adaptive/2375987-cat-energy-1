@@ -1,13 +1,12 @@
 .link-htmlacademy {
   position: relative;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: 200px;
   }
 }
 
 .link-htmlacademy__link {
-  display: block;
   text-decoration: none;
   list-style-type: none;
   cursor: pointer;
@@ -16,7 +15,7 @@
   align-items: center;
   transition: color 0.3s ease-in-out;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     gap: 23px;
   }
 
@@ -52,7 +51,7 @@
   right: 0;
   fill: #666666;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     position: static;
   }
 }

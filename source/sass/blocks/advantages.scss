@@ -1,11 +1,11 @@
 .advantages {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 66px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 42px;
   }
 }
@@ -17,11 +17,12 @@
   font-weight: 400;
   line-height: 40px;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 43px;
   }
 }
 
@@ -32,41 +33,40 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (min-width:$mobile-width) {
+  @media (min-width: $mobile-width) {
     gap: 20px;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     gap: 45px 135px;
     counter-reset: myCounter;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     gap: 83px;
   }
-
 }
 
 .advantages__item {
   box-sizing: border-box;
   position: relative;
 
-  @media (min-width:$mobile-width) {
+  @media (min-width: $mobile-width) {
     width: 280px;
     padding: 2px 0 4px 80px;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 249px;
     padding: 142px 0 57px 0;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 242px;
   }
 
   &::before {
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       counter-increment: myCounter;
       content: counter(myCounter);
       width: 112px;
@@ -79,11 +79,11 @@
       z-index: -1;
       position: absolute;
       display: inline-block;
-      bottom: 0;
+      top: -8px;
       right: 23px;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       counter-increment: myCounter;
       content: counter(myCounter);
       width: 112px;
@@ -96,7 +96,7 @@
       z-index: -1;
       position: absolute;
       display: inline-block;
-      bottom: 0;
+      top: -10px;
       right: 15px;
     }
   }
@@ -105,7 +105,7 @@
     margin: 0;
     position: relative;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: 16px;
       font-weight: 400;
       line-height: 24px;
@@ -117,14 +117,14 @@
       background-color: var(--basic-green);
       position: absolute;
 
-      @media (min-width:$mobile-width) {
+      @media (min-width: $mobile-width) {
         width: 60px;
         height: 60px;
         left: -80px;
         top: -2px;
       }
 
-      @media (min-width:$tablet-width) {
+      @media (min-width: $tablet-width) {
         width: 80px;
         height: 80px;
         left: 0;
@@ -149,7 +149,7 @@
     width: 25px;
     height: 28px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       top: -85px;
       left: 27px;
     }
@@ -160,7 +160,7 @@
     width: 26px;
     height: 29px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       top: -85px;
       left: 27px;
     }
@@ -171,9 +171,9 @@
     width: 25px;
     height: 30px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       top: -87px;
-      left: 28px
+      left: 28px;
     }
   }
 
@@ -182,7 +182,7 @@
     width: 26px;
     height: 31px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       top: -87px;
       left: 27px;
     }
@@ -190,7 +190,7 @@
 }
 
 .advantages__text {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }
