@@ -48,4 +48,12 @@
       }
     }
   }
+
+  &--card {
+    &::before {
+      @media (min-width: $tablet-width) {
+        top: 71%;
+      }
+    }
+  }
 }

@@ -47,6 +47,8 @@
   }
 
   &--feedback {
+    margin-bottom: 21px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 63px;
     }
@@ -231,7 +233,7 @@
   }
 
   &--additionally {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 56px;
